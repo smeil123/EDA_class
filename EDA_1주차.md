@@ -41,6 +41,7 @@ par(op)
 ```
 
 **그래프에 그리는 선이 중요한 이유**
+데이터의 의미를 해석하는데 도움을 준다
 
 ```
 # ==================== 소스순번: 003 ==================== 
@@ -63,6 +64,6 @@ abline(z, lty = 2, lwd = 2, col="green")
 abline(z$coef, lty = 3, lwd = 2, col="red")
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwMjI3ODE5MSwtMjA0OTAzMjIzNiwtMz
+eyJoaXN0b3J5IjpbLTgwMDAwNzE5NiwtMjA0OTAzMjIzNiwtMz
 QyNDYyNDQ5XX0=
 -->
