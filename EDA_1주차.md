@@ -67,7 +67,12 @@ abline(z$coef, lty = 3, lwd = 2, col="red")
 R그래프 함수가 각각 어떤 역할을 하는지가 시험문제로 출제된다
 예를 들어 코드와 그래프를 매칭시키기
 
+### ggplot 설치하기
+```
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2ODM4OTA3NSwtMzQ5MzM4NzA5LC04MD
-AwMDcxOTYsLTIwNDkwMzIyMzYsLTM0MjQ2MjQ0OV19
+eyJoaXN0b3J5IjpbLTM1MTEzMjk5NSwtODY4Mzg5MDc1LC0zND
+kzMzg3MDksLTgwMDAwNzE5NiwtMjA0OTAzMjIzNiwtMzQyNDYy
+NDQ5XX0=
 -->
