@@ -8,7 +8,7 @@ datavis.ca? 어느 홈페이지에 들어가면 시각화를 다양한 언어로
 
 EDA를 할 때 주의할 점
 * 2D로 표현가능한데 3D를 사용할 필요없다.
-* 잘못된 전달
+* 잘못된 전달, 뎅
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwNDA2MjU2Nl19
+eyJoaXN0b3J5IjpbLTE0NjA2NzAyNzVdfQ==
 -->
