@@ -40,9 +40,29 @@ par(op)
 
 ```
 
+**그래프에 그리는 선이 중요한 이유**
 
+```
+# ==================== 소스순번: 003 ==================== 
 
+cars[1:4,]
+z <- lm(dist ~ speed, data = cars)
+is(z)
+z$coef
+plot(cars, main = "abline")
+# horizontal
+abline(h = 20)
+abline(h = 30)
+# vertical
+abline(v = 20, col="blue")
+# y = a + bx
+abline(a = 40, b = 4, col="red")
+# reg 인수
+abline(z, lty = 2, lwd = 2, col="green")
+# coef 인수
+abline(z$coef, lty = 3, lwd = 2, col="red")
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3NTY0MjkxNCwtMjA0OTAzMjIzNiwtMz
+eyJoaXN0b3J5IjpbLTUwMjI3ODE5MSwtMjA0OTAzMjIzNiwtMz
 QyNDYyNDQ5XX0=
 -->
