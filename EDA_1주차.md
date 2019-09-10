@@ -64,7 +64,10 @@ abline(z, lty = 2, lwd = 2, col="green")
 abline(z$coef, lty = 3, lwd = 2, col="red")
 ```
 
+R그래프 함수가 각각 어떤 역할을 하는지가 시험문제로 출제된다
+예를 들어 코드와 그래프를 매칭시키기
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyNjUzNTQ0OSwtMzQ5MzM4NzA5LC04MD
+eyJoaXN0b3J5IjpbLTg2ODM4OTA3NSwtMzQ5MzM4NzA5LC04MD
 AwMDcxOTYsLTIwNDkwMzIyMzYsLTM0MjQ2MjQ0OV19
 -->
