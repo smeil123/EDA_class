@@ -116,7 +116,8 @@ p + geom_point() + geom_smooth(method="loess")+scale_x_log10()
 p <- ggplot(data=gapminder, mapping=aes(x = year, y=gdpPercap))
 p + geom_line(aes(group=country))
 
-p + geom_line(aes(group=country)) + facet_wrap(~continent)
+# 국가별로 그래프를 나눈다 
+p + geom_line(aes(group=country)) + facet_wrap(~continent) 
 
 p <- ggplot(data=gapminder, mapping = aes(x=year,y=gdpPercap))
 p + geom_line(color="gray70",aes(group=country))+
@@ -134,8 +135,8 @@ p + geom_line(color="gray70",aes(group=country))+
 * ggplot에 있는 명령어의 의미를 이해하기
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzU2NDMyOTI4LDExNTgxMzg5NzAsLTQ3Nz
-MwNjcyNCwzMjcyMDg1MDUsLTc1OTY3MTM3MCwtMzUxMTMyOTk1
-LC04NjgzODkwNzUsLTM0OTMzODcwOSwtODAwMDA3MTk2LC0yMD
-Q5MDMyMjM2LC0zNDI0NjI0NDldfQ==
+eyJoaXN0b3J5IjpbLTE4ODg0NjIzNzgsMTE1ODEzODk3MCwtND
+c3MzA2NzI0LDMyNzIwODUwNSwtNzU5NjcxMzcwLC0zNTExMzI5
+OTUsLTg2ODM4OTA3NSwtMzQ5MzM4NzA5LC04MDAwMDcxOTYsLT
+IwNDkwMzIyMzYsLTM0MjQ2MjQ0OV19
 -->
