@@ -112,10 +112,10 @@ p + geom_point() + geom_smooth(method="loess")+scale_x_log10()
 ```
 
 ### 시간에 따른 국가별 그래프
-
+1``
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1ODEzODk3MCwtNDc3MzA2NzI0LDMyNz
-IwODUwNSwtNzU5NjcxMzcwLC0zNTExMzI5OTUsLTg2ODM4OTA3
-NSwtMzQ5MzM4NzA5LC04MDAwMDcxOTYsLTIwNDkwMzIyMzYsLT
-M0MjQ2MjQ0OV19
+eyJoaXN0b3J5IjpbLTE1NTU3MzcxMTEsMTE1ODEzODk3MCwtND
+c3MzA2NzI0LDMyNzIwODUwNSwtNzU5NjcxMzcwLC0zNTExMzI5
+OTUsLTg2ODM4OTA3NSwtMzQ5MzM4NzA5LC04MDAwMDcxOTYsLT
+IwNDkwMzIyMzYsLTM0MjQ2MjQ0OV19
 -->
