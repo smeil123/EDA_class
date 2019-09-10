@@ -22,7 +22,23 @@ EDA를 할 때 주의할 점
 * 공동성 :  같은 방향으로 물체가 움직인다고 인지
 * 대칭성 : 대칭된 그룹을 통합된 하나의 집단으로 인지
 
+**Plot in R**
+```
+x1 <- 1:5
+y1 <- x1^2
+z1 <- 5:1
+(mat1 <- cbind(x1,y1,z1))
+op <- par(no.readonly = TRUE)
+par(mfrow=c(2,3))
+plot(y1, main="using index")
+plot(x=x1, y=y1, main="x")
+plot(mat1, main="using matrix")
+plot(x=x1, y=y1, type="l", main="line")
+plot(x=x1, y=y1, type="h", main="high density")
+plot(x=x1, y=y1, type="n", main="no plotting")
+par(op)
 
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0MjQ2MjQ0OV19
+eyJoaXN0b3J5IjpbLTIwNDkwMzIyMzYsLTM0MjQ2MjQ0OV19
 -->
