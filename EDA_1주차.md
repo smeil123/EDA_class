@@ -78,8 +78,30 @@ install.packages(my_packages,repos="https://cran.rstudio.com")
 devtools::install_github("kjhealy/socviz")
 
 ```
+
+```
+library(ggplot2)
+library(gapminder)
+
+p <- ggplot(data=gapminder,
+            mapping = aes(x=gdpPercap,y=lifeExp))
+
+p + geom_point()
+
+p <- ggplot(data = gapminder, mapping = aes (x=gdpPercap, y = lifeExp))
+p + geom_point()
+p + geom_smooth()
+p + geom_point() + geom_smooth()
+p + geom_point() + geom_smooth(method="lm")
+p + geom_point() + geom_smooth(method="gam")+scale_x_log10()
+
+p + geom_point() + 
+  geom_smooth(method="gam")+
+  scale_x_log10(labels=scales::dollar) # scale을 달러로 해서 라벨을 달러로 변환한 값을 적어줌 
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzI3MjA4NTA1LC03NTk2NzEzNzAsLTM1MT
-EzMjk5NSwtODY4Mzg5MDc1LC0zNDkzMzg3MDksLTgwMDAwNzE5
-NiwtMjA0OTAzMjIzNiwtMzQyNDYyNDQ5XX0=
+eyJoaXN0b3J5IjpbLTQ3NzMwNjcyNCwzMjcyMDg1MDUsLTc1OT
+Y3MTM3MCwtMzUxMTMyOTk1LC04NjgzODkwNzUsLTM0OTMzODcw
+OSwtODAwMDA3MTk2LC0yMDQ5MDMyMjM2LC0zNDI0NjI0NDldfQ
+==
 -->
