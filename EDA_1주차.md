@@ -112,10 +112,30 @@ p + geom_point() + geom_smooth(method="loess")+scale_x_log10()
 ```
 
 ### 시간에 따른 국가별 그래프
-1``
+```
+p <- ggplot(data=gapminder, mapping=aes(x = year, y=gdpPercap))
+p + geom_line(aes(group=country))
+
+p + geom_line(aes(group=country)) + facet_wrap(~continent)
+
+p <- ggplot(data=gapminder, mapping = aes(x=year,y=gdpPercap))
+p + geom_line(color="gray70",aes(group=country))+
+  geom_smooth(size=1.1,method="loess",se=FALSE)+
+  scale_y_log10(labels=scales::dollar)+
+  facet_wrap(~continent,ncol=5)+
+  labs(x = "Year",
+       y = "GDP per capita",
+       title = "GDP per capita on Five Continents")
+
+```
+
+# 공부해야하는것
+* ggplot을 그리기 위해 데이터형식을 어떻게 해야하는가
+* ggplot에 있는 명령어의 의미를 이해하기
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTU3MzcxMTEsMTE1ODEzODk3MCwtND
-c3MzA2NzI0LDMyNzIwODUwNSwtNzU5NjcxMzcwLC0zNTExMzI5
-OTUsLTg2ODM4OTA3NSwtMzQ5MzM4NzA5LC04MDAwMDcxOTYsLT
-IwNDkwMzIyMzYsLTM0MjQ2MjQ0OV19
+eyJoaXN0b3J5IjpbMzU2NDMyOTI4LDExNTgxMzg5NzAsLTQ3Nz
+MwNjcyNCwzMjcyMDg1MDUsLTc1OTY3MTM3MCwtMzUxMTMyOTk1
+LC04NjgzODkwNzUsLTM0OTMzODcwOSwtODAwMDA3MTk2LC0yMD
+Q5MDMyMjM2LC0zNDI0NjI0NDldfQ==
 -->
