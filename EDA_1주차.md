@@ -130,13 +130,16 @@ p + geom_line(color="gray70",aes(group=country))+
 
 ```
 
+##  관련 사이트
+[https://github.com/andrewheiss/fancy-minard](https://github.com/andrewheiss/fancy-minard)
+
 # 공부해야하는것
 * ggplot을 그리기 위해 데이터형식을 어떻게 해야하는가
 * ggplot에 있는 명령어의 의미를 이해하기
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODg0NjIzNzgsMTE1ODEzODk3MCwtND
-c3MzA2NzI0LDMyNzIwODUwNSwtNzU5NjcxMzcwLC0zNTExMzI5
-OTUsLTg2ODM4OTA3NSwtMzQ5MzM4NzA5LC04MDAwMDcxOTYsLT
-IwNDkwMzIyMzYsLTM0MjQ2MjQ0OV19
+eyJoaXN0b3J5IjpbNDQ1MDQ3MDg3LDExNTgxMzg5NzAsLTQ3Nz
+MwNjcyNCwzMjcyMDg1MDUsLTc1OTY3MTM3MCwtMzUxMTMyOTk1
+LC04NjgzODkwNzUsLTM0OTMzODcwOSwtODAwMDA3MTk2LC0yMD
+Q5MDMyMjM2LC0zNDI0NjI0NDldfQ==
 -->
