@@ -42,7 +42,7 @@ par(op)
 
 **그래프에 그리는 선이 중요한 이유**
 데이터의 의미를 해석하는데 도움을 준다
-
+예를 들어, 단기적으로 중요한데 장기적으로 안중요하다고 생각하는 사람이 있음을 선으로 그어서 표현
 ```
 # ==================== 소스순번: 003 ==================== 
 
@@ -64,6 +64,6 @@ abline(z, lty = 2, lwd = 2, col="green")
 abline(z$coef, lty = 3, lwd = 2, col="red")
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwMDAwNzE5NiwtMjA0OTAzMjIzNiwtMz
-QyNDYyNDQ5XX0=
+eyJoaXN0b3J5IjpbLTM0OTMzODcwOSwtODAwMDA3MTk2LC0yMD
+Q5MDMyMjM2LC0zNDI0NjI0NDldfQ==
 -->
