@@ -69,10 +69,16 @@ R그래프 함수가 각각 어떤 역할을 하는지가 시험문제로 출제
 
 ### ggplot 설치하기
 ```
+my_packages = c("tidyverse","broom","coefplot","comwlot","gapminder","GGally",
+                "ggrepel","ggridges","gridExtra","here","interplot","margins",
+                "maps","mapproj","mapdata","MASS","quantreg","rlang","scales",
+                "survey","srvyr","viridis","viridisLite","devtools")
 
+install.packages(my_packages,repos="https://cran.rstudio.com")
+devtools::install_github("kjhealy/socviz")
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1MTEzMjk5NSwtODY4Mzg5MDc1LC0zND
-kzMzg3MDksLTgwMDAwNzE5NiwtMjA0OTAzMjIzNiwtMzQyNDYy
-NDQ5XX0=
+eyJoaXN0b3J5IjpbLTc1OTY3MTM3MCwtMzUxMTMyOTk1LC04Nj
+gzODkwNzUsLTM0OTMzODcwOSwtODAwMDA3MTk2LC0yMDQ5MDMy
+MjM2LC0zNDI0NjI0NDldfQ==
 -->
