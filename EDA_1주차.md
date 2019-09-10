@@ -63,7 +63,8 @@ abline(z, lty = 2, lwd = 2, col="green")
 # coef 인수
 abline(z$coef, lty = 3, lwd = 2, col="red")
 ```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0OTMzODcwOSwtODAwMDA3MTk2LC0yMD
-Q5MDMyMjM2LC0zNDI0NjI0NDldfQ==
+eyJoaXN0b3J5IjpbMTMyNjUzNTQ0OSwtMzQ5MzM4NzA5LC04MD
+AwMDcxOTYsLTIwNDkwMzIyMzYsLTM0MjQ2MjQ0OV19
 -->
