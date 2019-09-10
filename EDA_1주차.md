@@ -67,7 +67,7 @@ abline(z$coef, lty = 3, lwd = 2, col="red")
 R그래프 함수가 각각 어떤 역할을 하는지가 시험문제로 출제된다
 예를 들어 코드와 그래프를 매칭시키기
 
-### ggplot 설치하기
+## ggplot 설치하기
 ```
 my_packages = c("tidyverse","broom","coefplot","cowplot","gapminder","GGally",
                 "ggrepel","ggridges","gridExtra","here","interplot","margins",
@@ -78,7 +78,7 @@ install.packages(my_packages,repos="https://cran.rstudio.com")
 devtools::install_github("kjhealy/socviz")
 
 ```
-
+## ggplot 
 ```
 library(ggplot2)
 library(gapminder)
@@ -99,9 +99,22 @@ p + geom_point() +
   geom_smooth(method="gam")+
   scale_x_log10(labels=scales::dollar) # scale을 달러로 해서 라벨을 달러로 변환한 값을 적어줌 
 ```
+### mapping
+```
+# mapping -> 데이터 사상만 바꿈?
+p <- ggplot(data=gapminder,mapping=aes(x=gdpPercap, y=lifeExp,
+                                       color=continent))
+
+p <- ggplot(data=gapminder,mapping=aes(x=gdpPercap, y=lifeExp,
+                                       color='purple'))
+
+p + geom_point() + geom_smooth(method="loess")+scale_x_log10()
+```
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3NzMwNjcyNCwzMjcyMDg1MDUsLTc1OT
-Y3MTM3MCwtMzUxMTMyOTk1LC04NjgzODkwNzUsLTM0OTMzODcw
-OSwtODAwMDA3MTk2LC0yMDQ5MDMyMjM2LC0zNDI0NjI0NDldfQ
-==
+eyJoaXN0b3J5IjpbMTc2NTEzNTAzOCwtNDc3MzA2NzI0LDMyNz
+IwODUwNSwtNzU5NjcxMzcwLC0zNTExMzI5OTUsLTg2ODM4OTA3
+NSwtMzQ5MzM4NzA5LC04MDAwMDcxOTYsLTIwNDkwMzIyMzYsLT
+M0MjQ2MjQ0OV19
 -->
