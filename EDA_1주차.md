@@ -12,7 +12,9 @@ EDA를 할 때 주의할 점
 
 단, 스케일을 같게(단위를 같게) 그리고 데이터 자체의 외곡이 없는 한 데이터의 특징을 최대한 잘 보여주도록 강조하는 것이 좋다.
 
-
+**게슈탈트의 법치**
+* 근접성 : 인접한 형태들을 같은 집단으로 인지
+* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5NTkwODM0OV19
+eyJoaXN0b3J5IjpbLTg2NDk3MDQzNF19
 -->
