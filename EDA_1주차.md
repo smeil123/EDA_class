@@ -111,9 +111,10 @@ p <- ggplot(data=gapminder,mapping=aes(x=gdpPercap, y=lifeExp,
 p + geom_point() + geom_smooth(method="loess")+scale_x_log10()
 ```
 
+### 시간에 따른 국가별 그래프
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2NTEzNTAzOCwtNDc3MzA2NzI0LDMyNz
+eyJoaXN0b3J5IjpbMTE1ODEzODk3MCwtNDc3MzA2NzI0LDMyNz
 IwODUwNSwtNzU5NjcxMzcwLC0zNTExMzI5OTUsLTg2ODM4OTA3
 NSwtMzQ5MzM4NzA5LC04MDAwMDcxOTYsLTIwNDkwMzIyMzYsLT
 M0MjQ2MjQ0OV19
