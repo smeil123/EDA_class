@@ -12,6 +12,7 @@
 	* 원하는 분석 내용, 요구 사항 명세를 들어본다
 * 파이썬으로 해도 된다
 * 사회학분석은 범주형 데이터를 주로 다룬다
+* 내가 던진 질문에 맞는 그래프를 그리는 것이 중요하다
 
 ## 작은 과제
 * ggplot에서 원하는 부분에 원을 그리는 방법
@@ -331,9 +332,12 @@ title(main = "groups = quarter, labels = name")
 * width와 length를 볼 때 빨간색 집단을 빼면 positive한 상관관계를 가짐을 알 수 있다. 
 * 데이터의 상관관계, 연속형변수/범주형 변수임을 한번에 다 확인할 수 있는 매우 중요한 부분
 
-### 
+### 정리 
+처음에는 차이를 많이 보여주기 위해 많은 정보를 담고 있는 그래프를 그린다.
+나중에는 내가 보여주고 싶은 부분에 집중할 수 있는 그래프를 그려야 한다.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTU4MzU5MzgsLTEwODIyNzAyMTMsLT
+eyJoaXN0b3J5IjpbLTE2NDc2NDgyNTcsLTEwODIyNzAyMTMsLT
 E1Mjg3NzE4MTQsLTczNjIxNDUxNywtMjY4MzQ0MzAzLDQxMjE4
 NDg4MCw2MDM2ODQ5NjAsNzMwOTk4MTE2XX0=
 -->
