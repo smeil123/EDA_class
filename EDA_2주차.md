@@ -27,10 +27,10 @@
 
 (이 순서대로 진행하면서 필요없는 변수를 제거한 이유를 드러내는 것이 좋다, 모든 경우를 고려하고 많이 생각, 의견의 반증을 다 확인했는지 알 수 있게 된다)
 
-
+# ㄱ
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1Mjg3NzE4MTQsLTczNjIxNDUxNywtMj
-Y4MzQ0MzAzLDQxMjE4NDg4MCw2MDM2ODQ5NjAsNzMwOTk4MTE2
-XX0=
+eyJoaXN0b3J5IjpbMTQ1OTc3NDg4MiwtMTUyODc3MTgxNCwtNz
+M2MjE0NTE3LC0yNjgzNDQzMDMsNDEyMTg0ODgwLDYwMzY4NDk2
+MCw3MzA5OTgxMTZdfQ==
 -->
