@@ -11,6 +11,7 @@
 * 70년대생 90년대생의 차이를 보여줘야한다
 	* 원하는 분석 내용, 요구 사항 명세를 들어본다
 * 파이썬으로 해도 된다
+* 
 
 ## 작은 과제
 * ggplot에서 원하는 부분에 원을 그리는 방법
@@ -29,6 +30,7 @@
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczNjIxNDUxNywtMjY4MzQ0MzAzLDQxMj
-E4NDg4MCw2MDM2ODQ5NjAsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTc2MzI1MzE2NSwtNzM2MjE0NTE3LC0yNj
+gzNDQzMDMsNDEyMTg0ODgwLDYwMzY4NDk2MCw3MzA5OTgxMTZd
+fQ==
 -->
