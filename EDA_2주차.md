@@ -12,7 +12,8 @@
 	* 원하는 분석 내용, 요구 사항 명세를 들어본다
 * 파이썬으로 해도 된다
 
-
+## 작은 과제
+* ggplot에서 원하는 부분에 원을 그리는 방법
 
 # 과제하는 순서
 1. 원하는 분석 내용, 요구 사항 명세를 들어본다
@@ -28,6 +29,6 @@
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1NjQyMjQ3NSwtMjY4MzQ0MzAzLDQxMj
+eyJoaXN0b3J5IjpbLTczNjIxNDUxNywtMjY4MzQ0MzAzLDQxMj
 E4NDg4MCw2MDM2ODQ5NjAsNzMwOTk4MTE2XX0=
 -->
