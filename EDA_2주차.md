@@ -10,7 +10,7 @@
 * "어떤 차이"인지 생각(나이차이, 세대차이..?)
 * 70년대생 90년대생의 차이를 보여줘야한다
 	* 원하는 분석 내용, 요구 사항 명세를 들어본다
-
+* 파이썬으로 해도 된다
 
 # 과제하는 순서
 1. 원하는 분석 내용, 요구 사항 명세를 들어본다
@@ -19,8 +19,10 @@
 3. 정해진 주제에 맞는 항목들을 추출한다.
 큰 데이터에서 주제에 맞는 항목들로 작은 데이터로 만든다
 4. 응답 분포를 본다
-5. 
+5. 항목들간 관계를 본다
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5Njk1MDgyLDYwMzY4NDk2MCw3MzA5OT
+eyJoaXN0b3J5IjpbNDEyMTg0ODgwLDYwMzY4NDk2MCw3MzA5OT
 gxMTZdfQ==
 -->
