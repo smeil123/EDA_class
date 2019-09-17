@@ -331,9 +331,9 @@ title(main = "groups = quarter, labels = name")
 * width와 length를 볼 때 빨간색 집단을 빼면 positive한 상관관계를 가짐을 알 수 있다. 
 * 데이터의 상관관계, 연속형변수/범주형 변수임을 한번에 다 확인할 수 있는 매우 중요한 부분
 
-
+### 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODIyNzAyMTMsLTE1Mjg3NzE4MTQsLT
-czNjIxNDUxNywtMjY4MzQ0MzAzLDQxMjE4NDg4MCw2MDM2ODQ5
-NjAsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTE0NTU4MzU5MzgsLTEwODIyNzAyMTMsLT
+E1Mjg3NzE4MTQsLTczNjIxNDUxNywtMjY4MzQ0MzAzLDQxMjE4
+NDg4MCw2MDM2ODQ5NjAsNzMwOTk4MTE2XX0=
 -->
