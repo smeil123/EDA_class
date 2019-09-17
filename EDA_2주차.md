@@ -27,10 +27,14 @@
 
 (이 순서대로 진행하면서 필요없는 변수를 제거한 이유를 드러내는 것이 좋다, 모든 경우를 고려하고 많이 생각, 의견의 반증을 다 확인했는지 알 수 있게 된다)
 
-# ㄱ
+# 그래프
+
+### pairs()
+* width와 length를 볼 때 빨간색 집단을 빼면 positive한 상관관계를 가짐을 알 수 있다. 
+* 데이터의 상관관계, 연속형변수/범주형 변수임을 한번에 다 확인할 수 있는 매우 중요한 부분
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1OTc3NDg4MiwtMTUyODc3MTgxNCwtNz
-M2MjE0NTE3LC0yNjgzNDQzMDMsNDEyMTg0ODgwLDYwMzY4NDk2
-MCw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTE5MjY4MzA2MTMsLTE1Mjg3NzE4MTQsLT
+czNjIxNDUxNywtMjY4MzQ0MzAzLDQxMjE4NDg4MCw2MDM2ODQ5
+NjAsNzMwOTk4MTE2XX0=
 -->
