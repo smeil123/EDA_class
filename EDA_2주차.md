@@ -21,8 +21,11 @@
 4. 응답 분포를 본다
 5. 항목들간 관계를 본다
 
+(이 순서대로 진행하면서 필요없는 변수를 제거한 이유를 드러내는 것이 좋다, 모든 경우를 고려하고 많이 생각, 의견의 반증을 다 확인했는지 알 수 있게 된다)
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDEyMTg0ODgwLDYwMzY4NDk2MCw3MzA5OT
-gxMTZdfQ==
+eyJoaXN0b3J5IjpbLTI2ODM0NDMwMyw0MTIxODQ4ODAsNjAzNj
+g0OTYwLDczMDk5ODExNl19
 -->
