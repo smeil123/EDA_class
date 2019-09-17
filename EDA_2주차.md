@@ -12,6 +12,8 @@
 	* 원하는 분석 내용, 요구 사항 명세를 들어본다
 * 파이썬으로 해도 된다
 
+
+
 # 과제하는 순서
 1. 원하는 분석 내용, 요구 사항 명세를 들어본다
 2. 해당 사항이 없을 경우,
@@ -26,6 +28,6 @@
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2ODM0NDMwMyw0MTIxODQ4ODAsNjAzNj
-g0OTYwLDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbLTk1NjQyMjQ3NSwtMjY4MzQ0MzAzLDQxMj
+E4NDg4MCw2MDM2ODQ5NjAsNzMwOTk4MTE2XX0=
 -->
