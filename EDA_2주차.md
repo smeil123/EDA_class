@@ -15,8 +15,8 @@
 2. 해당 사항이 없을 경우,
 데이터 수집 환경이라든가 메타 데이터, 코드북을 중심으로 어떤 주제의 분석이 가능한지 살피면서 주제를 정한다.
 3. 정해진 주제에 맞는 항목들을 추출한다.
-큰 데이터에서 주제에 맞는 항목들로 작ㅇ
+큰 데이터에서 주제에 맞는 항목들로 작은 데이터로 만든다
 4. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTcyNTIwNzcsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbNjAzNjg0OTYwLDczMDk5ODExNl19
 -->
