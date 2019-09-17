@@ -12,14 +12,15 @@
 	* 원하는 분석 내용, 요구 사항 명세를 들어본다
 
 
-# 데이터를 분석할 때 해야하는 것
+# 과제하는 순서
 1. 원하는 분석 내용, 요구 사항 명세를 들어본다
 2. 해당 사항이 없을 경우,
 데이터 수집 환경이라든가 메타 데이터, 코드북을 중심으로 어떤 주제의 분석이 가능한지 살피면서 주제를 정한다.
 3. 정해진 주제에 맞는 항목들을 추출한다.
 큰 데이터에서 주제에 맞는 항목들로 작은 데이터로 만든다
-4. 
+4. 응답 분포를 본다
+5. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDI3NDkwOTIzLDYwMzY4NDk2MCw3MzA5OT
+eyJoaXN0b3J5IjpbMTA5Njk1MDgyLDYwMzY4NDk2MCw3MzA5OT
 gxMTZdfQ==
 -->
