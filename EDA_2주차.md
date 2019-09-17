@@ -10,6 +10,10 @@
 	* 원하는 분석 내용, 요구 사항 명세를 들어본다
 
 
+# 수업
+1. 원하는 분석 내용, 요구 사항 명세를 들어본다
+2. 해당 사항이 없을 경우,
+데이터 수집 환경이라든가 메타 데이터, 코드북을 중심으로 어떤 주제의 분석이 ㄱ
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4NDEzNjE4MSw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTE4MjEyOTE2NjksNzMwOTk4MTE2XX0=
 -->
