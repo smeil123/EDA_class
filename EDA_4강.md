@@ -154,11 +154,13 @@ show.settings()
 
 ```
 
+
 ## 참고사이트
 * [https://statkclee.github.io/viz/viz-trellis.html](https://statkclee.github.io/viz/viz-trellis.html)
 * 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTY2Mjc1MzM4LDkwOTkwOTIyMiwtMTg1MT
-kxMDA0MiwtMTA2Nzg2MzUzOSw4NjM0MDQ4NiwxMjExMzM5Mzc3
-LC0zOTc4OTUwOTIsMTk2OTUwNjcwNCw4ODU0NjY1MzVdfQ==
+eyJoaXN0b3J5IjpbLTkzMDcxNDc2MCw1NjYyNzUzMzgsOTA5OT
+A5MjIyLC0xODUxOTEwMDQyLC0xMDY3ODYzNTM5LDg2MzQwNDg2
+LDEyMTEzMzkzNzcsLTM5Nzg5NTA5MiwxOTY5NTA2NzA0LDg4NT
+Q2NjUzNV19
 -->
