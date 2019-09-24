@@ -1,8 +1,8 @@
 
 
+# Lattice Package
 
 ### plot , xyplot
-(Lattice package)
 ```
 library(lattice)
 attach(pressure)
@@ -94,7 +94,7 @@ xyplot(mpg ~ disp | factor(gear), data=mtcars,
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzIwMTg1NTUsODYzNDA0ODYsMTIxMT
+eyJoaXN0b3J5IjpbLTEwNjc4NjM1MzksODYzNDA0ODYsMTIxMT
 MzOTM3NywtMzk3ODk1MDkyLDE5Njk1MDY3MDQsODg1NDY2NTM1
 XX0=
 -->
