@@ -126,9 +126,10 @@ dotplot(variety ~ yield | year * site, data = barley, layout = c(6, 2),
 
 ```
 
+### splom
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxMjI2NDQzMCw5MDk5MDkyMjIsLTE4NT
-E5MTAwNDIsLTEwNjc4NjM1MzksODYzNDA0ODYsMTIxMTMzOTM3
-NywtMzk3ODk1MDkyLDE5Njk1MDY3MDQsODg1NDY2NTM1XX0=
+eyJoaXN0b3J5IjpbMTkwODY1OTIwLDkwOTkwOTIyMiwtMTg1MT
+kxMDA0MiwtMTA2Nzg2MzUzOSw4NjM0MDQ4NiwxMjExMzM5Mzc3
+LC0zOTc4OTUwOTIsMTk2OTUwNjcwNCw4ODU0NjY1MzVdfQ==
 -->
