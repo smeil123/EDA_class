@@ -39,8 +39,10 @@ xyplot(mpg~disp | factor(gear),data=mtcars,
 ),aspect=2)
 ```
 ### position argument
+```
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxMTMzOTM3NywtMzk3ODk1MDkyLDE5Nj
-k1MDY3MDQsODg1NDY2NTM1XX0=
+eyJoaXN0b3J5IjpbLTE5NTc5MjkyODEsMTIxMTMzOTM3NywtMz
+k3ODk1MDkyLDE5Njk1MDY3MDQsODg1NDY2NTM1XX0=
 -->
