@@ -39,10 +39,31 @@ xyplot(mpg~disp | factor(gear),data=mtcars,
 ),aspect=2)
 ```
 ### position argument
+#### lattice를 이용해서 여러개의 그래프 위치를 조정해가며 한번에 그릴 수 있다
+```
+## subset + potision
+# (left, bottom,right,top)
+# 화면을 나누지 않고 위치를 조정해서 여러개의 그래프를 그릴 수 있다
+
+plot1 <- xyplot(mpg~disp,data=mtcars,
+                aspect=1,xlim=c(65,480),ylim=c(9,35),
+                subset=gear==5)
+
+plot2 <- xyplot(mpg~disp,data=mtcars,
+                aspect=1,xlim=c(65,480),ylim=c(9,35),
+                subset=gear==4)
+
+plot3 <- xyplot(mpg~disp,data=mtcars,
+                aspect=1,xlim=c(65,480),ylim=c(9,35),
+                subset=gear==3)
+
+print(plot1, position=c(0, 2/3, 1, 1), more=TRUE)
+print(plot2, position=c(0, 1/3, 1, 2/3), more=TRUE)
+print(plot3, position=c(0, 0, 1, 1/3))
 ```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTc5MjkyODEsMTIxMTMzOTM3NywtMz
-k3ODk1MDkyLDE5Njk1MDY3MDQsODg1NDY2NTM1XX0=
+eyJoaXN0b3J5IjpbODYzNDA0ODYsMTIxMTMzOTM3NywtMzk3OD
+k1MDkyLDE5Njk1MDY3MDQsODg1NDY2NTM1XX0=
 -->
