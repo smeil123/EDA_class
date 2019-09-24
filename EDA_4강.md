@@ -154,12 +154,14 @@ show.settings()
 
 ```
 
+## ggplot2
+
 
 ## 참고사이트
 * [https://statkclee.github.io/viz/viz-trellis.html](https://statkclee.github.io/viz/viz-trellis.html)
 * 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzMDcxNDc2MCw1NjYyNzUzMzgsOTA5OT
+eyJoaXN0b3J5IjpbLTQ3MTA2MDU3Myw1NjYyNzUzMzgsOTA5OT
 A5MjIyLC0xODUxOTEwMDQyLC0xMDY3ODYzNTM5LDg2MzQwNDg2
 LDEyMTEzMzkzNzcsLTM5Nzg5NTA5MiwxOTY5NTA2NzA0LDg4NT
 Q2NjUzNV19
