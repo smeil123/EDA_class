@@ -145,9 +145,10 @@ splom(~iris[1:4], groups = Species, data = iris,
                    text = list(c("Setosa", "Versicolor", "Virgi
 nica"))))
 ```
+### trellis패키지의 기본 설정을 바꿀 수 있다
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTYwNzc2MTcsOTA5OTA5MjIyLC0xOD
+eyJoaXN0b3J5IjpbLTIwNzIxNjc2MzAsOTA5OTA5MjIyLC0xOD
 UxOTEwMDQyLC0xMDY3ODYzNTM5LDg2MzQwNDg2LDEyMTEzMzkz
 NzcsLTM5Nzg5NTA5MiwxOTY5NTA2NzA0LDg4NTQ2NjUzNV19
 -->
