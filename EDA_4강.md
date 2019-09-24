@@ -111,9 +111,23 @@ xyplot(NOx ~ E | C, data = ethanol,
 ```
 
 ### 데이터에 level이 많을 때
+```
+ level : 몇개의 범주가 있는지 확인
+# paste 합치기
+packet <- outer(levels(barley$year), levels(barley$site), paste)
+as.vector(aperm(packet, 1:2)) # (1) prem.cond = 1:2인 경우의 패킷 순서
+as.vector(aperm(packet, 2:1))    # (2) prem.cond = 2:1인 경우의 패킷 순서
+# 그래프 그릴 때는그냥 year*site로 사용하며면 된다
+dotplot(variety ~ yield | year * site, data = barley, layout = c(6, 2),
+        xlab = "Barley Yield (bushels/acre) ", ylab = NULL,
+        perm.cond = c(2, 1),
+        main = "variety ~ yield | year * site, perm.cond = c(2, 1)")
+
+
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTA5OTA5MjIyLC0xODUxOTEwMDQyLC0xMD
-Y3ODYzNTM5LDg2MzQwNDg2LDEyMTEzMzkzNzcsLTM5Nzg5NTA5
-MiwxOTY5NTA2NzA0LDg4NTQ2NjUzNV19
+eyJoaXN0b3J5IjpbLTUyMjMzMzA0OCw5MDk5MDkyMjIsLTE4NT
+E5MTAwNDIsLTEwNjc4NjM1MzksODYzNDA0ODYsMTIxMTMzOTM3
+NywtMzk3ODk1MDkyLDE5Njk1MDY3MDQsODg1NDY2NTM1XX0=
 -->
