@@ -93,8 +93,10 @@ xyplot(mpg ~ disp | factor(gear), data=mtcars,
        })
 ```
 
+#### prepanel
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjc4NjM1MzksODYzNDA0ODYsMTIxMT
-MzOTM3NywtMzk3ODk1MDkyLDE5Njk1MDY3MDQsODg1NDY2NTM1
-XX0=
+eyJoaXN0b3J5IjpbLTE4NTE5MTAwNDIsLTEwNjc4NjM1MzksOD
+YzNDA0ODYsMTIxMTMzOTM3NywtMzk3ODk1MDkyLDE5Njk1MDY3
+MDQsODg1NDY2NTM1XX0=
 -->
