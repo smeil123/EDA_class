@@ -83,10 +83,18 @@ xyplot(mpg ~ disp | factor(gear), data=mtcars,
       
  })
 ```
-
+**각 그래프마다 기울기 그리기**
+```
+xyplot(mpg ~ disp | factor(gear), data=mtcars,
+       layout=c(3, 1), aspect=1,
+       panel=function(x, y, ...) {
+         panel.lmline(x, y)
+         panel.xyplot(x, y, ...)
+       })
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTIxMDc2NzYsODYzNDA0ODYsMTIxMT
+eyJoaXN0b3J5IjpbLTEwMzIwMTg1NTUsODYzNDA0ODYsMTIxMT
 MzOTM3NywtMzk3ODk1MDkyLDE5Njk1MDY3MDQsODg1NDY2NTM1
 XX0=
 -->
