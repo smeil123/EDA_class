@@ -146,9 +146,10 @@ splom(~iris[1:4], groups = Species, data = iris,
 nica"))))
 ```
 ### trellis패키지의 기본 설정을 바꿀 수 있다
-
+```
+'``
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzIxNjc2MzAsOTA5OTA5MjIyLC0xOD
-UxOTEwMDQyLC0xMDY3ODYzNTM5LDg2MzQwNDg2LDEyMTEzMzkz
-NzcsLTM5Nzg5NTA5MiwxOTY5NTA2NzA0LDg4NTQ2NjUzNV19
+eyJoaXN0b3J5IjpbMTc2NDA0ODE1Nyw5MDk5MDkyMjIsLTE4NT
+E5MTAwNDIsLTEwNjc4NjM1MzksODYzNDA0ODYsMTIxMTMzOTM3
+NywtMzk3ODk1MDkyLDE5Njk1MDY3MDQsODg1NDY2NTM1XX0=
 -->
