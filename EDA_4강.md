@@ -98,12 +98,21 @@ panel 크기를 조절한다.
 * aspect = xy 가 데이터를 외곡되게 보여줄 수 있는데
 * 이를 prepanel이 잡아준다
 
-
+* 45도가 왜곡주지 않고 사람들이 제대로 ㅣㄴ식하게 된다
 ```
-
+xyplot(NOx ~ E | C, data = ethanol,
+       prepanel = function(x, y) prepanel.loess(x, y),
+       panel = function(x, y) {
+         panel.grid(h = -1, v = 2)
+         panel.xyplot(x, y, pch = 16, col = "blue")
+         panel.loess(x, y, col = "red")
+       },
+       aspect = "xy",
+       main = "prepanel = function(x, y)
+       prepanel.loess(x, y)")
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTg5NTM1NjYsLTE4NTE5MTAwNDIsLT
-EwNjc4NjM1MzksODYzNDA0ODYsMTIxMTMzOTM3NywtMzk3ODk1
-MDkyLDE5Njk1MDY3MDQsODg1NDY2NTM1XX0=
+eyJoaXN0b3J5IjpbMTg4MTYyNTgsLTE4NTE5MTAwNDIsLTEwNj
+c4NjM1MzksODYzNDA0ODYsMTIxMTMzOTM3NywtMzk3ODk1MDky
+LDE5Njk1MDY3MDQsODg1NDY2NTM1XX0=
 -->
