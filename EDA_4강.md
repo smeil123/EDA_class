@@ -18,8 +18,27 @@ xyplot(pressure ~ temperature)
 * 각 함수마다 어떤 그래피인지
 	* bwplot() -> boxplot() 등등..
 
+```
+head(mtcars)
+xyplot(mpg ~ disp, data=mtcars)
 
+# gear에 따라서 그래프를 그리도록 조건을 줄 수 있다
+# gear를 factor형으로 변환해서 나눔 
+xyplot(mpg ~ disp | factor(gear), data=mtcars)
+
+xyplot(mpg~disp,data=mtcars,
+       group=gear,
+       auto.key=list(space="right")) # 범례를 오른쪽으로 밀어버림
+
+
+xyplot(mpg~disp | factor(gear),data=mtcars,
+       layout = c(1,3),aspect=1)
+
+xyplot(mpg~disp | factor(gear),data=mtcars,
+       layout = c(1,3),aspect=2)
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2OTUwNjcwNCw4ODU0NjY1MzVdfQ==
+eyJoaXN0b3J5IjpbLTM5Nzg5NTA5MiwxOTY5NTA2NzA0LDg4NT
+Q2NjUzNV19
 -->
