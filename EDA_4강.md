@@ -62,8 +62,21 @@ print(plot2, position=c(0, 1/3, 1, 2/3), more=TRUE)
 print(plot3, position=c(0, 0, 1, 1/3))
 ```
 
+### y축 scale
+```
+xyplot(mpg~disp | factor(gear),data=mtcars,
+       layout=c(3,1),aspect=1,
+       scales = list(y=list(at=seq(10,30,10))))
+`
+``
 
+### panel
+
+```
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODYzNDA0ODYsMTIxMTMzOTM3NywtMzk3OD
-k1MDkyLDE5Njk1MDY3MDQsODg1NDY2NTM1XX0=
+eyJoaXN0b3J5IjpbNjgxMjk1Mjc3LDg2MzQwNDg2LDEyMTEzMz
+kzNzcsLTM5Nzg5NTA5MiwxOTY5NTA2NzA0LDg4NTQ2NjUzNV19
+
 -->
