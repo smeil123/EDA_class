@@ -328,6 +328,10 @@ title(main = "groups = quarter, labels = name")
 
 ```
 
+## 3D그래프
+* 3D그래프를 그려야하는 이유 ) 
+
+
 ### pairs()
 * width와 length를 볼 때 빨간색 집단을 빼면 positive한 상관관계를 가짐을 알 수 있다. 
 * 데이터의 상관관계, 연속형변수/범주형 변수임을 한번에 다 확인할 수 있는 매우 중요한 부분
@@ -337,7 +341,8 @@ title(main = "groups = quarter, labels = name")
 나중에는 내가 보여주고 싶은 부분에 집중할 수 있는 그래프를 그려야 한다.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDc2NDgyNTcsLTEwODIyNzAyMTMsLT
-E1Mjg3NzE4MTQsLTczNjIxNDUxNywtMjY4MzQ0MzAzLDQxMjE4
-NDg4MCw2MDM2ODQ5NjAsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTQ0NjM0MzA1NiwtMTY0NzY0ODI1NywtMT
+A4MjI3MDIxMywtMTUyODc3MTgxNCwtNzM2MjE0NTE3LC0yNjgz
+NDQzMDMsNDEyMTg0ODgwLDYwMzY4NDk2MCw3MzA5OTgxMTZdfQ
+==
 -->
