@@ -67,16 +67,26 @@ print(plot3, position=c(0, 0, 1, 1/3))
 xyplot(mpg~disp | factor(gear),data=mtcars,
        layout=c(3,1),aspect=1,
        scales = list(y=list(at=seq(10,30,10))))
-`
-``
+```
 
 ### panel
+ 그래프 안에 선넣기
 
 ```
-
+xyplot(mpg ~ disp | factor(gear), data=mtcars,
+       layout=c(3, 1), aspect=1,
+       panel=function(...) {
+         panel.xyplot(...)
+         panel.abline(h=29, lty="dashed")
+         panel.text(470, 29.5, "efficiency criterion",
+                    adj=c(1, 0), cex=.7)
+      
+ })
 ```
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjgxMjk1Mjc3LDg2MzQwNDg2LDEyMTEzMz
-kzNzcsLTM5Nzg5NTA5MiwxOTY5NTA2NzA0LDg4NTQ2NjUzNV19
-
+eyJoaXN0b3J5IjpbLTEzOTIxMDc2NzYsODYzNDA0ODYsMTIxMT
+MzOTM3NywtMzk3ODk1MDkyLDE5Njk1MDY3MDQsODg1NDY2NTM1
+XX0=
 -->
