@@ -93,10 +93,17 @@ xyplot(mpg ~ disp | factor(gear), data=mtcars,
        })
 ```
 
-#### prepanel
-ㅔ
+### prepanel
+panel 크기를 조절한다.
+* aspect = xy 가 데이터를 외곡되게 보여줄 수 있는데
+* 이를 prepanel이 잡아준다
+
+
+```
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTE2ODE4Mzk0LC0xODUxOTEwMDQyLC0xMD
-Y3ODYzNTM5LDg2MzQwNDg2LDEyMTEzMzkzNzcsLTM5Nzg5NTA5
-MiwxOTY5NTA2NzA0LDg4NTQ2NjUzNV19
+eyJoaXN0b3J5IjpbLTExOTg5NTM1NjYsLTE4NTE5MTAwNDIsLT
+EwNjc4NjM1MzksODYzNDA0ODYsMTIxMTMzOTM3NywtMzk3ODk1
+MDkyLDE5Njk1MDY3MDQsODg1NDY2NTM1XX0=
 -->
