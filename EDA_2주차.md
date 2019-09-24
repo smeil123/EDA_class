@@ -329,7 +329,10 @@ title(main = "groups = quarter, labels = name")
 ```
 
 ## 3D그래프
-* 3D그래프를 그려야하는 이유 ) 
+* 3D그래프를 그려야하는 이유 ) 두 변수의 기울기를 보려줄때
+* 예를 들어 남/여 임금차이는 성별 한 변수의 기울기만 보여주고 그래프를 따로그리는 것이 보기 편하다
+* 반면) 남/여 + 연령 별 임금차이를 보여주는 것은 두변수의 차이를 보여주는 것이기 때문에 3D가 잘보여줄 것이다
+
 
 
 ### pairs()
@@ -341,8 +344,8 @@ title(main = "groups = quarter, labels = name")
 나중에는 내가 보여주고 싶은 부분에 집중할 수 있는 그래프를 그려야 한다.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0NjM0MzA1NiwtMTY0NzY0ODI1NywtMT
-A4MjI3MDIxMywtMTUyODc3MTgxNCwtNzM2MjE0NTE3LC0yNjgz
-NDQzMDMsNDEyMTg0ODgwLDYwMzY4NDk2MCw3MzA5OTgxMTZdfQ
-==
+eyJoaXN0b3J5IjpbLTE0OTc1OTA1OTEsLTQ0NjM0MzA1NiwtMT
+Y0NzY0ODI1NywtMTA4MjI3MDIxMywtMTUyODc3MTgxNCwtNzM2
+MjE0NTE3LC0yNjgzNDQzMDMsNDEyMTg0ODgwLDYwMzY4NDk2MC
+w3MzA5OTgxMTZdfQ==
 -->
