@@ -109,8 +109,11 @@ xyplot(NOx ~ E | C, data = ethanol,
        main = "prepanel = function(x, y)
        prepanel.loess(x, y)")
 ```
+
+### 데이터에 level이 많을 때
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTkyMTMyMzAzLC0xODUxOTEwMDQyLC0xMD
+eyJoaXN0b3J5IjpbOTA5OTA5MjIyLC0xODUxOTEwMDQyLC0xMD
 Y3ODYzNTM5LDg2MzQwNDg2LDEyMTEzMzkzNzcsLTM5Nzg5NTA5
 MiwxOTY5NTA2NzA0LDg4NTQ2NjUzNV19
 -->
