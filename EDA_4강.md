@@ -127,9 +127,27 @@ dotplot(variety ~ yield | year * site, data = barley, layout = c(6, 2),
 ```
 
 ### splom
+scatterplot을 그려준다
+```
+trellis.par.set(theme = col.whitebg())
+super.sym <- trellis.par.get("superpose.symbol")
+splom(~iris[1:4], groups = Species, data = iris,
+        panel = panel.superpose,
+        pscales = list(
+            list(labels = c("4.0", "5.0", "6.0", "7.0", "8.0")),
+            list(at = c(2, 3, 4)),
+            list(limits = c(1, 10)),
+            list(at = seq(0.5, 2.5, 0.5))),
+        key = list(title = "Three Varieties of Iris",
+                   columns = 3,
+                   points = list(pch = super.sym$pch[1:3],
+                                 col = super.sym$col[1:3]),
+                   text = list(c("Setosa", "Versicolor", "Virgi
+nica"))))
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwODY1OTIwLDkwOTkwOTIyMiwtMTg1MT
-kxMDA0MiwtMTA2Nzg2MzUzOSw4NjM0MDQ4NiwxMjExMzM5Mzc3
-LC0zOTc4OTUwOTIsMTk2OTUwNjcwNCw4ODU0NjY1MzVdfQ==
+eyJoaXN0b3J5IjpbLTE2NTYwNzc2MTcsOTA5OTA5MjIyLC0xOD
+UxOTEwMDQyLC0xMDY3ODYzNTM5LDg2MzQwNDg2LDEyMTEzMzkz
+NzcsLTM5Nzg5NTA5MiwxOTY5NTA2NzA0LDg4NTQ2NjUzNV19
 -->
