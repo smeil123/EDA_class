@@ -121,13 +121,14 @@ as.vector(aperm(packet, 2:1))    # (2) prem.cond = 2:1인 경우의 패킷 순�
 dotplot(variety ~ yield | year * site, data = barley, layout = c(6, 2),
         xlab = "Barley Yield (bushels/acre) ", ylab = NULL,
         perm.cond = c(2, 1),
-        main = "variety ~ yield | year * site, perm.cond = c(2, 1)")
-
+        main = "variety ~ yield | year * site, perm.cond = c(2, 1)
+")
 
 ```
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyMjMzMzA0OCw5MDk5MDkyMjIsLTE4NT
+eyJoaXN0b3J5IjpbLTcxMjI2NDQzMCw5MDk5MDkyMjIsLTE4NT
 E5MTAwNDIsLTEwNjc4NjM1MzksODYzNDA0ODYsMTIxMTMzOTM3
 NywtMzk3ODk1MDkyLDE5Njk1MDY3MDQsODg1NDY2NTM1XX0=
 -->
