@@ -15,6 +15,11 @@ xyplot(pressure ~ temperature)
 * xyplot이 보기 좀 편리해지게 나온다
 * xyplot는 grid(격자)기반이기 때문에 그룹되 그래프를 그릴때 유용하다
 
+* 각 함수마다 어떤 그래피인지
+	* bwplot() -> boxplot() 등등..
+
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyNzEwMjY0NCw4ODU0NjY1MzVdfQ==
+eyJoaXN0b3J5IjpbMTk2OTUwNjcwNCw4ODU0NjY1MzVdfQ==
 -->
