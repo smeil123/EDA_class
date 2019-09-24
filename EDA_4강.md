@@ -35,10 +35,12 @@ xyplot(mpg~disp | factor(gear),data=mtcars,
        layout = c(1,3),aspect=1)
 
 xyplot(mpg~disp | factor(gear),data=mtcars,
-       layout = c(1,3),aspect=2)
+       layout = c(1,3
+),aspect=2)
 ```
+### position argument
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5Nzg5NTA5MiwxOTY5NTA2NzA0LDg4NT
-Q2NjUzNV19
+eyJoaXN0b3J5IjpbMTIxMTMzOTM3NywtMzk3ODk1MDkyLDE5Nj
+k1MDY3MDQsODg1NDY2NTM1XX0=
 -->
