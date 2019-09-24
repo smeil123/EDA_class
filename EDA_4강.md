@@ -147,9 +147,18 @@ nica"))))
 ```
 ### trellis패키지의 기본 설정을 바꿀 수 있다
 ```
-'``
+names(trellis.par.get())
+show.settings()
+trellis.par.set(list(add.text=list(col="yellow")))
+show.settings()
+
+```
+
+## 참고사이트
+* [https://statkclee.github.io/viz/viz-trellis.html](https://statkclee.github.io/viz/viz-trellis.html)
+* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2NDA0ODE1Nyw5MDk5MDkyMjIsLTE4NT
-E5MTAwNDIsLTEwNjc4NjM1MzksODYzNDA0ODYsMTIxMTMzOTM3
-NywtMzk3ODk1MDkyLDE5Njk1MDY3MDQsODg1NDY2NTM1XX0=
+eyJoaXN0b3J5IjpbNTY2Mjc1MzM4LDkwOTkwOTIyMiwtMTg1MT
+kxMDA0MiwtMTA2Nzg2MzUzOSw4NjM0MDQ4NiwxMjExMzM5Mzc3
+LC0zOTc4OTUwOTIsMTk2OTUwNjcwNCw4ODU0NjY1MzVdfQ==
 -->
