@@ -1,0 +1,46 @@
+library(socviz)
+install.packages("socviz")
+library(socviz)
+head(yahoo)
+
+library(ggplot2)
+# Mayer가 고용자를 다 잘랐지만 수익이 늘지 않았음
+# Mayer의 투입은 수익에 좋은 영향을 주지 않는다?
+p = ggplot(data=yahoo,aes(x=Employees,y=Revenue)) +
+  geom_point(alpha=0.5)+
+geom_path(color="gray80") + geom_text(aes(color=Mayer,label=Year,size=5,fontface="bold"))
+p
+
+# 이 그래프로 보면 revenue와 employess가 떨어진거같긴한데 mayer때문인지아닌지 애매해진다
+ggplot(data=yahoo, aes(x=Year,y=Revenue/Employees)) + geom_line() + geom_vline(xintercept = 2012) +
+  annotate("text", x=2013,y=0.44,
+           label = "Mayer becomes CEO",size=4)+
+  labs(x="Year/n",
+       y="Revenue/Employees",
+       title="Yahoo Reveneu to Employee Ratio, 2004-2014")
+
+
+data <- read.csv("C:\\Users\\uos\\Downloads\\cluster_mean.csv")
+
+m_data = as.matrix(data)
+m_data[,1] = c(1:length(data$Question))
+m_data[,2] = as.numeric(m_data[,2])
+m_data[,3] = as.numeric(m_data[,3])
+m_data[,4] = as.numeric(m_data[,4])
+m_data[,5] = as.numeric(m_data[,5])
+m_data[,6] = as.numeric(m_data[,6])
+
+m_data = as.factor(m_data)
+m_data = as.matrix(m_data)
+dotchart(m_data)
+str(m_data)
+
+op <- par(no.readonly = TRUE)
+par(mfrow = c(2, 2))
+month <- matrix(1:12, ncol = 3)
+rownames(month) <- paste("Row", 1:4)
+colnames(month) <- paste("Col", 1:3)
+
+# 6강
+#나폴레옹 지도 그리기만 보면된다
+# 게슈탈트도 패스
