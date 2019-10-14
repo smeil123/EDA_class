@@ -74,9 +74,24 @@ row 4    27    28    12
 * border : 막대경계선
 
 ``` r
+op <- par(no.readonly = TRUE)
+par(mfrow = c(2,2))
+barplot(bar.x, horiz=T, density=10)
+title(main = "Vector Barplot by horiz = T, density = 5")
 
+barplot(bar.x, density=15)
+title(main = "Vector Barplot by density = 15, angle = 135")
+
+barplot(bar.x, col=rainbow(length(bar.x)))
+title(main="Vector Barplot by rainbow color")
+
+barplot(bar.y, border="red", col=c("lightblue","mistyrose","lightcyan","lavender"))
+title(main = "matrix Barplot by col,border")
+
+par(op)
 ```
+<img src="graph_image/bar_3.png" width="960" />
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4NTk1ODMzMCwxMzkyMjkxOTMsLTIwOD
-g3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbLTE0NzU0MjcyOTAsMTM5MjI5MTkzLC0yMD
+g4NzQ2NjEyXX0=
 -->
