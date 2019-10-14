@@ -52,7 +52,7 @@ title(main = "Matrix Barplot using legend.text = T")
 par(op)
 
 ```
-
+<img src="graph_image/bar_2.png" width="960" />
 ```
 bar.y의 데이터
      col 1 col 2 col 3
@@ -62,8 +62,12 @@ row 3     6    42    23
 row 4    27    28    12
 ```
 
-* 벡터 데이터는 
+* 벡터 데이터는 legend나 names.arg를 쓸때 별개의 데이터를 넣어줘야한다
+* matrix는 행,열의 이름을 쓰면된다
+
+## barplot(height, horiz,density, angle, col, border)
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4NzM1NjIyNCwxMzkyMjkxOTMsLTIwOD
-g3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbODY4NDIzMTMyLDEzOTIyOTE5MywtMjA4OD
+c0NjYxMl19
 -->
