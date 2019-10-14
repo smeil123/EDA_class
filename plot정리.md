@@ -67,7 +67,12 @@ row 4    27    28    12
 
 ## barplot(height, horiz,density, angle, col, border)
 
+* horiz : 그래프를 가로로
+* density
+* angle
+* col
+* border
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODY4NDIzMTMyLDEzOTIyOTE5MywtMjA4OD
-c0NjYxMl19
+eyJoaXN0b3J5IjpbMjEzMzc3NjQ0OSwxMzkyMjkxOTMsLTIwOD
+g3NDY2MTJdfQ==
 -->
