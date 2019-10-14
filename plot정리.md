@@ -70,9 +70,13 @@ row 4    27    28    12
 * horiz : 그래프를 가로로
 * density : 음영선의 밀도
 * angle : 막대 또는 막대 구성요소에 대한 음영선의 기울기
-* col
-* border
+* col 
+* border : 막대경계선
+
+``` r
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4MzAwNTc2OCwxMzkyMjkxOTMsLTIwOD
+eyJoaXN0b3J5IjpbMTE4NTk1ODMzMCwxMzkyMjkxOTMsLTIwOD
 g3NDY2MTJdfQ==
 -->
