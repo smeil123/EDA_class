@@ -28,8 +28,8 @@ barplot(bar.y, beside=TRUE,space = c(0.5,2))
 title(main="Vector Barplot by space=c(0.5,2)")
 
 ```
-
+<img src="graph_image/bar_1.png" width="960" />
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MzY2OTIyNTAsLTIwODg3NDY2MTJdfQ
+eyJoaXN0b3J5IjpbLTE0MTQ0NDI1NTYsLTIwODg3NDY2MTJdfQ
 ==
 -->
