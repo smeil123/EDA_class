@@ -33,6 +33,23 @@ title(main="Vector Barplot by space=c(0.5,2)")
 ## barplot(height, names.arg=NULL, legend.text = NULL)
 
 ``` r
+op <- par(no.readonly = TRUE)
+rownames(bar.y) <- paste("row",1:4)
+colnames(bar.y) <- paste("col",1:3)
+par(mfrow = c(2,2))
+
+barplot(bar.x, names.arg = letters[1:length(bar.x)])#x축을 알파벳 순서대로
+title(main = "Vector Barplot using names.arg")
+
+barplot(bar.y)
+title(main="Matrix Barplot using default names.arg")
+
+barplot(bar.x, legend.text = letters[1:length(bar.x)])
+title(main="Vector Barplot using legend.text")
+
+barplot(bar.y, legend.text = T)
+title(main = "Matrix Barplot using legend.text = T")
+par(op)
 
 ```
 
@@ -44,6 +61,9 @@ row 2     8    47    47
 row 3     6    42    23
 row 4    27    28    12
 ```
+
+* 벡터 데이터는 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5MjI5MTkzLC0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbMTM4NzM1NjIyNCwxMzkyMjkxOTMsLTIwOD
+g3NDY2MTJdfQ==
 -->
