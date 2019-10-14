@@ -68,11 +68,11 @@ row 4    27    28    12
 ## barplot(height, horiz,density, angle, col, border)
 
 * horiz : 그래프를 가로로
-* density
-* angle
+* density : 음영선의 밀도
+* angle : 막대 또는 막대 구성요소에 대한 음영선의 기울기
 * col
 * border
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzMzc3NjQ0OSwxMzkyMjkxOTMsLTIwOD
+eyJoaXN0b3J5IjpbMTE4MzAwNTc2OCwxMzkyMjkxOTMsLTIwOD
 g3NDY2MTJdfQ==
 -->
