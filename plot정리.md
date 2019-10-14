@@ -35,6 +35,7 @@ title(main="Vector Barplot by space=c(0.5,2)")
 ```
 
 ```
+bar.y의 데이터
      col 1 col 2 col 3
 row 1     9    35    29
 row 2     8    47    47
@@ -42,5 +43,5 @@ row 3     6    42    23
 row 4    27    28    12
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1NDMzOTEzNywtMjA4ODc0NjYxMl19
+eyJoaXN0b3J5IjpbLTYwNDAyNjIxNSwtMjA4ODc0NjYxMl19
 -->
