@@ -29,7 +29,18 @@ title(main="Vector Barplot by space=c(0.5,2)")
 
 ```
 <img src="graph_image/bar_1.png" width="960" />
+
+``` r
+
+```
+
+```
+     col 1 col 2 col 3
+row 1     9    35    29
+row 2     8    47    47
+row 3     6    42    23
+row 4    27    28    12
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTQ0NDI1NTYsLTIwODg3NDY2MTJdfQ
-==
+eyJoaXN0b3J5IjpbMTM1NDMzOTEzNywtMjA4ODc0NjYxMl19
 -->
