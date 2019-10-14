@@ -1,4 +1,5 @@
 # barplot
+## barplot(height, width=1, space=NULL)
 ``` r
 ## barplot(height, width = 1, space = NULL)
 # 데이터 생성
@@ -29,6 +30,7 @@ title(main="Vector Barplot by space=c(0.5,2)")
 
 ```
 <img src="graph_image/bar_1.png" width="960" />
+## barplot(height, names.arg=NULL, legend.text = NULL)
 
 ``` r
 
@@ -43,5 +45,5 @@ row 3     6    42    23
 row 4    27    28    12
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwNDAyNjIxNSwtMjA4ODc0NjYxMl19
+eyJoaXN0b3J5IjpbMTM5MjI5MTkzLC0yMDg4NzQ2NjEyXX0=
 -->
