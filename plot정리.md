@@ -211,8 +211,9 @@ par(op)
 <img src="graph_image/dot_1.png" width="960" />
 
 ### color 변경 
+* gdata : 그룹의 데이터의 요약값을 넣을 수 있다
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5Mzc3MzQ2OCw1NjExMjc3NiwtMTIyNT
-k2MjA2MywtMTQ3NTQyNzI5MCwxMzkyMjkxOTMsLTIwODg3NDY2
-MTJdfQ==
+eyJoaXN0b3J5IjpbLTE0MzgxMDIyNjgsLTI5Mzc3MzQ2OCw1Nj
+ExMjc3NiwtMTIyNTk2MjA2MywtMTQ3NTQyNzI5MCwxMzkyMjkx
+OTMsLTIwODg3NDY2MTJdfQ==
 -->
