@@ -576,13 +576,18 @@ p + geom_point(aes(x=disp, y=mpg)) +
 ```
 <img src="graph_image/ggplot1_3.png" width="960" />
 
-### 그룹간 비교
+### 그룹간 비교 : facet_wrap
+```r
+p <- ggplot(mtcars)
+p + geom_point(aes(x=disp,y=mpg)) + facet_wrap(~gear,nrow=1)
+```
+<img src="graph_image/ggplot1_4.png" width="960" />
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3MTkwNzM0NCw4NTQyMzk3NzEsMTU3NT
-A5Njg5Nyw1NzEwNzUwNzIsMTMwNjgwNzkzOSwtODI1MTU5Mzkz
-LDExMTg4MjIzMjAsLTE4ODk3NDU0NzUsNTA2MTEwNzg0LC0yNj
-E2MzI4MjYsMTMyMDE0NjE0MCwtMjkzNzczNDY4LDU2MTEyNzc2
-LC0xMjI1OTYyMDYzLC0xNDc1NDI3MjkwLDEzOTIyOTE5MywtMj
-A4ODc0NjYxMl19
+eyJoaXN0b3J5IjpbLTE2MDM3OTYxODQsODU0MjM5NzcxLDE1Nz
+UwOTY4OTcsNTcxMDc1MDcyLDEzMDY4MDc5MzksLTgyNTE1OTM5
+MywxMTE4ODIyMzIwLC0xODg5NzQ1NDc1LDUwNjExMDc4NCwtMj
+YxNjMyODI2LDEzMjAxNDYxNDAsLTI5Mzc3MzQ2OCw1NjExMjc3
+NiwtMTIyNTk2MjA2MywtMTQ3NTQyNzI5MCwxMzkyMjkxOTMsLT
+IwODg3NDY2MTJdfQ==
 -->
