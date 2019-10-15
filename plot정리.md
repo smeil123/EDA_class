@@ -364,7 +364,9 @@ xyplot(mpg~disp | factor(gear),data=mtcars,
 <img src="graph_image/xyplot_6.png" width="960" />
 
 ### panel
-* 그릴 수 있는 line의
+* 그릴 수 있는 그래프 종류
+<img src="graph_image/xyplot_10.png" width="960" />
+
  * 그래프 abline 그리기 
 
 ```r
@@ -535,9 +537,9 @@ p + geom_point(size=3) +
 <img src="graph_image/ggplot_data_1.png" width="960" />
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MzM5MDc1MjAsMTMwNjgwNzkzOSwtOD
-I1MTU5MzkzLDExMTg4MjIzMjAsLTE4ODk3NDU0NzUsNTA2MTEw
-Nzg0LC0yNjE2MzI4MjYsMTMyMDE0NjE0MCwtMjkzNzczNDY4LD
-U2MTEyNzc2LC0xMjI1OTYyMDYzLC0xNDc1NDI3MjkwLDEzOTIy
-OTE5MywtMjA4ODc0NjYxMl19
+eyJoaXN0b3J5IjpbNTcxMDc1MDcyLDEzMDY4MDc5MzksLTgyNT
+E1OTM5MywxMTE4ODIyMzIwLC0xODg5NzQ1NDc1LDUwNjExMDc4
+NCwtMjYxNjMyODI2LDEzMjAxNDYxNDAsLTI5Mzc3MzQ2OCw1Nj
+ExMjc3NiwtMTIyNTk2MjA2MywtMTQ3NTQyNzI5MCwxMzkyMjkx
+OTMsLTIwODg3NDY2MTJdfQ==
 -->
