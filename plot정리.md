@@ -388,6 +388,7 @@ xyplot(mpg ~ disp | factor(gear), data=mtcars,
          panel.xyplot(x, y, ...)
        })
 ```
+<img src="graph_image/xyplot_8.png" width="960" />
 
 ### prepanel
 panel 크기를 조절한다.
@@ -531,7 +532,7 @@ p + geom_point(size=3) +
 <img src="graph_image/ggplot_data_1.png" width="960" />
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1NDAyODc5MSwtODI1MTU5MzkzLDExMT
+eyJoaXN0b3J5IjpbMTMwNjgwNzkzOSwtODI1MTU5MzkzLDExMT
 g4MjIzMjAsLTE4ODk3NDU0NzUsNTA2MTEwNzg0LC0yNjE2MzI4
 MjYsMTMyMDE0NjE0MCwtMjkzNzczNDY4LDU2MTEyNzc2LC0xMj
 I1OTYyMDYzLC0xNDc1NDI3MjkwLDEzOTIyOTE5MywtMjA4ODc0
