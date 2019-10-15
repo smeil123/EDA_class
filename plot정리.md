@@ -1,4 +1,5 @@
 ### R plot type
+#### point type
 -   **“p”**: Points
 -   **“l”**:  Lines
 -   **“b”**:  Both    
@@ -6,6 +7,9 @@
 -   **“o”**: Both “overplotted”    
 -   **“h”**: Histogram like (or high-density) vertical lines    
 -   **“n”**:  No plotting
+#### lty type
+<img src="graph_image/lty_ty.png" width="960" />
+
 # barplot
 ## barplot(height, width=1, space=NULL)
 ``` r
@@ -38,7 +42,8 @@ title(main="Vector Barplot by space=c(0.5,2)")
 
 ```
 <img src="graph_image/bar_1.png" width="960" />
-## barplot(height, names.arg=NULL, legend.text = NULL)
+
+## barplot(height, names.arg, legend.text )
 
 ``` r
 op <- par(no.readonly = TRUE)
@@ -526,7 +531,7 @@ p + geom_point(size=3) +
 <img src="graph_image/ggplot_data_1.png" width="960" />
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjc5OTkwMDY2LC04MjUxNTkzOTMsMTExOD
+eyJoaXN0b3J5IjpbNjcxOTY0MzQxLC04MjUxNTkzOTMsMTExOD
 gyMjMyMCwtMTg4OTc0NTQ3NSw1MDYxMTA3ODQsLTI2MTYzMjgy
 NiwxMzIwMTQ2MTQwLC0yOTM3NzM0NjgsNTYxMTI3NzYsLTEyMj
 U5NjIwNjMsLTE0NzU0MjcyOTAsMTM5MjI5MTkzLC0yMDg4NzQ2
