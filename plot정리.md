@@ -379,7 +379,7 @@ xyplot(mpg ~ disp | factor(gear), data=mtcars,
 ```
 <img src="graph_image/xyplot_7.png" width="960" />
 
-* **각 그래프마다 기울기 그리기**
+* **각 그래프마다 기울기 그리기** : lmline
 ```r
 xyplot(mpg ~ disp | factor(gear), data=mtcars,
        layout=c(3, 1), aspect=1,
@@ -531,9 +531,9 @@ p + geom_point(size=3) +
 <img src="graph_image/ggplot_data_1.png" width="960" />
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzMxNTExMzMyLC04MjUxNTkzOTMsMTExOD
-gyMjMyMCwtMTg4OTc0NTQ3NSw1MDYxMTA3ODQsLTI2MTYzMjgy
-NiwxMzIwMTQ2MTQwLC0yOTM3NzM0NjgsNTYxMTI3NzYsLTEyMj
-U5NjIwNjMsLTE0NzU0MjcyOTAsMTM5MjI5MTkzLC0yMDg4NzQ2
-NjEyXX0=
+eyJoaXN0b3J5IjpbMTI1NDAyODc5MSwtODI1MTU5MzkzLDExMT
+g4MjIzMjAsLTE4ODk3NDU0NzUsNTA2MTEwNzg0LC0yNjE2MzI4
+MjYsMTMyMDE0NjE0MCwtMjkzNzczNDY4LDU2MTEyNzc2LC0xMj
+I1OTYyMDYzLC0xNDc1NDI3MjkwLDEzOTIyOTE5MywtMjA4ODc0
+NjYxMl19
 -->
