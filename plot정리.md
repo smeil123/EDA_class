@@ -583,8 +583,19 @@ p + geom_point(aes(x=disp,y=mpg)) + facet_wrap(~gear,nrow=1)
 ```
 <img src="graph_image/ggplot1_4.png" width="960" />
 
+### them 옵션
+```r
+p + geom_point(aes(x=disp, y=mpg)) +
+  theme_bw()
+p + geom_point(aes(x=disp, y=mpg)) +
+  theme(axis.title.y=element_text(angle=0, vjust=.5))
+p + geom_point(aes(x=disp, y=mpg)) +
+  theme(axis.title.y=element_blank())
+p + geom_point(aes(x=disp, y=mpg)) +
+  labs(title="Vehicle Fuel Efficiency")
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDM3OTYxODQsODU0MjM5NzcxLDE1Nz
+eyJoaXN0b3J5IjpbLTE4MTgwODEwNzgsODU0MjM5NzcxLDE1Nz
 UwOTY4OTcsNTcxMDc1MDcyLDEzMDY4MDc5MzksLTgyNTE1OTM5
 MywxMTE4ODIyMzIwLC0xODg5NzQ1NDc1LDUwNjExMDc4NCwtMj
 YxNjMyODI2LDEzMjAxNDYxNDAsLTI5Mzc3MzQ2OCw1NjExMjc3
