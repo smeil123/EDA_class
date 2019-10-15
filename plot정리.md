@@ -412,9 +412,11 @@ xyplot(NOx ~ E | C, data = ethanol,
 <img src="graph_image/xyplot_9.png" width="960" />
 
 
-### 데이터에 범주(level)이 많을 때
+### Dotplot 
+* 범주형 변수 그래프
 *  level : 몇개의 범주가 있는지 확인
-* aperm : ㅡ
+* aperm : matrix transpose
+* 2개의 범주형 변수를 붙여서 packet을 만듦(year과 site를 붙임)
 ```r 
 # paste 합치기
 packet <- outer(levels(barley$year), levels(barley$site), paste)
@@ -537,7 +539,7 @@ p + geom_point(size=3) +
 <img src="graph_image/ggplot_data_1.png" width="960" />
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDA3NTY1MjEsNTcxMDc1MDcyLDEzMD
+eyJoaXN0b3J5IjpbLTE4MzYyMzE5MDYsNTcxMDc1MDcyLDEzMD
 Y4MDc5MzksLTgyNTE1OTM5MywxMTE4ODIyMzIwLC0xODg5NzQ1
 NDc1LDUwNjExMDc4NCwtMjYxNjMyODI2LDEzMjAxNDYxNDAsLT
 I5Mzc3MzQ2OCw1NjExMjc3NiwtMTIyNTk2MjA2MywtMTQ3NTQy
