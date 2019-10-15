@@ -557,11 +557,21 @@ p + geom_point(aes(x=disp,y=mpg,color=gear),size=4) +
 ```
 <img src="graph_image/ggplot1_1.png" width="960" />
 
+* geom_line 추가
+```r
+p + geom_point(aes(x=disp, y=mpg)) +
+  scale_y_continuous(trans="log",breaks=seq(10, 40, 10)) +
+  scale_x_continuous(trans="log",breaks=seq(100, 400, 100)) +
+  geom_line(aes(x=disp, y=mpg), stat="smooth",method="lm")
+```
+<img src="graph_image/ggplot1_2.png" width="960" />
+
+* coord_trans 추가
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODU0MjM5NzcxLDE1NzUwOTY4OTcsNTcxMD
-c1MDcyLDEzMDY4MDc5MzksLTgyNTE1OTM5MywxMTE4ODIyMzIw
-LC0xODg5NzQ1NDc1LDUwNjExMDc4NCwtMjYxNjMyODI2LDEzMj
-AxNDYxNDAsLTI5Mzc3MzQ2OCw1NjExMjc3NiwtMTIyNTk2MjA2
-MywtMTQ3NTQyNzI5MCwxMzkyMjkxOTMsLTIwODg3NDY2MTJdfQ
-==
+eyJoaXN0b3J5IjpbMTA5MTg2MjU2Myw4NTQyMzk3NzEsMTU3NT
+A5Njg5Nyw1NzEwNzUwNzIsMTMwNjgwNzkzOSwtODI1MTU5Mzkz
+LDExMTg4MjIzMjAsLTE4ODk3NDU0NzUsNTA2MTEwNzg0LC0yNj
+E2MzI4MjYsMTMyMDE0NjE0MCwtMjkzNzczNDY4LDU2MTEyNzc2
+LC0xMjI1OTYyMDYzLC0xNDc1NDI3MjkwLDEzOTIyOTE5MywtMj
+A4ODc0NjYxMl19
 -->
