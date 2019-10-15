@@ -671,11 +671,13 @@ p + geom_point() +
   geom_text_repel(data = subset(by_country,gdp_mean > 25000),
                   mapping = aes(label = country))
 ```
+<img src="graph_image/ggplot1_9.png" width="960" />
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzNzg0MDczMiwtMTY3NjYwOTA2OSwtNj
-cxOTU5NzY4LDg1NDIzOTc3MSwxNTc1MDk2ODk3LDU3MTA3NTA3
-MiwxMzA2ODA3OTM5LC04MjUxNTkzOTMsMTExODgyMjMyMCwtMT
-g4OTc0NTQ3NSw1MDYxMTA3ODQsLTI2MTYzMjgyNiwxMzIwMTQ2
-MTQwLC0yOTM3NzM0NjgsNTYxMTI3NzYsLTEyMjU5NjIwNjMsLT
-E0NzU0MjcyOTAsMTM5MjI5MTkzLC0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbLTE1ODUyMTUyNzcsLTE2NzY2MDkwNjksLT
+Y3MTk1OTc2OCw4NTQyMzk3NzEsMTU3NTA5Njg5Nyw1NzEwNzUw
+NzIsMTMwNjgwNzkzOSwtODI1MTU5MzkzLDExMTg4MjIzMjAsLT
+E4ODk3NDU0NzUsNTA2MTEwNzg0LC0yNjE2MzI4MjYsMTMyMDE0
+NjE0MCwtMjkzNzczNDY4LDU2MTEyNzc2LC0xMjI1OTYyMDYzLC
+0xNDc1NDI3MjkwLDEzOTIyOTE5MywtMjA4ODc0NjYxMl19
 -->
