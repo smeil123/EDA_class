@@ -575,6 +575,16 @@ p + geom_point(aes(x=disp, y=mpg)) +
 ```
 <img src="graph_image/ggplot1_3.png" width="960" />
 
+#### x,y좌표명 변경
+
+```r
+p + geom_point() + scale_x_log10() +
+  scale_y_continuous(breaks = c(5,15, 25),
+                     labels = c("Five", "Fifteen","Twenty Five"))
+```
+<img src="graph_image/ggplot1_13.png" width="960" />
+
+
 ### 그룹간 비교 : facet_wrap
 ```r
 p <- ggplot(mtcars)
@@ -706,7 +716,7 @@ p + geom_point() +
 <img src="graph_image/ggplot1_12.png" width="960" />
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5OTUwODgxMCwxMjk4MDU4MTcyLC0xNj
+eyJoaXN0b3J5IjpbLTg5MzI5OTMzMCwxMjk4MDU4MTcyLC0xNj
 c2NjA5MDY5LC02NzE5NTk3NjgsODU0MjM5NzcxLDE1NzUwOTY4
 OTcsNTcxMDc1MDcyLDEzMDY4MDc5MzksLTgyNTE1OTM5MywxMT
 E4ODIyMzIwLC0xODg5NzQ1NDc1LDUwNjExMDc4NCwtMjYxNjMy
