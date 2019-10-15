@@ -1,4 +1,4 @@
-# R plot type
+### R plot type
 -   **“p”**: Points
 -   **“l”**:  Lines
 -   **“b”**:  Both    
@@ -277,7 +277,7 @@ par(op)
 <img src="graph_image/pair_2.png" width="960" />
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTE4OTQ3MjM4LDEzMjAxNDYxNDAsLTI5Mz
-c3MzQ2OCw1NjExMjc3NiwtMTIyNTk2MjA2MywtMTQ3NTQyNzI5
-MCwxMzkyMjkxOTMsLTIwODg3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbLTI2MTYzMjgyNiwxMzIwMTQ2MTQwLC0yOT
+M3NzM0NjgsNTYxMTI3NzYsLTEyMjU5NjIwNjMsLTE0NzU0Mjcy
+OTAsMTM5MjI5MTkzLC0yMDg4NzQ2NjEyXX0=
 -->
