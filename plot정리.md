@@ -137,7 +137,10 @@ title("boxplot of dataframe by formula")
 ```
 <img src="graph_image/box_1.png" width="960" />
 
+## subset
+* boxplot을 subset별로 실행하면 결과는 중첩되어 나온다
+* subset = 채ㅣ
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjQzNDAwMDMsLTEyMjU5NjIwNjMsLT
-E0NzU0MjcyOTAsMTM5MjI5MTkzLC0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbMTM4ODgzMjY4MCwtMTIyNTk2MjA2MywtMT
+Q3NTQyNzI5MCwxMzkyMjkxOTMsLTIwODg3NDY2MTJdfQ==
 -->
