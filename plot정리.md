@@ -310,6 +310,19 @@ xyplot(mpg ~ disp | factor(gear), data=mtcars)
 
 * 범례 위치 조정
 ```r
+xyplot(mpg~disp,data=mtcars,
+       group=gear,
+       auto.key=list(space="right")) # 범례를 오른쪽으로 밀어버림
+```
+<img src="graph_image/xyplot_3.png" width="960" />
+
+* layout
+* aspect : 그래프 너비 조정
+```r
+xyplot(mpg~disp | factor(gear),data=mtcars,
+       layout = c(1,3),aspect=1)
+```
+<img src="graph_image/xyplot_4.png" width="960" />
 
 
 ### position argument
@@ -509,7 +522,7 @@ p + geom_point(size=3) +
 <img src="graph_image/ggplot_data_1.png" width="960" />
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyMDc3OTQ1NCwtODI1MTU5MzkzLDExMT
+eyJoaXN0b3J5IjpbLTY3Njc3MjY4NCwtODI1MTU5MzkzLDExMT
 g4MjIzMjAsLTE4ODk3NDU0NzUsNTA2MTEwNzg0LC0yNjE2MzI4
 MjYsMTMyMDE0NjE0MCwtMjkzNzczNDY4LDU2MTEyNzc2LC0xMj
 I1OTYyMDYzLC0xNDc1NDI3MjkwLDEzOTIyOTE5MywtMjA4ODc0
