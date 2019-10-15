@@ -301,11 +301,14 @@ p + geom_boxplot()
 ```
 <img src="graph_image/ggplot_1.png" width="960" />
 
+* coord_flip()은 x축과 y축의 구성을 뒤집어 표현하라는 명령어
 ```r
 p + geom_boxplot() + coord_flip()
 ```
 <img src="graph_image/ggplot_2.png" width="960" />
 
+* reorder를 통해서 
+* x축의 이름을 없앰
 ```r
 p = ggplot(data = organdata, mapping = aes(x = reorder(country, donors, na.rm = TRUE), y = donors))
 p + geom_boxplot() + labs(x = NULL) + coord_flip()
@@ -321,7 +324,7 @@ p + geom_boxplot() + labs(x=NULL) +
 <img src="graph_image/ggplot_4.png" width="960" />
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwOTQ4MTkzMiw1MDYxMTA3ODQsLTI2MT
+eyJoaXN0b3J5IjpbMTI1OTQ4MzA5MCw1MDYxMTA3ODQsLTI2MT
 YzMjgyNiwxMzIwMTQ2MTQwLC0yOTM3NzM0NjgsNTYxMTI3NzYs
 LTEyMjU5NjIwNjMsLTE0NzU0MjcyOTAsMTM5MjI5MTkzLC0yMD
 g4NzQ2NjEyXX0=
