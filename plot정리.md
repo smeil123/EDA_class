@@ -172,9 +172,11 @@ boxplot(G2~G1, data = test_data, boxwex = 0.25, at=1:11 + 0.2,
 * 이유) x축값이 범주형 데이터가 아니기 때문에
 * test2를 ToothGrowth 형태를 보고 왜 안되는지 이해
 * ToothGrowth를 보면 dose와 supp가 고정되어 있고 len값을 가지는 형태이다
+<img src="graph_image/box_data_1.png" width="960" />
+<img src="graph_image/box_data_2.png" width="960" />
 
 # Dot chart
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjgxMzcxNzcsLTEyMjU5NjIwNjMsLT
-E0NzU0MjcyOTAsMTM5MjI5MTkzLC0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbOTYyMTAzMDkyLC0xMjI1OTYyMDYzLC0xND
+c1NDI3MjkwLDEzOTIyOTE5MywtMjA4ODc0NjYxMl19
 -->
