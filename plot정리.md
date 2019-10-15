@@ -153,8 +153,28 @@ legend(2,9,c("Ascorbic acid","Orange juice"),fill=c("yellow","orange"))
 <img src="graph_image/box_2.png" width="960" />
 
 ### 예제파일
+```r
+## 데이터 형식을 모르고 그래프를 그리면 원하지 않는 모양의 형태가 나온다 
+test_data <- read.csv("C:/Users/dmswl/Downloads/test2.csv")
+par(mfrow = c(1, 2))
 
+# G1과 G2의 관계를 구분
+boxplot(G2~G1, data = test_data, boxwex = 0.25, at=1:9 - 0.2,
+        subset = Cat == 1)
+boxplot(G2~G1, data = test_data, boxwex = 0.25, at=1:11 + 0.2,
+        subset = Cat == 0,
+        staplewex=0.5)
+
+```
+<img src="graph_image/box_3.png" width="960" />
+
+* 위의 데이터를 이용하면 botplot으로 나오지 않는다
+* 이유) x축값이 범주형 데이터가 아니기 때문에
+* test2를 ToothGrowth 형태를 보고 왜 안되는지 이해
+* ToothGrowth를 보면 dose와 supp가 고정되어 있고 len값을 가지는 형태이다
+
+# Dot chart
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTExMzM1Mzg4LC0xMjI1OTYyMDYzLC0xND
-c1NDI3MjkwLDEzOTIyOTE5MywtMjA4ODc0NjYxMl19
+eyJoaXN0b3J5IjpbLTExMjgxMzcxNzcsLTEyMjU5NjIwNjMsLT
+E0NzU0MjcyOTAsMTM5MjI5MTkzLC0yMDg4NzQ2NjEyXX0=
 -->
