@@ -364,6 +364,7 @@ xyplot(mpg~disp | factor(gear),data=mtcars,
 <img src="graph_image/xyplot_6.png" width="960" />
 
 ### panel
+* 그릴 수 있는 line의
  * 그래프 abline 그리기 
 
 ```r
@@ -407,6 +408,7 @@ xyplot(NOx ~ E | C, data = ethanol,
        prepanel.loess(x, y)")
 ```
 <img src="graph_image/xyplot_9.png" width="960" />
+
 
 ### 데이터에 level이 많을 때
 ```
@@ -533,9 +535,9 @@ p + geom_point(size=3) +
 <img src="graph_image/ggplot_data_1.png" width="960" />
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1NDMxNjk2MiwxMzA2ODA3OTM5LC04Mj
-UxNTkzOTMsMTExODgyMjMyMCwtMTg4OTc0NTQ3NSw1MDYxMTA3
-ODQsLTI2MTYzMjgyNiwxMzIwMTQ2MTQwLC0yOTM3NzM0NjgsNT
-YxMTI3NzYsLTEyMjU5NjIwNjMsLTE0NzU0MjcyOTAsMTM5MjI5
-MTkzLC0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbLTE3MzM5MDc1MjAsMTMwNjgwNzkzOSwtOD
+I1MTU5MzkzLDExMTg4MjIzMjAsLTE4ODk3NDU0NzUsNTA2MTEw
+Nzg0LC0yNjE2MzI4MjYsMTMyMDE0NjE0MCwtMjkzNzczNDY4LD
+U2MTEyNzc2LC0xMjI1OTYyMDYzLC0xNDc1NDI3MjkwLDEzOTIy
+OTE5MywtMjA4ODc0NjYxMl19
 -->
