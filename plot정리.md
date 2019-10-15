@@ -141,9 +141,20 @@ title("boxplot of dataframe by formula")
 * boxplot을 subset별로 실행하면 결과는 중첩되어 나온다
 * subset = colname = group
 ``` r
+dev.off()
 
+boxplot(len~dose, data=ToothGrowth, boxwex = 0.25, at=1:3-0.2,
+        subset = supp == "VC", col="yellow",main="Guinea Pig' Tooth Growth",
+        xlab = "Vitamin C does mg", ylab = "tooth length", ylim = c(0,35))
+boxplot(len~dose, data=ToothGrowth, add=TRUE, boxwex=0.25, at = 1:3 + 0.2,
+        subset = supp == "OJ", col = "orange")
+legend(2,9,c("Ascorbic acid","Orange juice"),fill=c("yellow","orange"))
 ```
+<img src="graph_image/box_2.png" width="960" />
+
+### 예제파일
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3Njg2NTI3MCwtMTIyNTk2MjA2MywtMT
-Q3NTQyNzI5MCwxMzkyMjkxOTMsLTIwODg3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbLTEwNTA0NDE4NzksLTEyMjU5NjIwNjMsLT
+E0NzU0MjcyOTAsMTM5MjI5MTkzLC0yMDg4NzQ2NjEyXX0=
 -->
