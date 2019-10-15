@@ -8,7 +8,7 @@
 -   **“h”**: Histogram like (or high-density) vertical lines    
 -   **“n”**:  No plotting
 #### lty type
-<img src="graph_image/lty_type.png" width="960" />
+<img src="/graph_image/lty_type.PNG" width="960" />
 
 # barplot
 ## barplot(height, width=1, space=NULL)
