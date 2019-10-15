@@ -292,8 +292,37 @@ pairs(iris[1:4], main = "Anderson's Iris Data--3 species",
 ```
 <img src="graph_image/pair_4.png" width="960" />
 
+# ggplot
+## boxplot
+```r
+library(socviz)
+p = ggplot(data = organdata, mapping = aes(x = country, y = donors))
+p + geom_boxplot()
+```
+<img src="graph_image/ggplot_1.png" width="960" />
+
+```r
+p + geom_boxplot() + coord_flip()
+```
+<img src="graph_image/ggplot_2.png" width="960" />
+
+```r
+p = ggplot(data = organdata, mapping = aes(x = reorder(country, donors, na.rm = TRUE), y = donors))
+p + geom_boxplot() + labs(x = NULL) + coord_flip()
+```
+<img src="graph_image/ggplot_3.png" width="960" />
+
+```r
+p = ggplot(data = organdata,
+           mapping = aes(x = reorder(country, donors, na.rm=TRUE),y = donors, fill = world))
+p + geom_boxplot() + labs(x=NULL) +
+  coord_flip() + theme(legend.position = "top")
+```
+<img src="graph_image/ggplot_4.png" width="960" />
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTA2MTEwNzg0LC0yNjE2MzI4MjYsMTMyMD
-E0NjE0MCwtMjkzNzczNDY4LDU2MTEyNzc2LC0xMjI1OTYyMDYz
-LC0xNDc1NDI3MjkwLDEzOTIyOTE5MywtMjA4ODc0NjYxMl19
+eyJoaXN0b3J5IjpbLTYwOTQ4MTkzMiw1MDYxMTA3ODQsLTI2MT
+YzMjgyNiwxMzIwMTQ2MTQwLC0yOTM3NzM0NjgsNTYxMTI3NzYs
+LTEyMjU5NjIwNjMsLTE0NzU0MjcyOTAsMTM5MjI5MTkzLC0yMD
+g4NzQ2NjEyXX0=
 -->
