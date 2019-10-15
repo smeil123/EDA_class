@@ -176,7 +176,16 @@ boxplot(G2~G1, data = test_data, boxwex = 0.25, at=1:11 + 0.2,
 <img src="graph_image/box_data_2.png" width="960" />
 
 # Dot chart
+**데이터생성**
+``` r
+op <- par(no.readonly = TRUE)
+par(mfrow = c(2,2))
+month <- matrix(1:12,ncol=3)
+rownames(month) <- paste("Row", 1:4)
+colnames(month) <- paste("Col",1:3)
+```
+<img src="graph_image/dot_data1.png" width="960" />
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTYyMTAzMDkyLC0xMjI1OTYyMDYzLC0xND
-c1NDI3MjkwLDEzOTIyOTE5MywtMjA4ODc0NjYxMl19
+eyJoaXN0b3J5IjpbNTYxMTI3NzYsLTEyMjU5NjIwNjMsLTE0Nz
+U0MjcyOTAsMTM5MjI5MTkzLC0yMDg4NzQ2NjEyXX0=
 -->
