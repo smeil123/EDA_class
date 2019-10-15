@@ -316,7 +316,6 @@ p + geom_boxplot() + labs(x = NULL) + coord_flip()
 <img src="graph_image/ggplot_3.png" width="960" />
 
 * fill = world : 색을 다르게
-* 
 
 ```r
 p = ggplot(data = organdata,
@@ -326,9 +325,12 @@ p + geom_boxplot() + labs(x=NULL) +
 ```
 <img src="graph_image/ggplot_4.png" width="960" />
 
+## point
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODk3NDU0NzUsNTA2MTEwNzg0LC0yNj
-E2MzI4MjYsMTMyMDE0NjE0MCwtMjkzNzczNDY4LDU2MTEyNzc2
-LC0xMjI1OTYyMDYzLC0xNDc1NDI3MjkwLDEzOTIyOTE5MywtMj
-A4ODc0NjYxMl19
+eyJoaXN0b3J5IjpbLTI1Mzc5OTU2OSwtMTg4OTc0NTQ3NSw1MD
+YxMTA3ODQsLTI2MTYzMjgyNiwxMzIwMTQ2MTQwLC0yOTM3NzM0
+NjgsNTYxMTI3NzYsLTEyMjU5NjIwNjMsLTE0NzU0MjcyOTAsMT
+M5MjI5MTkzLC0yMDg4NzQ2NjEyXX0=
 -->
