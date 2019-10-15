@@ -592,7 +592,12 @@ p + geom_point() +
 ```
 <img src="graph_image/ggplot2_1.png" width="960" />
 
-
+#### 범례 삭제
+```r
+p + geom_point() + labs(x = "Road Deaths", y = "Donor Procurement") +
+  guides(color = FALSE)
+```
+<img src="graph_image/ggplot2_2.png" width="960" />
 
 ### 그룹간 비교 : facet_wrap
 ```r
@@ -725,11 +730,11 @@ p + geom_point() +
 <img src="graph_image/ggplot1_12.png" width="960" />
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5MDgxMDA3LC04OTMyOTkzMzAsMTI5OD
-A1ODE3MiwtMTY3NjYwOTA2OSwtNjcxOTU5NzY4LDg1NDIzOTc3
-MSwxNTc1MDk2ODk3LDU3MTA3NTA3MiwxMzA2ODA3OTM5LC04Mj
-UxNTkzOTMsMTExODgyMjMyMCwtMTg4OTc0NTQ3NSw1MDYxMTA3
-ODQsLTI2MTYzMjgyNiwxMzIwMTQ2MTQwLC0yOTM3NzM0NjgsNT
-YxMTI3NzYsLTEyMjU5NjIwNjMsLTE0NzU0MjcyOTAsMTM5MjI5
-MTkzXX0=
+eyJoaXN0b3J5IjpbMTAzNTYwNzIyMiwtODkzMjk5MzMwLDEyOT
+gwNTgxNzIsLTE2NzY2MDkwNjksLTY3MTk1OTc2OCw4NTQyMzk3
+NzEsMTU3NTA5Njg5Nyw1NzEwNzUwNzIsMTMwNjgwNzkzOSwtOD
+I1MTU5MzkzLDExMTg4MjIzMjAsLTE4ODk3NDU0NzUsNTA2MTEw
+Nzg0LC0yNjE2MzI4MjYsMTMyMDE0NjE0MCwtMjkzNzczNDY4LD
+U2MTEyNzc2LC0xMjI1OTYyMDYzLC0xNDc1NDI3MjkwLDEzOTIy
+OTE5M119
 -->
