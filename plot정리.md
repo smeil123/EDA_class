@@ -91,7 +91,18 @@ title(main = "matrix Barplot by col,border")
 par(op)
 ```
 <img src="graph_image/bar_3.png" width="960" />
+
+```r
+hotdogs <- read.csv("http://datasets.flowingdata.com/hot-dog-contest-winners.csv",sep=",",header=T)
+
+barplot(hotdogs$Dogs.eaten, names.arg=hotdogs$Year,
+        col=ifelse(hotdogs$New.record==1,"blue","red"),
+        xlab="Year",ylab="Hot Dogs and buns ...")
+
+```
+<img src="graph_image/bar_3.png" width="960" />
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NzU0MjcyOTAsMTM5MjI5MTkzLC0yMD
-g4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbLTE5ODUzOTI0NzMsLTE0NzU0MjcyOTAsMT
+M5MjI5MTkzLC0yMDg4NzQ2NjEyXX0=
 -->
