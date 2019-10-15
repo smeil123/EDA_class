@@ -602,7 +602,7 @@ p + geom_point(aes(x=disp, y=mpg)) +
 
 ### geom_hline, geom_text
 * 라인과 텍스트를 그리기 위한 데이터를 추가 생성
-* geom_hline(가로),geom_vline(ㅅ
+* geom_hline(가로),geom_vline(세로)
 	* yintercept : 좌표
 	* size
 	* color
@@ -637,7 +637,7 @@ p = ggplot(data = by_country,
 p + geom_point() + geom_text(mapping = aes(label = country), hjust = 0)
 
 ```
-
+* geom_text_repel : plot에 직접 텍스트를 추가한다
 ```r
 library(ggrepel)
 elections_historic %>% select(2:7)
@@ -659,10 +659,10 @@ p + geom_hline(yintercept = 0.5, size = 1.4, color = "gray80") +
        caption = p_caption)
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwOTYzMTYyLC0xNjc2NjA5MDY5LC02Nz
-E5NTk3NjgsODU0MjM5NzcxLDE1NzUwOTY4OTcsNTcxMDc1MDcy
-LDEzMDY4MDc5MzksLTgyNTE1OTM5MywxMTE4ODIyMzIwLC0xOD
-g5NzQ1NDc1LDUwNjExMDc4NCwtMjYxNjMyODI2LDEzMjAxNDYx
-NDAsLTI5Mzc3MzQ2OCw1NjExMjc3NiwtMTIyNTk2MjA2MywtMT
-Q3NTQyNzI5MCwxMzkyMjkxOTMsLTIwODg3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbLTU2NjE1ODQzNywtMTY3NjYwOTA2OSwtNj
+cxOTU5NzY4LDg1NDIzOTc3MSwxNTc1MDk2ODk3LDU3MTA3NTA3
+MiwxMzA2ODA3OTM5LC04MjUxNTkzOTMsMTExODgyMjMyMCwtMT
+g4OTc0NTQ3NSw1MDYxMTA3ODQsLTI2MTYzMjgyNiwxMzIwMTQ2
+MTQwLC0yOTM3NzM0NjgsNTYxMTI3NzYsLTEyMjU5NjIwNjMsLT
+E0NzU0MjcyOTAsMTM5MjI5MTkzLC0yMDg4NzQ2NjEyXX0=
 -->
