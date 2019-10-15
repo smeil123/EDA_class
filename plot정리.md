@@ -422,13 +422,14 @@ xyplot(NOx ~ E | C, data = ethanol,
 packet <- outer(levels(barley$year), levels(barley$site), paste)
 as.vector(aperm(packet, 1:2)) # (1) prem.cond = 1:2인 경우의 패킷 순서
 as.vector(aperm(packet, 2:1))    # (2) prem.cond = 2:1인 경우의 패킷 순서
-# 그래프 그릴 때는그냥 year*site로 사용하며면 된다
+# 그래프 그릴 때는그냥 year*site로 사용하면 된다
 dotplot(variety ~ yield | year * site, data = barley, layout = c(6, 2),
         xlab = "Barley Yield (bushels/acre) ", ylab = NULL,
         perm.cond = c(2, 1),
         main = "variety ~ yield | year * site, perm.cond = c(2, 1)
 ")
 ```
+<img src="graph_image/dotplot_1.png" width="960" />
 
 ### splom
 scatterplot을 그려준다
@@ -539,9 +540,9 @@ p + geom_point(size=3) +
 <img src="graph_image/ggplot_data_1.png" width="960" />
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzYyMzE5MDYsNTcxMDc1MDcyLDEzMD
-Y4MDc5MzksLTgyNTE1OTM5MywxMTE4ODIyMzIwLC0xODg5NzQ1
-NDc1LDUwNjExMDc4NCwtMjYxNjMyODI2LDEzMjAxNDYxNDAsLT
-I5Mzc3MzQ2OCw1NjExMjc3NiwtMTIyNTk2MjA2MywtMTQ3NTQy
-NzI5MCwxMzkyMjkxOTMsLTIwODg3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbLTY3MjU2ODU0NSw1NzEwNzUwNzIsMTMwNj
+gwNzkzOSwtODI1MTU5MzkzLDExMTg4MjIzMjAsLTE4ODk3NDU0
+NzUsNTA2MTEwNzg0LC0yNjE2MzI4MjYsMTMyMDE0NjE0MCwtMj
+kzNzczNDY4LDU2MTEyNzc2LC0xMjI1OTYyMDYzLC0xNDc1NDI3
+MjkwLDEzOTIyOTE5MywtMjA4ODc0NjYxMl19
 -->
