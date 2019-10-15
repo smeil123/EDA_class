@@ -292,6 +292,8 @@ pairs(iris[1:4], main = "Anderson's Iris Data--3 species",
 ```
 <img src="graph_image/pair_4.png" width="960" />
 
+# Lattiece
+
 # ggplot
 ## boxplot
 ```r
@@ -373,8 +375,9 @@ p + geom_point(size=3) +
 <img src="graph_image/ggplot_data_1.png" width="960" />
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyNTE1OTM5MywxMTE4ODIyMzIwLC0xOD
-g5NzQ1NDc1LDUwNjExMDc4NCwtMjYxNjMyODI2LDEzMjAxNDYx
-NDAsLTI5Mzc3MzQ2OCw1NjExMjc3NiwtMTIyNTk2MjA2MywtMT
-Q3NTQyNzI5MCwxMzkyMjkxOTMsLTIwODg3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbODQwODAxNTIzLC04MjUxNTkzOTMsMTExOD
+gyMjMyMCwtMTg4OTc0NTQ3NSw1MDYxMTA3ODQsLTI2MTYzMjgy
+NiwxMzIwMTQ2MTQwLC0yOTM3NzM0NjgsNTYxMTI3NzYsLTEyMj
+U5NjIwNjMsLTE0NzU0MjcyOTAsMTM5MjI5MTkzLC0yMDg4NzQ2
+NjEyXX0=
 -->
