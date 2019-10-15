@@ -228,8 +228,11 @@ dotchart(month, cex = 1.1, lcolor = "red", gcolor = "blue", groups = quarter,gda
 title(main = "lcolor = \"red\", gcolor = \"blue\"")
 par(op)
 ```
+
+<img src="graph_image/dot_2.png" width="960" />
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3MjM2NDg1NSwtMjkzNzczNDY4LDU2MT
+eyJoaXN0b3J5IjpbMTMyMDE0NjE0MCwtMjkzNzczNDY4LDU2MT
 EyNzc2LC0xMjI1OTYyMDYzLC0xNDc1NDI3MjkwLDEzOTIyOTE5
 MywtMjA4ODc0NjYxMl19
 -->
