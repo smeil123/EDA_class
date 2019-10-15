@@ -327,7 +327,10 @@ xyplot(mpg~disp | factor(gear),data=mtcars,
 
 ### position argument
 #### lattice를 이용해서 여러개의 그래프 위치를 조정해가며 한번에 그릴 수 있다
-```
+* subset + position
+* (left, bottom, right, top)
+* 화면을 나누지 않고 (par(mfrow ...)) 위치를 조정해서 여러개의 그래프를 그림 
+```r
 ## subset + potision
 # (left, bottom,right,top)
 # 화면을 나누지 않고 위치를 조정해서 여러개의 그래프를 그릴 수 있다
@@ -522,9 +525,9 @@ p + geom_point(size=3) +
 <img src="graph_image/ggplot_data_1.png" width="960" />
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3Njc3MjY4NCwtODI1MTU5MzkzLDExMT
-g4MjIzMjAsLTE4ODk3NDU0NzUsNTA2MTEwNzg0LC0yNjE2MzI4
-MjYsMTMyMDE0NjE0MCwtMjkzNzczNDY4LDU2MTEyNzc2LC0xMj
-I1OTYyMDYzLC0xNDc1NDI3MjkwLDEzOTIyOTE5MywtMjA4ODc0
-NjYxMl19
+eyJoaXN0b3J5IjpbMjU2ODcyNzUsLTgyNTE1OTM5MywxMTE4OD
+IyMzIwLC0xODg5NzQ1NDc1LDUwNjExMDc4NCwtMjYxNjMyODI2
+LDEzMjAxNDYxNDAsLTI5Mzc3MzQ2OCw1NjExMjc3NiwtMTIyNT
+k2MjA2MywtMTQ3NTQyNzI5MCwxMzkyMjkxOTMsLTIwODg3NDY2
+MTJdfQ==
 -->
