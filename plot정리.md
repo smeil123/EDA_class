@@ -370,10 +370,11 @@ p + geom_point(size=3) +
   theme(legend.position="top")
 ```
 <img src="graph_image/ggplot_8.png" width="960" />
+<img src="graph_image/ggplot_data_1.png" width="960" />
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTgwMjAwNzE4LDExMTg4MjIzMjAsLTE4OD
-k3NDU0NzUsNTA2MTEwNzg0LC0yNjE2MzI4MjYsMTMyMDE0NjE0
-MCwtMjkzNzczNDY4LDU2MTEyNzc2LC0xMjI1OTYyMDYzLC0xND
-c1NDI3MjkwLDEzOTIyOTE5MywtMjA4ODc0NjYxMl19
+eyJoaXN0b3J5IjpbLTgyNTE1OTM5MywxMTE4ODIyMzIwLC0xOD
+g5NzQ1NDc1LDUwNjExMDc4NCwtMjYxNjMyODI2LDEzMjAxNDYx
+NDAsLTI5Mzc3MzQ2OCw1NjExMjc3NiwtMTIyNTk2MjA2MywtMT
+Q3NTQyNzI5MCwxMzkyMjkxOTMsLTIwODg3NDY2MTJdfQ==
 -->
