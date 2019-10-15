@@ -453,15 +453,16 @@ nica"))))
 <img src="graph_image/splom_1.png" width="960" />
 
 ### trellis패키지의 기본 설정을 바꿀 수 있다
-```
+```r
 names(trellis.par.get())
 show.settings()
 trellis.par.set(list(add.text=list(col="yellow")))
 show.settings()
-
 ```
 
 # ggplot
+<img src="graph_image/ggplot.png" width="960" />
+
 ## boxplot
 ```r
 library(socviz)
@@ -542,7 +543,7 @@ p + geom_point(size=3) +
 <img src="graph_image/ggplot_data_1.png" width="960" />
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA2NTIyNjIwMyw1NzEwNzUwNzIsMTMwNj
+eyJoaXN0b3J5IjpbMTU3NTA5Njg5Nyw1NzEwNzUwNzIsMTMwNj
 gwNzkzOSwtODI1MTU5MzkzLDExMTg4MjIzMjAsLTE4ODk3NDU0
 NzUsNTA2MTEwNzg0LC0yNjE2MzI4MjYsMTMyMDE0NjE0MCwtMj
 kzNzczNDY4LDU2MTEyNzc2LC0xMjI1OTYyMDYzLC0xNDc1NDI3
