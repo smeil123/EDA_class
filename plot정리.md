@@ -583,12 +583,16 @@ p + geom_point(aes(x=disp,y=mpg)) + facet_wrap(~gear,nrow=1)
 ```
 <img src="graph_image/ggplot1_4.png" width="960" />
 
-### them 옵션
+### theme 옵션
+* them_bw
+* element_text 
+* element_blank() : 이름을 비워둔다 
+* labs로 title작성
 ```r
 p + geom_point(aes(x=disp, y=mpg)) +
   theme_bw()
 p + geom_point(aes(x=disp, y=mpg)) +
-  theme(axis.title.y=element_text(angle=0, vjust=.5))
+  theme(axis.title.y=element_text(angle=0, vjust=.5)) # y축이름을 가로로
 p + geom_point(aes(x=disp, y=mpg)) +
   theme(axis.title.y=element_blank())
 p + geom_point(aes(x=disp, y=mpg)) +
@@ -597,10 +601,10 @@ p + geom_point(aes(x=disp, y=mpg)) +
 <img src="graph_image/ggplot1_5.png" width="960" />
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU0NzMwNDAxLDg1NDIzOTc3MSwxNTc1MD
-k2ODk3LDU3MTA3NTA3MiwxMzA2ODA3OTM5LC04MjUxNTkzOTMs
-MTExODgyMjMyMCwtMTg4OTc0NTQ3NSw1MDYxMTA3ODQsLTI2MT
-YzMjgyNiwxMzIwMTQ2MTQwLC0yOTM3NzM0NjgsNTYxMTI3NzYs
-LTEyMjU5NjIwNjMsLTE0NzU0MjcyOTAsMTM5MjI5MTkzLC0yMD
-g4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbLTEyMDgyOTUyMDcsODU0MjM5NzcxLDE1Nz
+UwOTY4OTcsNTcxMDc1MDcyLDEzMDY4MDc5MzksLTgyNTE1OTM5
+MywxMTE4ODIyMzIwLC0xODg5NzQ1NDc1LDUwNjExMDc4NCwtMj
+YxNjMyODI2LDEzMjAxNDYxNDAsLTI5Mzc3MzQ2OCw1NjExMjc3
+NiwtMTIyNTk2MjA2MywtMTQ3NTQyNzI5MCwxMzkyMjkxOTMsLT
+IwODg3NDY2MTJdfQ==
 -->
