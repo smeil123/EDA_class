@@ -639,7 +639,7 @@ p + geom_point() + geom_text(mapping = aes(label = country), hjust = 0)
 ```
 <img src="graph_image/ggplot1_7.png" width="960" />
 
-* geom_text_repel : plot에 직접 텍스트를 추가한다
+* geom_text_repel : plot에 직접 텍스트를 추가한다. 텍스트가 잘 보이는 위치에 알아서 그려줌으로 편리하다 
 ```r
 library(ggrepel)
 elections_historic %>% select(2:7)
@@ -663,10 +663,10 @@ p + geom_hline(yintercept = 0.5, size = 1.4, color = "gray80") +
 <img src="graph_image/ggplot1_8.png" width="960" />
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyMDI3Mzk1NiwtMTY3NjYwOTA2OSwtNj
-cxOTU5NzY4LDg1NDIzOTc3MSwxNTc1MDk2ODk3LDU3MTA3NTA3
-MiwxMzA2ODA3OTM5LC04MjUxNTkzOTMsMTExODgyMjMyMCwtMT
-g4OTc0NTQ3NSw1MDYxMTA3ODQsLTI2MTYzMjgyNiwxMzIwMTQ2
-MTQwLC0yOTM3NzM0NjgsNTYxMTI3NzYsLTEyMjU5NjIwNjMsLT
-E0NzU0MjcyOTAsMTM5MjI5MTkzLC0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbLTEzODAxMzc4ODEsLTE2NzY2MDkwNjksLT
+Y3MTk1OTc2OCw4NTQyMzk3NzEsMTU3NTA5Njg5Nyw1NzEwNzUw
+NzIsMTMwNjgwNzkzOSwtODI1MTU5MzkzLDExMTg4MjIzMjAsLT
+E4ODk3NDU0NzUsNTA2MTEwNzg0LC0yNjE2MzI4MjYsMTMyMDE0
+NjE0MCwtMjkzNzczNDY4LDU2MTEyNzc2LC0xMjI1OTYyMDYzLC
+0xNDc1NDI3MjkwLDEzOTIyOTE5MywtMjA4ODc0NjYxMl19
 -->
