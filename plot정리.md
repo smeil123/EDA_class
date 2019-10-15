@@ -307,13 +307,16 @@ p + geom_boxplot() + coord_flip()
 ```
 <img src="graph_image/ggplot_2.png" width="960" />
 
-* reorder를 통해서 
+* reorder를 통해서 순서대로 나열
 * x축의 이름을 없앰
 ```r
 p = ggplot(data = organdata, mapping = aes(x = reorder(country, donors, na.rm = TRUE), y = donors))
 p + geom_boxplot() + labs(x = NULL) + coord_flip()
 ```
 <img src="graph_image/ggplot_3.png" width="960" />
+
+* fill = world : 색을 다르게
+* 
 
 ```r
 p = ggplot(data = organdata,
@@ -324,8 +327,8 @@ p + geom_boxplot() + labs(x=NULL) +
 <img src="graph_image/ggplot_4.png" width="960" />
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1OTQ4MzA5MCw1MDYxMTA3ODQsLTI2MT
-YzMjgyNiwxMzIwMTQ2MTQwLC0yOTM3NzM0NjgsNTYxMTI3NzYs
-LTEyMjU5NjIwNjMsLTE0NzU0MjcyOTAsMTM5MjI5MTkzLC0yMD
-g4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbLTE4ODk3NDU0NzUsNTA2MTEwNzg0LC0yNj
+E2MzI4MjYsMTMyMDE0NjE0MCwtMjkzNzczNDY4LDU2MTEyNzc2
+LC0xMjI1OTYyMDYzLC0xNDc1NDI3MjkwLDEzOTIyOTE5MywtMj
+A4ODc0NjYxMl19
 -->
