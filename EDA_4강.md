@@ -13,9 +13,9 @@ xyplot(pressure ~ temperature)
 * y축이 가로로 나온다
 * x축 간격이 넓어진다
 * xyplot이 보기 좀 편리해지게 나온다
-* xyplot는 grid(격자)기반이기 때문에 그룹되 그래프를 그릴때 유용하다
+* xyplot는 grid(격자)기반이기 때문에 그룹화되어 그래프를 그릴때 유용하다
 
-* 각 함수마다 어떤 그래피인지
+* 각 함수마다 어떤 그래프인지
 	* bwplot() -> boxplot() 등등..
 
 ```
@@ -161,8 +161,8 @@ show.settings()
 * [https://statkclee.github.io/viz/viz-trellis.html](https://statkclee.github.io/viz/viz-trellis.html)
 * 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3MTA2MDU3Myw1NjYyNzUzMzgsOTA5OT
-A5MjIyLC0xODUxOTEwMDQyLC0xMDY3ODYzNTM5LDg2MzQwNDg2
-LDEyMTEzMzkzNzcsLTM5Nzg5NTA5MiwxOTY5NTA2NzA0LDg4NT
-Q2NjUzNV19
+eyJoaXN0b3J5IjpbLTE5NjgzNjE5MDEsLTQ3MTA2MDU3Myw1Nj
+YyNzUzMzgsOTA5OTA5MjIyLC0xODUxOTEwMDQyLC0xMDY3ODYz
+NTM5LDg2MzQwNDg2LDEyMTEzMzkzNzcsLTM5Nzg5NTA5MiwxOT
+Y5NTA2NzA0LDg4NTQ2NjUzNV19
 -->
