@@ -547,12 +547,19 @@ p + geom_point(size=3) +
 	* name : x 축 label
 	* breaks : 간격
 	* labels
-	* limits : xㅊ
+	* limits : x축 (시작, 끝)
+```r
+p <- ggplot(mtcars)
+
+p + geom_point(aes(x=disp,y=mpg)) +
+  scale_y_continuous(name="miles per gallon")+
+  scale_x_continuous(name="displacement (cu.in.)")
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5NTM3MDIwOSwxNTc1MDk2ODk3LDU3MT
-A3NTA3MiwxMzA2ODA3OTM5LC04MjUxNTkzOTMsMTExODgyMjMy
-MCwtMTg4OTc0NTQ3NSw1MDYxMTA3ODQsLTI2MTYzMjgyNiwxMz
-IwMTQ2MTQwLC0yOTM3NzM0NjgsNTYxMTI3NzYsLTEyMjU5NjIw
-NjMsLTE0NzU0MjcyOTAsMTM5MjI5MTkzLC0yMDg4NzQ2NjEyXX
-0=
+eyJoaXN0b3J5IjpbNDMxMDU1NTUwLDE1NzUwOTY4OTcsNTcxMD
+c1MDcyLDEzMDY4MDc5MzksLTgyNTE1OTM5MywxMTE4ODIyMzIw
+LC0xODg5NzQ1NDc1LDUwNjExMDc4NCwtMjYxNjMyODI2LDEzMj
+AxNDYxNDAsLTI5Mzc3MzQ2OCw1NjExMjc3NiwtMTIyNTk2MjA2
+MywtMTQ3NTQyNzI5MCwxMzkyMjkxOTMsLTIwODg3NDY2MTJdfQ
+==
 -->
