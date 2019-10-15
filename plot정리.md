@@ -344,13 +344,17 @@ p + geom_jitter() + labs(x=NULL) +
 ```
 <img src="graph_image/ggplot_6.png" width="960" />
 
+* position = position_jitter(width=0.15) : zitter 의 크기 조정
+
 ```r
 p + geom_jitter(position = position_jitter(width=0.15)) +
   labs(x=NULL) + coord_flip() + theme(legend.position = "top")
 ```
+<img src="graph_image/ggplot_7.png" width="960" />
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjY4MzUxNDcsLTE4ODk3NDU0NzUsNT
-A2MTEwNzg0LC0yNjE2MzI4MjYsMTMyMDE0NjE0MCwtMjkzNzcz
-NDY4LDU2MTEyNzc2LC0xMjI1OTYyMDYzLC0xNDc1NDI3MjkwLD
-EzOTIyOTE5MywtMjA4ODc0NjYxMl19
+eyJoaXN0b3J5IjpbMTExODgyMjMyMCwtMTg4OTc0NTQ3NSw1MD
+YxMTA3ODQsLTI2MTYzMjgyNiwxMzIwMTQ2MTQwLC0yOTM3NzM0
+NjgsNTYxMTI3NzYsLTEyMjU5NjIwNjMsLTE0NzU0MjcyOTAsMT
+M5MjI5MTkzLC0yMDg4NzQ2NjEyXX0=
 -->
