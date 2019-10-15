@@ -696,12 +696,23 @@ p + geom_point() +
 ```
 <img src="graph_image/ggplot1_11.png" width="960" />
 
+### annotate : 주석달기
+```r
+p = ggplot(data = organdata, mapping = aes(x = roads, y = donors))
+p + geom_point() + annotate(geom = "text", x = 91, y = 33,
+                            label = "A surprisingly high \n recovery rate.",
+                            hjust = 0)
+```
+
+```r
+
+``
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDQxODUzOTMsMTI5ODA1ODE3MiwtMT
-Y3NjYwOTA2OSwtNjcxOTU5NzY4LDg1NDIzOTc3MSwxNTc1MDk2
-ODk3LDU3MTA3NTA3MiwxMzA2ODA3OTM5LC04MjUxNTkzOTMsMT
-ExODgyMjMyMCwtMTg4OTc0NTQ3NSw1MDYxMTA3ODQsLTI2MTYz
-MjgyNiwxMzIwMTQ2MTQwLC0yOTM3NzM0NjgsNTYxMTI3NzYsLT
-EyMjU5NjIwNjMsLTE0NzU0MjcyOTAsMTM5MjI5MTkzLC0yMDg4
-NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbLTYzMjg2MzY5OSwxMjk4MDU4MTcyLC0xNj
+c2NjA5MDY5LC02NzE5NTk3NjgsODU0MjM5NzcxLDE1NzUwOTY4
+OTcsNTcxMDc1MDcyLDEzMDY4MDc5MzksLTgyNTE1OTM5MywxMT
+E4ODIyMzIwLC0xODg5NzQ1NDc1LDUwNjExMDc4NCwtMjYxNjMy
+ODI2LDEzMjAxNDYxNDAsLTI5Mzc3MzQ2OCw1NjExMjc3NiwtMT
+IyNTk2MjA2MywtMTQ3NTQyNzI5MCwxMzkyMjkxOTMsLTIwODg3
+NDY2MTJdfQ==
 -->
