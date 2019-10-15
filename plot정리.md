@@ -103,8 +103,41 @@ barplot(hotdogs$Dogs.eaten, names.arg=hotdogs$Year,
 <img src="graph_image/bar_4.png" width="960" />
 
 # Box Plot
+vector, list, dataframe의 데이터형을 그리고 표현할 수 있다
+``` r
+
+op <- par(no.readonly=TRUE)
+par(mfrow = c(2,2))
+# 데이터 생성
+set.seed(1)
+norm1 <- round(rnorm(100,3,2),digits=2) # 소수점 둘째자리
+set.seed(2)
+norm2 <- round(rnorm(100,3,3),digits=3)
+
+# (1) 데이터 형식 vector 1개 
+boxplot(norm1)
+title("boxplot of one vector")
+
+# (2) 데이터 형식 vector 2개 
+boxplot(norm1,norm2)
+title("boxplot of two vectors")
+
+# (3) 데이터 형식 list 
+list1 = list(data1=norm1, data2=norm2,
+            data3=rnorm(100,7,4))
+boxplot(list1)
+title("boxplot of simple list")
+
+# (4) 데이터 형식 dataframe
+dimnames(InsectSprays)
+dim(InsectSprays)
+boxplot(count~spray, data=InsectSprays, col="lightgray")
+title("boxplot of dataframe by formula")
+
+```
+<img src="graph_image/box_1.png" width="960" />
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjU5NjIwNjMsLTE0NzU0MjcyOTAsMT
-M5MjI5MTkzLC0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbLTE1MjQzNDAwMDMsLTEyMjU5NjIwNjMsLT
+E0NzU0MjcyOTAsMTM5MjI5MTkzLC0yMDg4NzQ2NjEyXX0=
 -->
