@@ -601,7 +601,7 @@ p + geom_point(aes(x=disp, y=mpg)) +
 <img src="graph_image/ggplot1_5.png" width="960" />
 
 ### geom_hline, geom_text
-* 라인과
+* 라인과 텍스트를 그리기 위한 데이터를 추가 생성
 ```r
 gcLimits <- data.frame(category=c("2WD car",
                         "4WD car",
@@ -619,8 +619,10 @@ p + geom_point(aes(x=disp, y=mpg))+
             aes(y=limit + .1, label=category),
             x=70, hjust=0, vjust=0, size=3)
 ```
+<img src="graph_image/ggplot1_6.png" width="960" />
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwNzk4MTUyMyw4NTQyMzk3NzEsMTU3NT
+eyJoaXN0b3J5IjpbLTY3MTk1OTc2OCw4NTQyMzk3NzEsMTU3NT
 A5Njg5Nyw1NzEwNzUwNzIsMTMwNjgwNzkzOSwtODI1MTU5Mzkz
 LDExMTg4MjIzMjAsLTE4ODk3NDU0NzUsNTA2MTEwNzg0LC0yNj
 E2MzI4MjYsMTMyMDE0NjE0MCwtMjkzNzczNDY4LDU2MTEyNzc2
