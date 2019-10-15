@@ -210,8 +210,9 @@ par(op)
 ```
 <img src="graph_image/dot_1.png" width="960" />
 
+### color 변경 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1NzM3MzU5Myw1NjExMjc3NiwtMTIyNT
+eyJoaXN0b3J5IjpbLTI5Mzc3MzQ2OCw1NjExMjc3NiwtMTIyNT
 k2MjA2MywtMTQ3NTQyNzI5MCwxMzkyMjkxOTMsLTIwODg3NDY2
 MTJdfQ==
 -->
