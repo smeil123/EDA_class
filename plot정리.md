@@ -774,12 +774,34 @@ p + geom_vline(xintercept = 2012) +
 ```
 <img src="graph_image/ggplot2_5.png" width="960" />
 
+### geom_bar + facet_grid
+```r
+p_lab = "Amount Owed, in thousand of Dollors" 
+p_title = "Outstanding Student Loans" 
+p_subtitle = "44 million borrowers owe a total ~" 
+p_caption = "Source: FRD NY" 
+f_labs = c(`Borrowers` = "Percept of\n all Borrowers", `Balances` = "Percent of \n all Balances")
+
+p + geom_bar(stat = "identity") + 
+  scale_fill_brewer(type = "qual", palette = "Dark2") +
+  scale_y_continuous(labels = scales::percent) + 
+  guides(fill=FALSE) +
+  theme(strip.text.x = element_text(face = "bold")) + 
+  labs(y = NULL, x = p_xlab, 
+       caption = p_caption, 
+       title = p_title,
+       subtitle = p_subtitle) +
+  facet_grid(~ type, labeller = as_labeller(f_labs)) +
+  coord_flip()
+```
+<img src="graph_image/ggplot2_6.png" width="960" />
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxOTAxNDAwNiwxOTM1NDQzNDc4LDEwMz
-U2MDcyMjIsLTg5MzI5OTMzMCwxMjk4MDU4MTcyLC0xNjc2NjA5
-MDY5LC02NzE5NTk3NjgsODU0MjM5NzcxLDE1NzUwOTY4OTcsNT
-cxMDc1MDcyLDEzMDY4MDc5MzksLTgyNTE1OTM5MywxMTE4ODIy
-MzIwLC0xODg5NzQ1NDc1LDUwNjExMDc4NCwtMjYxNjMyODI2LD
-EzMjAxNDYxNDAsLTI5Mzc3MzQ2OCw1NjExMjc3NiwtMTIyNTk2
-MjA2M119
+eyJoaXN0b3J5IjpbMTA0MDQ4MDQzNiwtNTE5MDE0MDA2LDE5Mz
+U0NDM0NzgsMTAzNTYwNzIyMiwtODkzMjk5MzMwLDEyOTgwNTgx
+NzIsLTE2NzY2MDkwNjksLTY3MTk1OTc2OCw4NTQyMzk3NzEsMT
+U3NTA5Njg5Nyw1NzEwNzUwNzIsMTMwNjgwNzkzOSwtODI1MTU5
+MzkzLDExMTg4MjIzMjAsLTE4ODk3NDU0NzUsNTA2MTEwNzg0LC
+0yNjE2MzI4MjYsMTMyMDE0NjE0MCwtMjkzNzczNDY4LDU2MTEy
+Nzc2XX0=
 -->
