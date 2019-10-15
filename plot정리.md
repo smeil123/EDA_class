@@ -8,7 +8,7 @@
 -   **“h”**: Histogram like (or high-density) vertical lines    
 -   **“n”**:  No plotting
 #### lty type
-<img src="graph_image/lty_ty.png" width="960" />
+<img src="graph_image/lty_type.png" width="960" />
 
 # barplot
 ## barplot(height, width=1, space=NULL)
@@ -364,7 +364,7 @@ xyplot(mpg~disp | factor(gear),data=mtcars,
 <img src="graph_image/xyplot_6.png" width="960" />
 
 ### panel
- * 그래프 안에 선넣기
+ * 그래프 abline 그리기 
 
 ```r
 xyplot(mpg ~ disp | factor(gear), data=mtcars,
@@ -379,8 +379,8 @@ xyplot(mpg ~ disp | factor(gear), data=mtcars,
 ```
 <img src="graph_image/xyplot_7.png" width="960" />
 
-**각 그래프마다 기울기 그리기**
-```
+* **각 그래프마다 기울기 그리기**
+```r
 xyplot(mpg ~ disp | factor(gear), data=mtcars,
        layout=c(3, 1), aspect=1,
        panel=function(x, y, ...) {
@@ -531,7 +531,7 @@ p + geom_point(size=3) +
 <img src="graph_image/ggplot_data_1.png" width="960" />
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjcxOTY0MzQxLC04MjUxNTkzOTMsMTExOD
+eyJoaXN0b3J5IjpbMzMxNTExMzMyLC04MjUxNTkzOTMsMTExOD
 gyMjMyMCwtMTg4OTc0NTQ3NSw1MDYxMTA3ODQsLTI2MTYzMjgy
 NiwxMzIwMTQ2MTQwLC0yOTM3NzM0NjgsNTYxMTI3NzYsLTEyMj
 U5NjIwNjMsLTE0NzU0MjcyOTAsMTM5MjI5MTkzLC0yMDg4NzQ2
