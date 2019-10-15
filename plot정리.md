@@ -681,6 +681,9 @@ p + geom_point() +
 ```
 <img src="graph_image/ggplot1_10.png" width="960" />
 
+* organdata$ind : 조건의 True/False
+* subset(organdata,ind) : ind가 True인 갑만 추출
+
 ```r
 organdata$ind <- organdata$ccode %in% c("Ita","Spa") & organdata$year > 1980
 p = ggplot(data=organdata,
@@ -694,7 +697,7 @@ p + geom_point() +
 <img src="graph_image/ggplot1_11.png" width="960" />
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzNjgwMzE2NSwxMjk4MDU4MTcyLC0xNj
+eyJoaXN0b3J5IjpbLTM1NjA0NTY2NCwxMjk4MDU4MTcyLC0xNj
 c2NjA5MDY5LC02NzE5NTk3NjgsODU0MjM5NzcxLDE1NzUwOTY4
 OTcsNTcxMDc1MDcyLDEzMDY4MDc5MzksLTgyNTE1OTM5MywxMT
 E4ODIyMzIwLC0xODg5NzQ1NDc1LDUwNjExMDc4NCwtMjYxNjMy
