@@ -543,9 +543,13 @@ p + geom_point(size=3) +
 <img src="graph_image/ggplot_data_1.png" width="960" />
 
 ##
-* c
+* sacle_x_continuous(name,breaks,labels,limits)
+	* name : x 축 label
+	* breaks : 간격
+	* labels
+	* limits : xㅊ
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1NDYyMTcxOCwxNTc1MDk2ODk3LDU3MT
+eyJoaXN0b3J5IjpbMTM5NTM3MDIwOSwxNTc1MDk2ODk3LDU3MT
 A3NTA3MiwxMzA2ODA3OTM5LC04MjUxNTkzOTMsMTExODgyMjMy
 MCwtMTg4OTc0NTQ3NSw1MDYxMTA3ODQsLTI2MTYzMjgyNiwxMz
 IwMTQ2MTQwLC0yOTM3NzM0NjgsNTYxMTI3NzYsLTEyMjU5NjIw
