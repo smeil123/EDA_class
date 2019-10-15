@@ -139,8 +139,11 @@ title("boxplot of dataframe by formula")
 
 ## subset
 * boxplot을 subset별로 실행하면 결과는 중첩되어 나온다
-* subset = 채ㅣ
+* subset = colname = group
+``` r
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4ODgzMjY4MCwtMTIyNTk2MjA2MywtMT
+eyJoaXN0b3J5IjpbLTQ3Njg2NTI3MCwtMTIyNTk2MjA2MywtMT
 Q3NTQyNzI5MCwxMzkyMjkxOTMsLTIwODg3NDY2MTJdfQ==
 -->
