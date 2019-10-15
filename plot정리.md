@@ -231,8 +231,13 @@ par(op)
 
 <img src="graph_image/dot_2.png" width="960" />
 
+# Pair
+## matplot, matpoints, matlines
+``` r
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyMDE0NjE0MCwtMjkzNzczNDY4LDU2MT
-EyNzc2LC0xMjI1OTYyMDYzLC0xNDc1NDI3MjkwLDEzOTIyOTE5
-MywtMjA4ODc0NjYxMl19
+eyJoaXN0b3J5IjpbMTA5Mzc2MTg0NiwxMzIwMTQ2MTQwLC0yOT
+M3NzM0NjgsNTYxMTI3NzYsLTEyMjU5NjIwNjMsLTE0NzU0Mjcy
+OTAsMTM5MjI5MTkzLC0yMDg4NzQ2NjEyXX0=
 -->
