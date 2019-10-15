@@ -412,9 +412,10 @@ xyplot(NOx ~ E | C, data = ethanol,
 <img src="graph_image/xyplot_9.png" width="960" />
 
 
-### 데이터에 level이 많을 때
-```
- level : 몇개의 범주가 있는지 확인
+### 데이터에 범주(level)이 많을 때
+*  level : 몇개의 범주가 있는지 확인
+* aperm : ㅡ
+```r 
 # paste 합치기
 packet <- outer(levels(barley$year), levels(barley$site), paste)
 as.vector(aperm(packet, 1:2)) # (1) prem.cond = 1:2인 경우의 패킷 순서
@@ -425,7 +426,6 @@ dotplot(variety ~ yield | year * site, data = barley, layout = c(6, 2),
         perm.cond = c(2, 1),
         main = "variety ~ yield | year * site, perm.cond = c(2, 1)
 ")
-
 ```
 
 ### splom
@@ -537,9 +537,9 @@ p + geom_point(size=3) +
 <img src="graph_image/ggplot_data_1.png" width="960" />
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTcxMDc1MDcyLDEzMDY4MDc5MzksLTgyNT
-E1OTM5MywxMTE4ODIyMzIwLC0xODg5NzQ1NDc1LDUwNjExMDc4
-NCwtMjYxNjMyODI2LDEzMjAxNDYxNDAsLTI5Mzc3MzQ2OCw1Nj
-ExMjc3NiwtMTIyNTk2MjA2MywtMTQ3NTQyNzI5MCwxMzkyMjkx
-OTMsLTIwODg3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbLTEyMDA3NTY1MjEsNTcxMDc1MDcyLDEzMD
+Y4MDc5MzksLTgyNTE1OTM5MywxMTE4ODIyMzIwLC0xODg5NzQ1
+NDc1LDUwNjExMDc4NCwtMjYxNjMyODI2LDEzMjAxNDYxNDAsLT
+I5Mzc3MzQ2OCw1NjExMjc3NiwtMTIyNTk2MjA2MywtMTQ3NTQy
+NzI5MCwxMzkyMjkxOTMsLTIwODg3NDY2MTJdfQ==
 -->
