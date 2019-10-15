@@ -325,16 +325,12 @@ xyplot(mpg~disp | factor(gear),data=mtcars,
 <img src="graph_image/xyplot_4.png" width="960" />
 
 
-### position argument
-#### lattice를 이용해서 여러개의 그래프 위치를 조정해가며 한번에 그릴 수 있다
+### position argument + subset
+##### lattice를 이용해서 여러개의 그래프 위치를 조정해가며 한번에 그릴 수 있다
 * subset + position
 * (left, bottom, right, top)
 * 화면을 나누지 않고 (par(mfrow ...)) 위치를 조정해서 여러개의 그래프를 그림 
 ```r
-## subset + potision
-# (left, bottom,right,top)
-# 화면을 나누지 않고 위치를 조정해서 여러개의 그래프를 그릴 수 있다
-
 plot1 <- xyplot(mpg~disp,data=mtcars,
                 aspect=1,xlim=c(65,480),ylim=c(9,35),
                 subset=gear==5)
@@ -351,6 +347,7 @@ print(plot1, position=c(0, 2/3, 1, 1), more=TRUE)
 print(plot2, position=c(0, 1/3, 1, 2/3), more=TRUE)
 print(plot3, position=c(0, 0, 1, 1/3))
 ```
+<img src="graph_image/xyplot_5.png" width="960" />
 
 ### y축 scale
 ```
@@ -525,9 +522,9 @@ p + geom_point(size=3) +
 <img src="graph_image/ggplot_data_1.png" width="960" />
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjU2ODcyNzUsLTgyNTE1OTM5MywxMTE4OD
-IyMzIwLC0xODg5NzQ1NDc1LDUwNjExMDc4NCwtMjYxNjMyODI2
-LDEzMjAxNDYxNDAsLTI5Mzc3MzQ2OCw1NjExMjc3NiwtMTIyNT
-k2MjA2MywtMTQ3NTQyNzI5MCwxMzkyMjkxOTMsLTIwODg3NDY2
-MTJdfQ==
+eyJoaXN0b3J5IjpbMTY2MDEyOTIxMSwtODI1MTU5MzkzLDExMT
+g4MjIzMjAsLTE4ODk3NDU0NzUsNTA2MTEwNzg0LC0yNjE2MzI4
+MjYsMTMyMDE0NjE0MCwtMjkzNzczNDY4LDU2MTEyNzc2LC0xMj
+I1OTYyMDYzLC0xNDc1NDI3MjkwLDEzOTIyOTE5MywtMjA4ODc0
+NjYxMl19
 -->
