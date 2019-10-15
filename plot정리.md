@@ -432,8 +432,8 @@ dotplot(variety ~ yield | year * site, data = barley, layout = c(6, 2),
 <img src="graph_image/dotplot_1.png" width="960" />
 
 ### splom
-scatterplot을 그려준다
-```
+* scatterplot을 그려준다
+```r
 trellis.par.set(theme = col.whitebg())
 super.sym <- trellis.par.get("superpose.symbol")
 splom(~iris[1:4], groups = Species, data = iris,
@@ -540,7 +540,7 @@ p + geom_point(size=3) +
 <img src="graph_image/ggplot_data_1.png" width="960" />
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3MjU2ODU0NSw1NzEwNzUwNzIsMTMwNj
+eyJoaXN0b3J5IjpbMTUxMTk4NTc1MSw1NzEwNzUwNzIsMTMwNj
 gwNzkzOSwtODI1MTU5MzkzLDExMTg4MjIzMjAsLTE4ODk3NDU0
 NzUsNTA2MTEwNzg0LC0yNjE2MzI4MjYsMTMyMDE0NjE0MCwtMj
 kzNzczNDY4LDU2MTEyNzc2LC0xMjI1OTYyMDYzLC0xNDc1NDI3
