@@ -352,6 +352,8 @@ p + geom_jitter(position = position_jitter(width=0.15)) +
 ```
 <img src="graph_image/ggplot_7.png" width="960" />
 
+* 데이터의 변형이 필요하다 
+
 ```r
 by_country = organdata %>% group_by(consent_law, country) %>%
   summarize_if(is.numeric, funs(mean, sd), na.rm = TRUE) %>%
@@ -367,9 +369,11 @@ p + geom_point(size=3) +
        y = "", color = "Consent Law") +
   theme(legend.position="top")
 ```
+<img src="graph_image/ggplot_8.png" width="960" />
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0NDQ3NTEzMiwxMTE4ODIyMzIwLC0xOD
-g5NzQ1NDc1LDUwNjExMDc4NCwtMjYxNjMyODI2LDEzMjAxNDYx
-NDAsLTI5Mzc3MzQ2OCw1NjExMjc3NiwtMTIyNTk2MjA2MywtMT
-Q3NTQyNzI5MCwxMzkyMjkxOTMsLTIwODg3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbOTgwMjAwNzE4LDExMTg4MjIzMjAsLTE4OD
+k3NDU0NzUsNTA2MTEwNzg0LC0yNjE2MzI4MjYsMTMyMDE0NjE0
+MCwtMjkzNzczNDY4LDU2MTEyNzc2LC0xMjI1OTYyMDYzLC0xND
+c1NDI3MjkwLDEzOTIyOTE5MywtMjA4ODc0NjYxMl19
 -->
