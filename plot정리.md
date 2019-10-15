@@ -185,7 +185,33 @@ rownames(month) <- paste("Row", 1:4)
 colnames(month) <- paste("Col",1:3)
 ```
 <img src="graph_image/dot_data1.png" width="960" />
+
+```r
+#(1) 벡터
+dotchart(as.vector(month),label=month.abb)
+title(main="x is a vector")
+
+#(2) 행렬
+dotchart(month)
+title(main = "x is a matrix")
+
+#(3) group
+# row 별로 그룹화하고 그룹명 설정
+quarter.name <- c("1QT","2QT","3QT","4QT")
+quarter <- factor(row(month),label=quarter.name)
+quarter
+dotchart(month, groups = quarter)
+title(main = "groups = quarter")
+#(4) groups, labels
+name <- c("1st", "2nd", "3rd")
+dotchart(month, groups = quarter, labels = name)
+title(main = "groups = quarter, labels = name")
+par(op)
+```
+<img src="graph_image/dot_1.png" width="960" />
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTYxMTI3NzYsLTEyMjU5NjIwNjMsLTE0Nz
-U0MjcyOTAsMTM5MjI5MTkzLC0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbMTA1NzM3MzU5Myw1NjExMjc3NiwtMTIyNT
+k2MjA2MywtMTQ3NTQyNzI5MCwxMzkyMjkxOTMsLTIwODg3NDY2
+MTJdfQ==
 -->
