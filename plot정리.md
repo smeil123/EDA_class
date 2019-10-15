@@ -743,12 +743,29 @@ cowplot::plot_grid(p1,p2,nrow=2,rel_heightts = c(0.75,0.25),align="v")
 
 
 
+### geom_path
+* scale_x_continuous 를 이용해서 축의 단위를 바꿀 수 있다
+```r
+head(yahoo)
+p <- ggplot(data=yahoo, aes(x=Employees, y=Revenue))
+p + geom_path(color="gray80") +
+  geom_text(aes(color=Mayer, label=Year),
+            size=5,fontface="bold")+
+  theme(legend.position="bottom")+
+  labs(color = "Mayer is CEO",
+       x = "Employess", y="Revenue(Million)",
+       title = "Yahoo Employees vs Revenues, 2004-2014")+
+  scale_x_continuous(labels = scales::dollar)+
+  scale_y_continuous(labels = scales::comma)
+```
+<img src="graph_image/ggplot2_4.png" width="960" />
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0MDkwNDk0NiwxOTM1NDQzNDc4LDEwMz
-U2MDcyMjIsLTg5MzI5OTMzMCwxMjk4MDU4MTcyLC0xNjc2NjA5
-MDY5LC02NzE5NTk3NjgsODU0MjM5NzcxLDE1NzUwOTY4OTcsNT
-cxMDc1MDcyLDEzMDY4MDc5MzksLTgyNTE1OTM5MywxMTE4ODIy
-MzIwLC0xODg5NzQ1NDc1LDUwNjExMDc4NCwtMjYxNjMyODI2LD
-EzMjAxNDYxNDAsLTI5Mzc3MzQ2OCw1NjExMjc3NiwtMTIyNTk2
-MjA2M119
+eyJoaXN0b3J5IjpbNTU3OTUwMDA1LDE5MzU0NDM0NzgsMTAzNT
+YwNzIyMiwtODkzMjk5MzMwLDEyOTgwNTgxNzIsLTE2NzY2MDkw
+NjksLTY3MTk1OTc2OCw4NTQyMzk3NzEsMTU3NTA5Njg5Nyw1Nz
+EwNzUwNzIsMTMwNjgwNzkzOSwtODI1MTU5MzkzLDExMTg4MjIz
+MjAsLTE4ODk3NDU0NzUsNTA2MTEwNzg0LC0yNjE2MzI4MjYsMT
+MyMDE0NjE0MCwtMjkzNzczNDY4LDU2MTEyNzc2LC0xMjI1OTYy
+MDYzXX0=
 -->
