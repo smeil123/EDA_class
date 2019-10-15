@@ -254,8 +254,22 @@ par(op)
 ```
 <img src="graph_image/pair_1.png" width="960" />
 
+**크기,색상**
+```r
+op <- par(no.readonly = TRUE)
+par(mfrow = c(2, 2))
+matplot(mat, type = "lSo", main = "type = \"lSo\"")
+matplot(mat, type = c("l","S","o"), main = "type = c(\"l\", \"S\", \"o\")")
+matplot(mat, col = c("red","blue","green"), cex = c(1, 1.2, 1.4))
+title(main = "c(\"red\", \"blue\", \"green\"), cex=c(1, 1.2, 1.4)")
+matplot(mat, type = "l", lty = 3:5, lwd = 1:3)
+title(main = "lty = 3:5, lwd = 1:3")
+par(op)
+```
+<img src="graph_image/pair_2.png" width="960" />
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzczMjM0OSwxMzIwMTQ2MTQwLC0yOT
-M3NzM0NjgsNTYxMTI3NzYsLTEyMjU5NjIwNjMsLTE0NzU0Mjcy
-OTAsMTM5MjI5MTkzLC0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbNjc0MjM4NTQ0LDEzMjAxNDYxNDAsLTI5Mz
+c3MzQ2OCw1NjExMjc3NiwtMTIyNTk2MjA2MywtMTQ3NTQyNzI5
+MCwxMzkyMjkxOTMsLTIwODg3NDY2MTJdfQ==
 -->
