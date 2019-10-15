@@ -352,9 +352,24 @@ p + geom_jitter(position = position_jitter(width=0.15)) +
 ```
 <img src="graph_image/ggplot_7.png" width="960" />
 
+```r
+by_country = organdata %>% group_by(consent_law, country) %>%
+  summarize_if(is.numeric, funs(mean, sd), na.rm = TRUE) %>%
+  ungroup()
+
+by_country
+p = ggplot(data = by_country,
+           mapping = aes(x = donors_mean, y = reorder(country, donors_mean),
+                         color = consent_law))
+
+p + geom_point(size=3) +
+  labs(x = "Donor Procurement Rate",
+       y = "", color = "Consent Law") +
+  theme(legend.position="top")
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExODgyMjMyMCwtMTg4OTc0NTQ3NSw1MD
-YxMTA3ODQsLTI2MTYzMjgyNiwxMzIwMTQ2MTQwLC0yOTM3NzM0
-NjgsNTYxMTI3NzYsLTEyMjU5NjIwNjMsLTE0NzU0MjcyOTAsMT
-M5MjI5MTkzLC0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbLTY0NDQ3NTEzMiwxMTE4ODIyMzIwLC0xOD
+g5NzQ1NDc1LDUwNjExMDc4NCwtMjYxNjMyODI2LDEzMjAxNDYx
+NDAsLTI5Mzc3MzQ2OCw1NjExMjc3NiwtMTIyNTk2MjA2MywtMT
+Q3NTQyNzI5MCwxMzkyMjkxOTMsLTIwODg3NDY2MTJdfQ==
 -->
