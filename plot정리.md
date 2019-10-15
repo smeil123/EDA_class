@@ -681,11 +681,22 @@ p + geom_point() +
 ```
 <img src="graph_image/ggplot1_10.png" width="960" />
 
+```r
+organdata$ind <- organdata$ccode %in% c("Ita","Spa") & organdata$year > 1980
+p = ggplot(data=organdata,
+           mapping = aes(x=roads,
+                         y=donors,color=ind))
+p + geom_point() + 
+  geom_text_repel(data=subset(organdata,ind),
+                  mapping =aes(label=ccode))+
+  guides(label=FALSE,color=FALSE)
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5ODA1ODE3MiwtMTY3NjYwOTA2OSwtNj
-cxOTU5NzY4LDg1NDIzOTc3MSwxNTc1MDk2ODk3LDU3MTA3NTA3
-MiwxMzA2ODA3OTM5LC04MjUxNTkzOTMsMTExODgyMjMyMCwtMT
-g4OTc0NTQ3NSw1MDYxMTA3ODQsLTI2MTYzMjgyNiwxMzIwMTQ2
-MTQwLC0yOTM3NzM0NjgsNTYxMTI3NzYsLTEyMjU5NjIwNjMsLT
-E0NzU0MjcyOTAsMTM5MjI5MTkzLC0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbLTIxMDcwNDIxMzEsMTI5ODA1ODE3MiwtMT
+Y3NjYwOTA2OSwtNjcxOTU5NzY4LDg1NDIzOTc3MSwxNTc1MDk2
+ODk3LDU3MTA3NTA3MiwxMzA2ODA3OTM5LC04MjUxNTkzOTMsMT
+ExODgyMjMyMCwtMTg4OTc0NTQ3NSw1MDYxMTA3ODQsLTI2MTYz
+MjgyNiwxMzIwMTQ2MTQwLC0yOTM3NzM0NjgsNTYxMTI3NzYsLT
+EyMjU5NjIwNjMsLTE0NzU0MjcyOTAsMTM5MjI5MTkzLC0yMDg4
+NzQ2NjEyXX0=
 -->
