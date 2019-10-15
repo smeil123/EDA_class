@@ -637,6 +637,8 @@ p = ggplot(data = by_country,
 p + geom_point() + geom_text(mapping = aes(label = country), hjust = 0)
 
 ```
+<img src="graph_image/ggplot1_7.png" width="960" />
+
 * geom_text_repel : plot에 직접 텍스트를 추가한다
 ```r
 library(ggrepel)
@@ -658,8 +660,10 @@ p + geom_hline(yintercept = 0.5, size = 1.4, color = "gray80") +
   labs(x = x_label, y = y_label, title = p_title, subtitle = p_subtitle,
        caption = p_caption)
 ```
+<img src="graph_image/ggplot1_8.png" width="960" />
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2NjE1ODQzNywtMTY3NjYwOTA2OSwtNj
+eyJoaXN0b3J5IjpbMjAyMDI3Mzk1NiwtMTY3NjYwOTA2OSwtNj
 cxOTU5NzY4LDg1NDIzOTc3MSwxNTc1MDk2ODk3LDU3MTA3NTA3
 MiwxMzA2ODA3OTM5LC04MjUxNTkzOTMsMTExODgyMjMyMCwtMT
 g4OTc0NTQ3NSw1MDYxMTA3ODQsLTI2MTYzMjgyNiwxMzIwMTQ2
