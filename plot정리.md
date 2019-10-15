@@ -566,9 +566,18 @@ p + geom_point(aes(x=disp, y=mpg)) +
 ```
 <img src="graph_image/ggplot1_2.png" width="960" />
 
-* coord_trans 추가
+* coord_trans : 값을 수치변환한다
+```r
+p + geom_point(aes(x=disp, y=mpg)) +
+  scale_x_continuous(trans="log") +
+  scale_y_continuous(trans="log") +
+  geom_line(aes(x=disp, y=mpg), stat="smooth",method="lm") +
+  coord_trans(x="exp", y="exp")
+```
+<img src="graph_image/ggplot1_3.png" width="960" />
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5MTg2MjU2Myw4NTQyMzk3NzEsMTU3NT
+eyJoaXN0b3J5IjpbMTc5NDgxMDY1MCw4NTQyMzk3NzEsMTU3NT
 A5Njg5Nyw1NzEwNzUwNzIsMTMwNjgwNzkzOSwtODI1MTU5Mzkz
 LDExMTg4MjIzMjAsLTE4ODk3NDU0NzUsNTA2MTEwNzg0LC0yNj
 E2MzI4MjYsMTMyMDE0NjE0MCwtMjkzNzczNDY4LDU2MTEyNzc2
