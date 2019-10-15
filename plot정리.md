@@ -350,11 +350,13 @@ print(plot3, position=c(0, 0, 1, 1/3))
 <img src="graph_image/xyplot_5.png" width="960" />
 
 ### y축 scale
+* y축을 10~30 으로
 ```
 xyplot(mpg~disp | factor(gear),data=mtcars,
        layout=c(3,1),aspect=1,
        scales = list(y=list(at=seq(10,30,10))))
 ```
+<img src="graph_image/xyplot_6.png" width="960" />
 
 ### panel
  그래프 안에 선넣기
@@ -522,9 +524,9 @@ p + geom_point(size=3) +
 <img src="graph_image/ggplot_data_1.png" width="960" />
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2MDEyOTIxMSwtODI1MTU5MzkzLDExMT
-g4MjIzMjAsLTE4ODk3NDU0NzUsNTA2MTEwNzg0LC0yNjE2MzI4
-MjYsMTMyMDE0NjE0MCwtMjkzNzczNDY4LDU2MTEyNzc2LC0xMj
-I1OTYyMDYzLC0xNDc1NDI3MjkwLDEzOTIyOTE5MywtMjA4ODc0
-NjYxMl19
+eyJoaXN0b3J5IjpbNzIzNDczNjQxLC04MjUxNTkzOTMsMTExOD
+gyMjMyMCwtMTg4OTc0NTQ3NSw1MDYxMTA3ODQsLTI2MTYzMjgy
+NiwxMzIwMTQ2MTQwLC0yOTM3NzM0NjgsNTYxMTI3NzYsLTEyMj
+U5NjIwNjMsLTE0NzU0MjcyOTAsMTM5MjI5MTkzLC0yMDg4NzQ2
+NjEyXX0=
 -->
