@@ -394,7 +394,7 @@ xyplot(mpg ~ disp | factor(gear), data=mtcars,
 panel 크기를 조절한다.
 * aspect = xy 가 데이터를 외곡되게 보여줄 수 있다
 * 45도가 왜곡주지 않고 사람들이 제대로 인식할 수 있는데 이를 prepanel이 잡아준다
-```
+```r
 xyplot(NOx ~ E | C, data = ethanol,
        prepanel = function(x, y) prepanel.loess(x, y),
        panel = function(x, y) {
@@ -406,6 +406,7 @@ xyplot(NOx ~ E | C, data = ethanol,
        main = "prepanel = function(x, y)
        prepanel.loess(x, y)")
 ```
+<img src="graph_image/xyplot_9.png" width="960" />
 
 ### 데이터에 level이 많을 때
 ```
@@ -532,9 +533,9 @@ p + geom_point(size=3) +
 <img src="graph_image/ggplot_data_1.png" width="960" />
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwNjgwNzkzOSwtODI1MTU5MzkzLDExMT
-g4MjIzMjAsLTE4ODk3NDU0NzUsNTA2MTEwNzg0LC0yNjE2MzI4
-MjYsMTMyMDE0NjE0MCwtMjkzNzczNDY4LDU2MTEyNzc2LC0xMj
-I1OTYyMDYzLC0xNDc1NDI3MjkwLDEzOTIyOTE5MywtMjA4ODc0
-NjYxMl19
+eyJoaXN0b3J5IjpbMTk1NDMxNjk2MiwxMzA2ODA3OTM5LC04Mj
+UxNTkzOTMsMTExODgyMjMyMCwtMTg4OTc0NTQ3NSw1MDYxMTA3
+ODQsLTI2MTYzMjgyNiwxMzIwMTQ2MTQwLC0yOTM3NzM0NjgsNT
+YxMTI3NzYsLTEyMjU5NjIwNjMsLTE0NzU0MjcyOTAsMTM5MjI5
+MTkzLC0yMDg4NzQ2NjEyXX0=
 -->
