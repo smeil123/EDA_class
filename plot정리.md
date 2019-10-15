@@ -211,9 +211,25 @@ par(op)
 <img src="graph_image/dot_1.png" width="960" />
 
 ### color 변경 
-* gdata : 그룹의 데이터의 요약값을 넣을 수 있다
+* gdata : 그룹의 데이터의 요약값을 넣을 수 있다 ( gdata를 쓰면 축이 사라진다?)
+``` r
+op <- par(no.readonly = TRUE)
+par(mfrow = c(2, 2))
+dotchart(month, cex = 1.1, bg = "red")
+title(main = "bg = \"red\"")
+
+dotchart(month, cex = 1.1, bg = "red", color = "blue")
+title(main = "bg = \"red\", color = \"blue\"")
+
+dotchart(month, cex = 1.1, color = "red", gcolor = "blue", groups = quarter,gdata = gmean)
+title(main = "color = \"red\", gcolor = \"blue\"")
+
+dotchart(month, cex = 1.1, lcolor = "red", gcolor = "blue", groups = quarter,gdata = gmean)
+title(main = "lcolor = \"red\", gcolor = \"blue\"")
+par(op)
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzgxMDIyNjgsLTI5Mzc3MzQ2OCw1Nj
-ExMjc3NiwtMTIyNTk2MjA2MywtMTQ3NTQyNzI5MCwxMzkyMjkx
-OTMsLTIwODg3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbMTU3MjM2NDg1NSwtMjkzNzczNDY4LDU2MT
+EyNzc2LC0xMjI1OTYyMDYzLC0xNDc1NDI3MjkwLDEzOTIyOTE5
+MywtMjA4ODc0NjYxMl19
 -->
