@@ -584,7 +584,7 @@ p + geom_point(aes(x=disp,y=mpg)) + facet_wrap(~gear,nrow=1)
 <img src="graph_image/ggplot1_4.png" width="960" />
 
 ### theme 옵션
-* them_bw
+* them_bw() : 배경색이 반전된다(하얀색)
 * element_text 
 * element_blank() : 이름을 비워둔다 
 * labs로 title작성
@@ -601,7 +601,7 @@ p + geom_point(aes(x=disp, y=mpg)) +
 <img src="graph_image/ggplot1_5.png" width="960" />
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDgyOTUyMDcsODU0MjM5NzcxLDE1Nz
+eyJoaXN0b3J5IjpbLTE4NDMxNzA1MTgsODU0MjM5NzcxLDE1Nz
 UwOTY4OTcsNTcxMDc1MDcyLDEzMDY4MDc5MzksLTgyNTE1OTM5
 MywxMTE4ODIyMzIwLC0xODg5NzQ1NDc1LDUwNjExMDc4NCwtMj
 YxNjMyODI2LDEzMjAxNDYxNDAsLTI5Mzc3MzQ2OCw1NjExMjc3
