@@ -729,9 +729,20 @@ p + geom_point() +
 ```
 <img src="graph_image/ggplot1_12.png" width="960" />
 
-####
+### 그래프 여러개 그리기 : plot_grid
+```r
+p <- ggplot(data=practice, aes(x=no,y=pm10))
+p <- p + geom_line() + labs(x="Date",y="PM10")
+p <- ggplot(data=practice, aes(x=no,y=n_article))
+p <- p + geom_line() + labs(x="Date",y="# of News Article")
+
+library(cowplot)
+cowplot::plot_grid(p1,p2,nrow=2,rel_heightts = c(0.75,0.25),align="v")
+```
+<img src="graph_image/ggplot2_3.png" width="960" />
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0NDc0MTAyOCwxMDM1NjA3MjIyLC04OT
+eyJoaXN0b3J5IjpbMTkzNTQ0MzQ3OCwxMDM1NjA3MjIyLC04OT
 MyOTkzMzAsMTI5ODA1ODE3MiwtMTY3NjYwOTA2OSwtNjcxOTU5
 NzY4LDg1NDIzOTc3MSwxNTc1MDk2ODk3LDU3MTA3NTA3MiwxMz
 A2ODA3OTM5LC04MjUxNTkzOTMsMTExODgyMjMyMCwtMTg4OTc0
