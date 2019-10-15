@@ -41,7 +41,7 @@ barplot(bar.y, beside=TRUE,space = c(0.5,2))
 title(main="Vector Barplot by space=c(0.5,2)")
 
 ```
-<img src="graph_image/bar_1.png" width="960" />
+<img src="graph_image/bar_1.PNG" width="960" />
 
 ## barplot(height, names.arg, legend.text )
 
