@@ -582,7 +582,16 @@ p + geom_point() + scale_x_log10() +
   scale_y_continuous(breaks = c(5,15, 25),
                      labels = c("Five", "Fifteen","Twenty Five"))
 ```
-<img src="graph_image/ggplot1_13.png" width="960" />
+<img src="graph_image/ggplot2_13.png" width="960" />
+
+#### 범례 이름 변경
+```r
+p + geom_point() +
+  scale_color_discrete(labels = c("Corporatist","Liberal", "Social Democratic", "Unclassified")) +
+  labs(x = "Road Deaths",y = "Donor Procurement", color = "Welfare State")
+```
+<img src="graph_image/ggplot2_1.png" width="960" />
+
 
 
 ### 그룹간 비교 : facet_wrap
@@ -716,11 +725,11 @@ p + geom_point() +
 <img src="graph_image/ggplot1_12.png" width="960" />
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5MzI5OTMzMCwxMjk4MDU4MTcyLC0xNj
-c2NjA5MDY5LC02NzE5NTk3NjgsODU0MjM5NzcxLDE1NzUwOTY4
-OTcsNTcxMDc1MDcyLDEzMDY4MDc5MzksLTgyNTE1OTM5MywxMT
-E4ODIyMzIwLC0xODg5NzQ1NDc1LDUwNjExMDc4NCwtMjYxNjMy
-ODI2LDEzMjAxNDYxNDAsLTI5Mzc3MzQ2OCw1NjExMjc3NiwtMT
-IyNTk2MjA2MywtMTQ3NTQyNzI5MCwxMzkyMjkxOTMsLTIwODg3
-NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbMTk5MDgxMDA3LC04OTMyOTkzMzAsMTI5OD
+A1ODE3MiwtMTY3NjYwOTA2OSwtNjcxOTU5NzY4LDg1NDIzOTc3
+MSwxNTc1MDk2ODk3LDU3MTA3NTA3MiwxMzA2ODA3OTM5LC04Mj
+UxNTkzOTMsMTExODgyMjMyMCwtMTg4OTc0NTQ3NSw1MDYxMTA3
+ODQsLTI2MTYzMjgyNiwxMzIwMTQ2MTQwLC0yOTM3NzM0NjgsNT
+YxMTI3NzYsLTEyMjU5NjIwNjMsLTE0NzU0MjcyOTAsMTM5MjI5
+MTkzXX0=
 -->
