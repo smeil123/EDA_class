@@ -8,7 +8,7 @@
 -   **“h”**: Histogram like (or high-density) vertical lines    
 -   **“n”**:  No plotting
 #### lty type
-<img src="/graph_image/lty_type.PNG" width="960" />
+<img src="/graph_image/lty_type.PNG"/>
 
 # barplot
 ## barplot(height, width=1, space=NULL)
@@ -41,7 +41,7 @@ barplot(bar.y, beside=TRUE,space = c(0.5,2))
 title(main="Vector Barplot by space=c(0.5,2)")
 
 ```
-<img src="graph_image/bar_1.PNG" width="960" />
+<img src="graph_image/bar_1.PNG"/>
 
 ## barplot(height, names.arg, legend.text )
 
@@ -65,7 +65,7 @@ title(main = "Matrix Barplot using legend.text = T")
 par(op)
 
 ```
-<img src="graph_image/bar_2.png" width="960" />
+<img src="graph_image/bar_2.PNG"/>
 ```
 bar.y의 데이터
      col 1 col 2 col 3
@@ -103,7 +103,7 @@ title(main = "matrix Barplot by col,border")
 
 par(op)
 ```
-<img src="graph_image/bar_3.png" width="960" />
+<img src="graph_image/bar_3.PNG"/>
 
 ```r
 hotdogs <- read.csv("http://datasets.flowingdata.com/hot-dog-contest-winners.csv",sep=",",header=T)
@@ -113,7 +113,7 @@ barplot(hotdogs$Dogs.eaten, names.arg=hotdogs$Year,
         xlab="Year",ylab="Hot Dogs and buns ...")
 
 ```
-<img src="graph_image/bar_4.png" width="960" />
+<img src="graph_image/bar_4.PNG"/>
 
 # Box Plot
 vector, list, dataframe의 데이터형을 그리고 표현할 수 있다
@@ -148,7 +148,7 @@ boxplot(count~spray, data=InsectSprays, col="lightgray")
 title("boxplot of dataframe by formula")
 
 ```
-<img src="graph_image/box_1.png" width="960" />
+<img src="graph_image/box_1.PNG"/>
 
 ## subset
 * boxplot을 subset별로 실행하면 결과는 중첩되어 나온다(add=Tru
@@ -163,7 +163,7 @@ boxplot(len~dose, data=ToothGrowth, add=TRUE, boxwex=0.25, at = 1:3 + 0.2,
         subset = supp == "OJ", col = "orange")
 legend(2,9,c("Ascorbic acid","Orange juice"),fill=c("yellow","orange"))
 ```
-<img src="graph_image/box_2.png" width="960" />
+<img src="graph_image/box_2.PNG"/>
 
 ### 예제파일
 ```r
@@ -179,14 +179,14 @@ boxplot(G2~G1, data = test_data, boxwex = 0.25, at=1:11 + 0.2,
         staplewex=0.5)
 
 ```
-<img src="graph_image/box_3.png" width="960" />
+<img src="graph_image/box_3.PNG"/>
 
 * 위의 데이터를 이용하면 botplot으로 나오지 않는다
 * 이유) x축값이 범주형 데이터가 아니기 때문에
 * test2를 ToothGrowth 형태를 보고 왜 안되는지 이해
 * ToothGrowth를 보면 dose와 supp가 고정되어 있고 len값을 가지는 형태이다
-<img src="graph_image/box_data_1.png" width="960" />
-<img src="graph_image/box_data_2.png" width="960" />
+<img src="graph_image/box_data_1.PNG"/>
+<img src="graph_image/box_data_2.PNG"/>
 
 # Dot chart
 **데이터생성**
@@ -197,7 +197,7 @@ month <- matrix(1:12,ncol=3)
 rownames(month) <- paste("Row", 1:4)
 colnames(month) <- paste("Col",1:3)
 ```
-<img src="graph_image/dot_data1.png" width="960" />
+<img src="graph_image/dot_data1.PNG"/>
 
 ```r
 #(1) 벡터
@@ -221,7 +221,7 @@ dotchart(month, groups = quarter, labels = name)
 title(main = "groups = quarter, labels = name")
 par(op)
 ```
-<img src="graph_image/dot_1.png" width="960" />
+<img src="graph_image/dot_1.PNG"/>
 
 ### color 변경 
 * gdata : 그룹의 데이터의 요약값을 넣을 수 있다 ( gdata를 쓰면 축이 사라진다?)
@@ -242,7 +242,7 @@ title(main = "lcolor = \"red\", gcolor = \"blue\"")
 par(op)
 ```
 
-<img src="graph_image/dot_2.png" width="960" />
+<img src="graph_image/dot_2.PNG"/>
 
 # Pair
 ## matplot, matpoints, matlines
@@ -265,7 +265,7 @@ matlines(mat)
 matpoints(mat)
 par(op)
 ```
-<img src="graph_image/pair_1.png" width="960" />
+<img src="graph_image/pair_1.PNG"/>
 
 **크기,색상**
 ```r
@@ -279,7 +279,7 @@ matplot(mat, type = "l", lty = 3:5, lwd = 1:3)
 title(main = "lty = 3:5, lwd = 1:3")
 par(op)
 ```
-<img src="graph_image/pair_2.png" width="960" />
+<img src="graph_image/pair_2.PNG"/>
 
 ## pairs()
 ```r
@@ -288,14 +288,14 @@ pairs(~Fertility + Education + Catholic, data=swiss,
       col = 1 + (swiss$Agriculture > 50),cex=1.2,
       pch = 1 + (swiss$Agriculture>50))
 ```
-<img src="graph_image/pair_3.png" width="960" />
+<img src="graph_image/pair_3.PNG"/>
 
 
 ```r
 pairs(iris[1:4], main = "Anderson's Iris Data--3 species",
       pch = 21, bg = c("red", "green3","blue")[unclass(iris$Species)])
 ```
-<img src="graph_image/pair_4.png" width="960" />
+<img src="graph_image/pair_4.PNG"/>
 
 # Lattice
 ## xyplot
@@ -304,14 +304,14 @@ library(lattice)
 head(mtcars)
 xyplot(mpg ~ disp, data=mtcars)
 ```
-<img src="graph_image/xyplot_1.png" width="960" />
+<img src="graph_image/xyplot_1.PNG"/>
 
 * gear에 따라서 그래프를 그리도록 조건을 줄 수 있다
 * gear를 factor형으로 변환해서 나눔
 ```r
 xyplot(mpg ~ disp | factor(gear), data=mtcars)
 ```
-<img src="graph_image/xyplot_2.png" width="960" />
+<img src="graph_image/xyplot_2.PNG"/>
 
 * 범례 위치 조정
 ```r
@@ -319,7 +319,7 @@ xyplot(mpg~disp,data=mtcars,
        group=gear,
        auto.key=list(space="right")) # 범례를 오른쪽으로 밀어버림
 ```
-<img src="graph_image/xyplot_3.png" width="960" />
+<img src="graph_image/xyplot_3.PNG"/>
 
 * layout
 * aspect : 그래프 너비 조정
@@ -327,7 +327,7 @@ xyplot(mpg~disp,data=mtcars,
 xyplot(mpg~disp | factor(gear),data=mtcars,
        layout = c(1,3),aspect=1)
 ```
-<img src="graph_image/xyplot_4.png" width="960" />
+<img src="graph_image/xyplot_4.PNG"/>
 
 
 ### position argument + subset
@@ -352,7 +352,7 @@ print(plot1, position=c(0, 2/3, 1, 1), more=TRUE)
 print(plot2, position=c(0, 1/3, 1, 2/3), more=TRUE)
 print(plot3, position=c(0, 0, 1, 1/3))
 ```
-<img src="graph_image/xyplot_5.png" width="960" />
+<img src="graph_image/xyplot_5.PNG"/>
 
 ### y축 scale
 * y축을 10~30 으로
@@ -361,11 +361,11 @@ xyplot(mpg~disp | factor(gear),data=mtcars,
        layout=c(3,1),aspect=1,
        scales = list(y=list(at=seq(10,30,10))))
 ```
-<img src="graph_image/xyplot_6.png" width="960" />
+<img src="graph_image/xyplot_6.PNG"/>
 
 ### panel
 * 그릴 수 있는 그래프 종류
-<img src="graph_image/xyplot_10.png" width="960" />
+<img src="graph_image/xyplot_10.PNG"/>
 
  * 그래프 abline 그리기 
 
@@ -380,7 +380,7 @@ xyplot(mpg ~ disp | factor(gear), data=mtcars,
       
  })
 ```
-<img src="graph_image/xyplot_7.png" width="960" />
+<img src="graph_image/xyplot_7.PNG"/>
 
 * **각 그래프마다 기울기 그리기** : lmline
 ```r
@@ -391,7 +391,7 @@ xyplot(mpg ~ disp | factor(gear), data=mtcars,
          panel.xyplot(x, y, ...)
        })
 ```
-<img src="graph_image/xyplot_8.png" width="960" />
+<img src="graph_image/xyplot_8.PNG"/>
 
 ### prepanel
 panel 크기를 조절한다.
@@ -409,7 +409,7 @@ xyplot(NOx ~ E | C, data = ethanol,
        main = "prepanel = function(x, y)
        prepanel.loess(x, y)")
 ```
-<img src="graph_image/xyplot_9.png" width="960" />
+<img src="graph_image/xyplot_9.PNG"/>
 
 
 ### Dotplot 
@@ -429,7 +429,7 @@ dotplot(variety ~ yield | year * site, data = barley, layout = c(6, 2),
         main = "variety ~ yield | year * site, perm.cond = c(2, 1)
 ")
 ```
-<img src="graph_image/dotplot_1.png" width="960" />
+<img src="graph_image/dotplot_1.PNG"/>
 
 ### splom
 * scatterplot을 그려준다
@@ -450,7 +450,7 @@ splom(~iris[1:4], groups = Species, data = iris,
                    text = list(c("Setosa", "Versicolor", "Virgi
 nica"))))
 ```
-<img src="graph_image/splom_1.png" width="960" />
+<img src="graph_image/splom_1.PNG"/>
 
 ### trellis패키지의 기본 설정을 바꿀 수 있다
 ```r
@@ -461,7 +461,7 @@ show.settings()
 ```
 
 # ggplot
-<img src="graph_image/ggplot.png" width="960" />
+<img src="graph_image/ggplot.PNG"/>
 
 ## boxplot
 ```r
@@ -469,13 +469,13 @@ library(socviz)
 p = ggplot(data = organdata, mapping = aes(x = country, y = donors))
 p + geom_boxplot()
 ```
-<img src="graph_image/ggplot_1.png" width="960" />
+<img src="graph_image/ggplot_1.PNG"/>
 
 * coord_flip()은 x축과 y축의 구성을 뒤집어 표현하라는 명령어
 ```r
 p + geom_boxplot() + coord_flip()
 ```
-<img src="graph_image/ggplot_2.png" width="960" />
+<img src="graph_image/ggplot_2.PNG"/>
 
 * reorder를 통해서 순서대로 나열
 * x축의 이름을 없앰
@@ -483,7 +483,7 @@ p + geom_boxplot() + coord_flip()
 p = ggplot(data = organdata, mapping = aes(x = reorder(country, donors, na.rm = TRUE), y = donors))
 p + geom_boxplot() + labs(x = NULL) + coord_flip()
 ```
-<img src="graph_image/ggplot_3.png" width="960" />
+<img src="graph_image/ggplot_3.PNG"/>
 
 * fill = world : 색을 다르게
 
@@ -493,7 +493,7 @@ p = ggplot(data = organdata,
 p + geom_boxplot() + labs(x=NULL) +
   coord_flip() + theme(legend.position = "top")
 ```
-<img src="graph_image/ggplot_4.png" width="960" />
+<img src="graph_image/ggplot_4.PNG"/>
 
 ## point
 
@@ -505,14 +505,14 @@ p = ggplot(data = organdata,
 p + geom_point() + labs(x=NULL) +
   coord_flip() + theme(legend.position = "top")
 ```
-<img src="graph_image/ggplot_5.png" width="960" />
+<img src="graph_image/ggplot_5.PNG"/>
 
 * jitter로 noise를 줘서 같은 자리에 있는 데이터들이 보이도록 한다 
 ```r
 p + geom_jitter() + labs(x=NULL) +
   coord_flip() + theme(legend.position = "top")
 ```
-<img src="graph_image/ggplot_6.png" width="960" />
+<img src="graph_image/ggplot_6.PNG"/>
 
 * position = position_jitter(width=0.15) : zitter 의 크기 조정
 
@@ -520,7 +520,7 @@ p + geom_jitter() + labs(x=NULL) +
 p + geom_jitter(position = position_jitter(width=0.15)) +
   labs(x=NULL) + coord_flip() + theme(legend.position = "top")
 ```
-<img src="graph_image/ggplot_7.png" width="960" />
+<img src="graph_image/ggplot_7.PNG"/>
 
 * 데이터의 변형이 필요하다 
 
@@ -539,8 +539,8 @@ p + geom_point(size=3) +
        y = "", color = "Consent Law") +
   theme(legend.position="top")
 ```
-<img src="graph_image/ggplot_8.png" width="960" />
-<img src="graph_image/ggplot_data_1.png" width="960" />
+<img src="graph_image/ggplot_8.PNG"/>
+<img src="graph_image/ggplot_data_1.PNG"/>
 
 ### sacle_x_continuous(name,breaks,labels,limits)
 * name : x 축 label
@@ -554,7 +554,7 @@ p + geom_point(aes(x=disp,y=mpg,color=gear),size=4) +
   scale_y_continuous(name="miles per gallon", limits = c(0,40))+
   scale_x_continuous(name="displacement (cu.in.)")
 ```
-<img src="graph_image/ggplot1_1.png" width="960" />
+<img src="graph_image/ggplot1_1.PNG"/>
 
 * geom_line 추가
 ```r
@@ -563,7 +563,7 @@ p + geom_point(aes(x=disp, y=mpg)) +
   scale_x_continuous(trans="log",breaks=seq(100, 400, 100)) +
   geom_line(aes(x=disp, y=mpg), stat="smooth",method="lm")
 ```
-<img src="graph_image/ggplot1_2.png" width="960" />
+<img src="graph_image/ggplot1_2.PNG"/>
 
 * coord_trans : 값을 수치변환한다
 ```r
@@ -573,7 +573,7 @@ p + geom_point(aes(x=disp, y=mpg)) +
   geom_line(aes(x=disp, y=mpg), stat="smooth",method="lm") +
   coord_trans(x="exp", y="exp")
 ```
-<img src="graph_image/ggplot1_3.png" width="960" />
+<img src="graph_image/ggplot1_3.PNG"/>
 
 #### x,y좌표명 변경
 
@@ -582,7 +582,7 @@ p + geom_point() + scale_x_log10() +
   scale_y_continuous(breaks = c(5,15, 25),
                      labels = c("Five", "Fifteen","Twenty Five"))
 ```
-<img src="graph_image/ggplot2_13.png" width="960" />
+<img src="graph_image/ggplot2_13.PNG"/>
 
 #### 범례 이름 변경
 ```r
@@ -590,21 +590,21 @@ p + geom_point() +
   scale_color_discrete(labels = c("Corporatist","Liberal", "Social Democratic", "Unclassified")) +
   labs(x = "Road Deaths",y = "Donor Procurement", color = "Welfare State")
 ```
-<img src="graph_image/ggplot2_1.png" width="960" />
+<img src="graph_image/ggplot2_1.PNG"/>
 
 #### 범례 삭제
 ```r
 p + geom_point() + labs(x = "Road Deaths", y = "Donor Procurement") +
   guides(color = FALSE)
 ```
-<img src="graph_image/ggplot2_2.png" width="960" />
+<img src="graph_image/ggplot2_2.PNG"/>
 
 ### 그룹간 비교 : facet_wrap
 ```r
 p <- ggplot(mtcars)
 p + geom_point(aes(x=disp,y=mpg)) + facet_wrap(~gear,nrow=1)
 ```
-<img src="graph_image/ggplot1_4.png" width="960" />
+<img src="graph_image/ggplot1_4.PNG"/>
 
 ### theme 옵션
 * them_bw() : 배경색이 반전된다(하얀색)
@@ -621,7 +621,7 @@ p + geom_point(aes(x=disp, y=mpg)) +
 p + geom_point(aes(x=disp, y=mpg)) +
   labs(title="Vehicle Fuel Efficiency")
 ```
-<img src="graph_image/ggplot1_5.png" width="960" />
+<img src="graph_image/ggplot1_5.PNG"/>
 
 ### geom_hline, geom_text
 * 라인과 텍스트를 그리기 위한 데이터를 추가 생성
@@ -646,7 +646,7 @@ p + geom_point(aes(x=disp, y=mpg))+
             aes(y=limit + .1, label=category),
             x=70, hjust=0, vjust=0, size=3)
 ```
-<img src="graph_image/ggplot1_6.png" width="960" />
+<img src="graph_image/ggplot1_6.PNG"/>
 
 * hjust = 0 : 좌표에 텍스트를 찍으면 point와 겹치니까 point옆에 수평하도록 배치
 
@@ -660,7 +660,7 @@ p = ggplot(data = by_country,
 p + geom_point() + geom_text(mapping = aes(label = country), hjust = 0)
 
 ```
-<img src="graph_image/ggplot1_7.png" width="960" />
+<img src="graph_image/ggplot1_7.PNG"/>
 
 ### geom_text_repel
 * geom_text_repel : plot에 직접 텍스트를 추가한다. 텍스트가 잘 보이는 위치에 알아서 그려줌으로 편리하다 
@@ -684,7 +684,7 @@ p + geom_hline(yintercept = 0.5, size = 1.4, color = "gray80") +
   labs(x = x_label, y = y_label, title = p_title, subtitle = p_subtitle,
        caption = p_caption)
 ```
-<img src="graph_image/ggplot1_8.png" width="960" />
+<img src="graph_image/ggplot1_8.PNG"/>
 
 ```r
 p = ggplot(data = by_country,
@@ -694,7 +694,7 @@ p + geom_point() +
   geom_text_repel(data = subset(by_country,gdp_mean > 25000),
                   mapping = aes(label = country))
 ```
-<img src="graph_image/ggplot1_9.png" width="960" />
+<img src="graph_image/ggplot1_9.PNG"/>
 
 ```r
 p + geom_point() +
@@ -702,7 +702,7 @@ p + geom_point() +
                                 gdp_mean > 25000 | health_mean < 1500 |country %in% "Belgium"),
                   mapping = aes(label = country))
 ```
-<img src="graph_image/ggplot1_10.png" width="960" />
+<img src="graph_image/ggplot1_10.PNG"/>
 
 * organdata$ind : 조건의 True/False
 * subset(organdata,ind) : ind가 True인 값만 추출
@@ -717,7 +717,7 @@ p + geom_point() +
                   mapping =aes(label=ccode))+
   guides(label=FALSE,color=FALSE)
 ```
-<img src="graph_image/ggplot1_11.png" width="960" />
+<img src="graph_image/ggplot1_11.PNG"/>
 
 ### annotate : 주석달기, 영역표시
 ```r
@@ -727,7 +727,7 @@ p + geom_point() +
   annotate(geom = "text", x = 157, y = 33,
            label = "A surprisingly high \n recovery rate.", hjust = 0)
 ```
-<img src="graph_image/ggplot1_12.png" width="960" />
+<img src="graph_image/ggplot1_12.PNG"/>
 
 ### 그래프 여러개 그리기 : plot_grid
 ```r
@@ -739,7 +739,7 @@ p <- p + geom_line() + labs(x="Date",y="# of News Article")
 library(cowplot)
 cowplot::plot_grid(p1,p2,nrow=2,rel_heightts = c(0.75,0.25),align="v")
 ```
-<img src="graph_image/ggplot2_3.png" width="960" />
+<img src="graph_image/ggplot2_3.PNG"/>
 
 
 
@@ -758,7 +758,7 @@ p + geom_path(color="gray80") +
   scale_x_continuous(labels = scales::dollar)+
   scale_y_continuous(labels = scales::comma)
 ```
-<img src="graph_image/ggplot2_4.png" width="960" />
+<img src="graph_image/ggplot2_4.PNG"/>
 
 ```r
 p = ggplot(data = yahoo,
@@ -772,7 +772,7 @@ p + geom_vline(xintercept = 2012) +
        y = "Revenue/Employees",
        title = "Yahoo Revenue to Employee Ratio, 2004-2014")
 ```
-<img src="graph_image/ggplot2_5.png" width="960" />
+<img src="graph_image/ggplot2_5.PNG"/>
 
 ### geom_bar + facet_grid
 ```r
@@ -794,7 +794,7 @@ p + geom_bar(stat = "identity") +
   facet_grid(~ type, labeller = as_labeller(f_labs)) +
   coord_flip()
 ```
-<img src="graph_image/ggplot2_6.png" width="960" />
+<img src="graph_image/ggplot2_6.PNG"/>
 
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMTA0MDQ4MDQzNiwtNTE5MDE0MDA2LDE5Mz
