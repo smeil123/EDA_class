@@ -100,9 +100,11 @@ barplot(hotdogs$Dogs.eaten, names.arg=hotdogs$Year,
         xlab="Year",ylab="Hot Dogs and buns ...")
 
 ```
-<img src="graph_image/bar_3.png" width="960" />
+<img src="graph_image/bar_4.png" width="960" />
+
+# Box Plot
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODUzOTI0NzMsLTE0NzU0MjcyOTAsMT
+eyJoaXN0b3J5IjpbLTEyMjU5NjIwNjMsLTE0NzU0MjcyOTAsMT
 M5MjI5MTkzLC0yMDg4NzQ2NjEyXX0=
 -->
