@@ -682,8 +682,8 @@ p + geom_point() +
 <img src="graph_image/ggplot1_10.png" width="960" />
 
 * organdata$ind : 조건의 True/False
-* subset(organdata,ind) : ind가 True인 갑만 추출
-
+* subset(organdata,ind) : ind가 True인 값만 추출
+* guides(label=FALSE,color=FALSE): legend를 없애줌
 ```r
 organdata$ind <- organdata$ccode %in% c("Ita","Spa") & organdata$year > 1980
 p = ggplot(data=organdata,
@@ -697,11 +697,11 @@ p + geom_point() +
 <img src="graph_image/ggplot1_11.png" width="960" />
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1NjA0NTY2NCwxMjk4MDU4MTcyLC0xNj
-c2NjA5MDY5LC02NzE5NTk3NjgsODU0MjM5NzcxLDE1NzUwOTY4
-OTcsNTcxMDc1MDcyLDEzMDY4MDc5MzksLTgyNTE1OTM5MywxMT
-E4ODIyMzIwLC0xODg5NzQ1NDc1LDUwNjExMDc4NCwtMjYxNjMy
-ODI2LDEzMjAxNDYxNDAsLTI5Mzc3MzQ2OCw1NjExMjc3NiwtMT
-IyNTk2MjA2MywtMTQ3NTQyNzI5MCwxMzkyMjkxOTMsLTIwODg3
-NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbLTE2NDQxODUzOTMsMTI5ODA1ODE3MiwtMT
+Y3NjYwOTA2OSwtNjcxOTU5NzY4LDg1NDIzOTc3MSwxNTc1MDk2
+ODk3LDU3MTA3NTA3MiwxMzA2ODA3OTM5LC04MjUxNTkzOTMsMT
+ExODgyMjMyMCwtMTg4OTc0NTQ3NSw1MDYxMTA3ODQsLTI2MTYz
+MjgyNiwxMzIwMTQ2MTQwLC0yOTM3NzM0NjgsNTYxMTI3NzYsLT
+EyMjU5NjIwNjMsLTE0NzU0MjcyOTAsMTM5MjI5MTkzLC0yMDg4
+NzQ2NjEyXX0=
 -->
