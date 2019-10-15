@@ -91,7 +91,7 @@ title("boxplot of two vectors")
 
 # (3) 데이터 형식 list 
 list1 = list(data1=norm1, data2=norm2,
-            data3=rnorm(100,7,4))
+             data3=rnorm(100,7,4))
 boxplot(list1)
 title("boxplot of simple list")
 
@@ -331,8 +331,8 @@ p + geom_boxplot() + labs(x=NULL) +
 
 ###################################################
 p = ggplot(data = organdata,
-         mapping = aes(x = reorder(country, donors, na.rm=TRUE),
-                       y = donors, color = world))
+           mapping = aes(x = reorder(country, donors, na.rm=TRUE),
+                         y = donors, color = world))
 
 p + geom_point() + labs(x=NULL) +
   coord_flip() + theme(legend.position = "top")
@@ -434,7 +434,7 @@ dotplot(variety ~ yield | year * site, data = barley, layout = c(6, 2),
         xlab = "Barley Yield (bushels/acre) ", ylab = NULL,
         perm.cond = c(2, 1),
         main = "variety ~ yield | year * site, perm.cond = c(2, 1)
-")
+        ")
 
 dotplot(variety ~ yield | year * site, data = barley, layout = c(6, 2),
         xlab = "Barley Yield (bushels/acre) ", ylab = NULL,
@@ -489,12 +489,12 @@ p + geom_point(aes(x=disp, y=mpg)) +
   labs(title="Vehicle Fuel Efficiency")
 
 gcLimits <- data.frame(category=c("2WD car",
-                        "4WD car",
-                        "2WD small pick-up truck",
-                        "4WD small pick-up truck",
-                        "2WD std pick-up truck",
-                        "4WD std pick-up truck"),
-             limit=c(29, 24, 20, 18, 17, 16))
+                                  "4WD car",
+                                  "2WD small pick-up truck",
+                                  "4WD small pick-up truck",
+                                  "2WD std pick-up truck",
+                                  "4WD std pick-up truck"),
+                       limit=c(29, 24, 20, 18, 17, 16))
 
 p + geom_point(aes(x=disp, y=mpg))+
   geom_hline(data=gcLimits,
@@ -572,7 +572,7 @@ p + geom_point() +
 
 p = ggplot(data = organdata, 
            mapping = aes(x = roads, y = donors,
-                 color = world))
+                         color = world))
 ##
 p + geom_point() + scale_x_log10() +
   scale_y_continuous(breaks = c(5,15, 25),
@@ -586,4 +586,56 @@ p + geom_point() + labs(x = "Road Deaths", y = "Donor Procurement") +
   guides(color = FALSE)
 
 #--------------------6강-----------------------#
+p <- ggplot(data=practice, aes(x=no,y=pm10))
+p <- p + geom_line() + labs(x="Date",y="PM10")
+p <- ggplot(data=practice, aes(x=no,y=n_article))
+p <- p + geom_line() + labs(x="Date",y="# of News Article")
+
+library(cowplot)
+cowplot::plot_grid(p1,p2,nrow=2,rel_heightts = c(0.75,0.25),align="v")
+
+##
+head(yahoo)
+p <- ggplot(data=yahoo, aes(x=Employees, y=Revenue))
+p + geom_path(color="gray80") +
+  geom_text(aes(color=Mayer, label=Year),
+            size=5,fontface="bold")+
+  theme(legend.position="bottom")+
+  labs(color = "Mayer is CEO",
+       x = "Employess", y="Revenue(Million)",
+       title = "Yahoo Employees vs Revenues, 2004-2014")+
+  scale_x_continuous(labels = scales::dollar)+
+  scale_y_continuous(labels = scales::comma)
+
+##
+p = ggplot(data = yahoo,
+           mapping = aes(x = Year, y = Revenue/Employees))
+
+p + geom_vline(xintercept = 2012) +
+  geom_line(color = "gray60", size = 2) +
+  annotate("text", x = 2013, y = 0.44,
+           label = " Mayer becomes CEO", size = 4) +
+  labs(x = "Year\n",
+       y = "Revenue/Employees",
+       title = "Yahoo Revenue to Employee Ratio, 2004-2014")
+
+##
+p_lab = "Amount Owed, in thousand of Dollors" 
+p_title = "Outstanding Student Loans" 
+p_subtitle = "44 million borrowers owe a total ~" 
+p_caption = "Source: FRD NY" 
+f_labs = c(`Borrowers` = "Percept of\n all Borrowers", `Balances` = "Percent of \n all Balances")
+
+p + geom_bar(stat = "identity") + 
+  scale_fill_brewer(type = "qual", palette = "Dark2") +
+  scale_y_continuous(labels = scales::percent) + 
+  guides(fill=FALSE) +
+  theme(strip.text.x = element_text(face = "bold")) + 
+  labs(y = NULL, x = p_xlab, 
+       caption = p_caption, 
+       title = p_title,
+       subtitle = p_subtitle) +
+  facet_grid(~ type, labeller = as_labeller(f_labs)) +
+  coord_flip()
+
 
