@@ -576,8 +576,10 @@ p + geom_point(aes(x=disp, y=mpg)) +
 ```
 <img src="graph_image/ggplot1_3.png" width="960" />
 
+### 그룹간 비교
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5NDgxMDY1MCw4NTQyMzk3NzEsMTU3NT
+eyJoaXN0b3J5IjpbMTc3MTkwNzM0NCw4NTQyMzk3NzEsMTU3NT
 A5Njg5Nyw1NzEwNzUwNzIsMTMwNjgwNzkzOSwtODI1MTU5Mzkz
 LDExMTg4MjIzMjAsLTE4ODk3NDU0NzUsNTA2MTEwNzg0LC0yNj
 E2MzI4MjYsMTMyMDE0NjE0MCwtMjkzNzczNDY4LDU2MTEyNzc2
