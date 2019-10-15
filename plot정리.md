@@ -276,8 +276,24 @@ par(op)
 ```
 <img src="graph_image/pair_2.png" width="960" />
 
+## pairs()
+```r
+pairs(~Fertility + Education + Catholic, data=swiss,
+      subset = Education <20, main = "Swiss data, Education <20",
+      col = 1 + (swiss$Agriculture > 50),cex=1.2,
+      pch = 1 + (swiss$Agriculture>50))
+```
+<img src="graph_image/pair_3.png" width="960" />
+
+
+```r
+pairs(iris[1:4], main = "Anderson's Iris Data--3 species",
+      pch = 21, bg = c("red", "green3","blue")[unclass(iris$Species)])
+```
+<img src="graph_image/pair_4.png" width="960" />
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2MTYzMjgyNiwxMzIwMTQ2MTQwLC0yOT
-M3NzM0NjgsNTYxMTI3NzYsLTEyMjU5NjIwNjMsLTE0NzU0Mjcy
-OTAsMTM5MjI5MTkzLC0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbNTA2MTEwNzg0LC0yNjE2MzI4MjYsMTMyMD
+E0NjE0MCwtMjkzNzczNDY4LDU2MTEyNzc2LC0xMjI1OTYyMDYz
+LC0xNDc1NDI3MjkwLDEzOTIyOTE5MywtMjA4ODc0NjYxMl19
 -->
