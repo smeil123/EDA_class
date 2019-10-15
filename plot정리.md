@@ -555,11 +555,13 @@ p + geom_point(aes(x=disp,y=mpg)) +
   scale_y_continuous(name="miles per gallon")+
   scale_x_continuous(name="displacement (cu.in.)")
 ```
+<img src="graph_image/ggplot_data_1.png" width="960" />
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDMxMDU1NTUwLDE1NzUwOTY4OTcsNTcxMD
-c1MDcyLDEzMDY4MDc5MzksLTgyNTE1OTM5MywxMTE4ODIyMzIw
-LC0xODg5NzQ1NDc1LDUwNjExMDc4NCwtMjYxNjMyODI2LDEzMj
-AxNDYxNDAsLTI5Mzc3MzQ2OCw1NjExMjc3NiwtMTIyNTk2MjA2
-MywtMTQ3NTQyNzI5MCwxMzkyMjkxOTMsLTIwODg3NDY2MTJdfQ
-==
+eyJoaXN0b3J5IjpbLTIwMDYxNTQ4NzksMTU3NTA5Njg5Nyw1Nz
+EwNzUwNzIsMTMwNjgwNzkzOSwtODI1MTU5MzkzLDExMTg4MjIz
+MjAsLTE4ODk3NDU0NzUsNTA2MTEwNzg0LC0yNjE2MzI4MjYsMT
+MyMDE0NjE0MCwtMjkzNzczNDY4LDU2MTEyNzc2LC0xMjI1OTYy
+MDYzLC0xNDc1NDI3MjkwLDEzOTIyOTE5MywtMjA4ODc0NjYxMl
+19
 -->
