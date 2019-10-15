@@ -621,11 +621,24 @@ p + geom_point(aes(x=disp, y=mpg))+
 ```
 <img src="graph_image/ggplot1_6.png" width="960" />
 
+* hjust = 0 : 좌표에 텍스트를 찍으면 point와 겹치니까 point옆에 수평하도록 배치
+
+```r
+by_country = organdata %>% group_by(consent_law, country) %>%
+  summarize_if(is.numeric, funs(mean, sd), na.rm = TRUE) %>%
+  ungroup()
+
+p = ggplot(data = by_country,
+           mapping = aes(x = roads_mean, y = donors_mean))
+p + geom_point() + geom_text(mapping = aes(label = country), hjust = 0)
+
+```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3MTk1OTc2OCw4NTQyMzk3NzEsMTU3NT
-A5Njg5Nyw1NzEwNzUwNzIsMTMwNjgwNzkzOSwtODI1MTU5Mzkz
-LDExMTg4MjIzMjAsLTE4ODk3NDU0NzUsNTA2MTEwNzg0LC0yNj
-E2MzI4MjYsMTMyMDE0NjE0MCwtMjkzNzczNDY4LDU2MTEyNzc2
-LC0xMjI1OTYyMDYzLC0xNDc1NDI3MjkwLDEzOTIyOTE5MywtMj
-A4ODc0NjYxMl19
+eyJoaXN0b3J5IjpbLTE2NzY2MDkwNjksLTY3MTk1OTc2OCw4NT
+QyMzk3NzEsMTU3NTA5Njg5Nyw1NzEwNzUwNzIsMTMwNjgwNzkz
+OSwtODI1MTU5MzkzLDExMTg4MjIzMjAsLTE4ODk3NDU0NzUsNT
+A2MTEwNzg0LC0yNjE2MzI4MjYsMTMyMDE0NjE0MCwtMjkzNzcz
+NDY4LDU2MTEyNzc2LC0xMjI1OTYyMDYzLC0xNDc1NDI3MjkwLD
+EzOTIyOTE5MywtMjA4ODc0NjYxMl19
 -->
