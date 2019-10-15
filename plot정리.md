@@ -1,3 +1,11 @@
+# R plot type
+-   **“p”**: Points
+-   **“l”**:  Lines
+-   **“b”**:  Both    
+-   **“c”**: The lines part alone of  “b”    
+-   **“o”**: Both “overplotted”    
+-   **“h”**: Histogram like (or high-density) vertical lines    
+-   **“n”**:  No plotting
 # barplot
 ## barplot(height, width=1, space=NULL)
 ``` r
@@ -269,7 +277,7 @@ par(op)
 <img src="graph_image/pair_2.png" width="960" />
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjc0MjM4NTQ0LDEzMjAxNDYxNDAsLTI5Mz
+eyJoaXN0b3J5IjpbOTE4OTQ3MjM4LDEzMjAxNDYxNDAsLTI5Mz
 c3MzQ2OCw1NjExMjc3NiwtMTIyNTk2MjA2MywtMTQ3NTQyNzI5
 MCwxMzkyMjkxOTMsLTIwODg3NDY2MTJdfQ==
 -->
