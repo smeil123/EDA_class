@@ -327,10 +327,30 @@ p + geom_boxplot() + labs(x=NULL) +
 
 ## point
 
+```r
+p = ggplot(data = organdata,
+         mapping = aes(x = reorder(country, donors, na.rm=TRUE),
+                       y = donors, color = world))
 
+p + geom_point() + labs(x=NULL) +
+  coord_flip() + theme(legend.position = "top")
+```
+<img src="graph_image/ggplot_5.png" width="960" />
+
+* jitter로 noise를 줘서 같은 자리에 있는 데이터들이 보이도록 한다 
+```r
+p + geom_jitter() + labs(x=NULL) +
+  coord_flip() + theme(legend.position = "top")
+```
+<img src="graph_image/ggplot_6.png" width="960" />
+
+```r
+p + geom_jitter(position = position_jitter(width=0.15)) +
+  labs(x=NULL) + coord_flip() + theme(legend.position = "top")
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1Mzc5OTU2OSwtMTg4OTc0NTQ3NSw1MD
-YxMTA3ODQsLTI2MTYzMjgyNiwxMzIwMTQ2MTQwLC0yOTM3NzM0
-NjgsNTYxMTI3NzYsLTEyMjU5NjIwNjMsLTE0NzU0MjcyOTAsMT
-M5MjI5MTkzLC0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbLTE5MjY4MzUxNDcsLTE4ODk3NDU0NzUsNT
+A2MTEwNzg0LC0yNjE2MzI4MjYsMTMyMDE0NjE0MCwtMjkzNzcz
+NDY4LDU2MTEyNzc2LC0xMjI1OTYyMDYzLC0xNDc1NDI3MjkwLD
+EzOTIyOTE5MywtMjA4ODc0NjYxMl19
 -->
