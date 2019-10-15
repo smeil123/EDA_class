@@ -600,11 +600,30 @@ p + geom_point(aes(x=disp, y=mpg)) +
 ```
 <img src="graph_image/ggplot1_5.png" width="960" />
 
+### geom_hline, geom_text
+* 라인과
+```r
+gcLimits <- data.frame(category=c("2WD car",
+                        "4WD car",
+                        "2WD small pick-up truck",
+                        "4WD small pick-up truck",
+                        "2WD std pick-up truck",
+                        "4WD std pick-up truck"),
+             limit=c(29, 24, 20, 18, 17, 16))
+
+p + geom_point(aes(x=disp, y=mpg))+
+  geom_hline(data=gcLimits,
+             aes(yintercept=limit),
+             linetype="dotted") +
+  geom_text(data=gcLimits,
+            aes(y=limit + .1, label=category),
+            x=70, hjust=0, vjust=0, size=3)
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NDMxNzA1MTgsODU0MjM5NzcxLDE1Nz
-UwOTY4OTcsNTcxMDc1MDcyLDEzMDY4MDc5MzksLTgyNTE1OTM5
-MywxMTE4ODIyMzIwLC0xODg5NzQ1NDc1LDUwNjExMDc4NCwtMj
-YxNjMyODI2LDEzMjAxNDYxNDAsLTI5Mzc3MzQ2OCw1NjExMjc3
-NiwtMTIyNTk2MjA2MywtMTQ3NTQyNzI5MCwxMzkyMjkxOTMsLT
-IwODg3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbMTUwNzk4MTUyMyw4NTQyMzk3NzEsMTU3NT
+A5Njg5Nyw1NzEwNzUwNzIsMTMwNjgwNzkzOSwtODI1MTU5Mzkz
+LDExMTg4MjIzMjAsLTE4ODk3NDU0NzUsNTA2MTEwNzg0LC0yNj
+E2MzI4MjYsMTMyMDE0NjE0MCwtMjkzNzczNDY4LDU2MTEyNzc2
+LC0xMjI1OTYyMDYzLC0xNDc1NDI3MjkwLDEzOTIyOTE5MywtMj
+A4ODc0NjYxMl19
 -->
