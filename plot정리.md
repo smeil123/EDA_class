@@ -634,11 +634,31 @@ p + geom_point() + geom_text(mapping = aes(label = country), hjust = 0)
 
 ```
 
+```r
+library(ggrepel)
+elections_historic %>% select(2:7)
+p_title = "Presidential Elections: Popular & Electoral College Margins"
+p_subtitle = "1824-2016"
+p_caption = "Data for 2016 are provisional."
+x_label = "Winner's share of Popular Vote"
+y_label = "Winner's share of Electoral College Votes"
+p = ggplot(elections_historic, aes(x = popular_pct, y = ec_pct,
+                                   label = winner_label))
+
+p + geom_hline(yintercept = 0.5, size = 1.4, color = "gray80") +
+  geom_vline(xintercept = 0.5, size = 1.4, color = "gray80") +
+  geom_point() +
+  geom_text_repel() +
+  scale_x_continuous(labels = scales::percent) +
+  scale_y_continuous(labels = scales::percent) +
+  labs(x = x_label, y = y_label, title = p_title, subtitle = p_subtitle,
+       caption = p_caption)
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzY2MDkwNjksLTY3MTk1OTc2OCw4NT
-QyMzk3NzEsMTU3NTA5Njg5Nyw1NzEwNzUwNzIsMTMwNjgwNzkz
-OSwtODI1MTU5MzkzLDExMTg4MjIzMjAsLTE4ODk3NDU0NzUsNT
-A2MTEwNzg0LC0yNjE2MzI4MjYsMTMyMDE0NjE0MCwtMjkzNzcz
-NDY4LDU2MTEyNzc2LC0xMjI1OTYyMDYzLC0xNDc1NDI3MjkwLD
-EzOTIyOTE5MywtMjA4ODc0NjYxMl19
+eyJoaXN0b3J5IjpbMTU2ODU1ODczOSwtMTY3NjYwOTA2OSwtNj
+cxOTU5NzY4LDg1NDIzOTc3MSwxNTc1MDk2ODk3LDU3MTA3NTA3
+MiwxMzA2ODA3OTM5LC04MjUxNTkzOTMsMTExODgyMjMyMCwtMT
+g4OTc0NTQ3NSw1MDYxMTA3ODQsLTI2MTYzMjgyNiwxMzIwMTQ2
+MTQwLC0yOTM3NzM0NjgsNTYxMTI3NzYsLTEyMjU5NjIwNjMsLT
+E0NzU0MjcyOTAsMTM5MjI5MTkzLC0yMDg4NzQ2NjEyXX0=
 -->
