@@ -138,7 +138,7 @@ title("boxplot of dataframe by formula")
 <img src="graph_image/box_1.png" width="960" />
 
 ## subset
-* boxplot을 subset별로 실행하면 결과는 중첩되어 나온다
+* boxplot을 subset별로 실행하면 결과는 중첩되어 나온다(add=Tru
 * subset = colname = group
 ``` r
 dev.off()
@@ -155,6 +155,6 @@ legend(2,9,c("Ascorbic acid","Orange juice"),fill=c("yellow","orange"))
 ### 예제파일
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTA0NDE4NzksLTEyMjU5NjIwNjMsLT
-E0NzU0MjcyOTAsMTM5MjI5MTkzLC0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbOTExMzM1Mzg4LC0xMjI1OTYyMDYzLC0xND
+c1NDI3MjkwLDEzOTIyOTE5MywtMjA4ODc0NjYxMl19
 -->
