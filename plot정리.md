@@ -234,10 +234,28 @@ par(op)
 # Pair
 ## matplot, matpoints, matlines
 ``` r
+op <- par(no.readonly=TRUE)
+set.seed(10)
+y1 <- rnorm(20,mean=-3,sd=1)
+set.seed(20)
+y2 <- rnorm(20,0,1)
+set.seed(30)
+y3 <- rnorm(20,3,1)
+mat <- cbind(y1,y2,y3)
 
+par(mfrow=c(2,2))
+matplot(y1, type="l",main="One vector argument")
+matplot(y1, y2, main = "Two vecter arguments")
+matplot(mat, main = "Matrix argument")
+matplot(mat, type = "n", main = "Add matlines, matpoints")
+matlines(mat)
+matpoints(mat)
+par(op)
 ```
+<img src="graph_image/pair_1.png" width="960" />
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5Mzc2MTg0NiwxMzIwMTQ2MTQwLC0yOT
+eyJoaXN0b3J5IjpbLTE4NzczMjM0OSwxMzIwMTQ2MTQwLC0yOT
 M3NzM0NjgsNTYxMTI3NzYsLTEyMjU5NjIwNjMsLTE0NzU0Mjcy
 OTAsMTM5MjI5MTkzLC0yMDg4NzQ2NjEyXX0=
 -->
