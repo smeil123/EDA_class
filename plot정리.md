@@ -760,12 +760,26 @@ p + geom_path(color="gray80") +
 ```
 <img src="graph_image/ggplot2_4.png" width="960" />
 
+```r
+p = ggplot(data = yahoo,
+           mapping = aes(x = Year, y = Revenue/Employees))
+
+p + geom_vline(xintercept = 2012) +
+  geom_line(color = "gray60", size = 2) +
+  annotate("text", x = 2013, y = 0.44,
+           label = " Mayer becomes CEO", size = 4) +
+  labs(x = "Year\n",
+       y = "Revenue/Employees",
+       title = "Yahoo Revenue to Employee Ratio, 2004-2014")
+```
+<img src="graph_image/ggplot2_5.png" width="960" />
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTU3OTUwMDA1LDE5MzU0NDM0NzgsMTAzNT
-YwNzIyMiwtODkzMjk5MzMwLDEyOTgwNTgxNzIsLTE2NzY2MDkw
-NjksLTY3MTk1OTc2OCw4NTQyMzk3NzEsMTU3NTA5Njg5Nyw1Nz
-EwNzUwNzIsMTMwNjgwNzkzOSwtODI1MTU5MzkzLDExMTg4MjIz
-MjAsLTE4ODk3NDU0NzUsNTA2MTEwNzg0LC0yNjE2MzI4MjYsMT
-MyMDE0NjE0MCwtMjkzNzczNDY4LDU2MTEyNzc2LC0xMjI1OTYy
-MDYzXX0=
+eyJoaXN0b3J5IjpbLTUxOTAxNDAwNiwxOTM1NDQzNDc4LDEwMz
+U2MDcyMjIsLTg5MzI5OTMzMCwxMjk4MDU4MTcyLC0xNjc2NjA5
+MDY5LC02NzE5NTk3NjgsODU0MjM5NzcxLDE1NzUwOTY4OTcsNT
+cxMDc1MDcyLDEzMDY4MDc5MzksLTgyNTE1OTM5MywxMTE4ODIy
+MzIwLC0xODg5NzQ1NDc1LDUwNjExMDc4NCwtMjYxNjMyODI2LD
+EzMjAxNDYxNDAsLTI5Mzc3MzQ2OCw1NjExMjc3NiwtMTIyNTk2
+MjA2M119
 -->
